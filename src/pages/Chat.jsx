@@ -1,13 +1,29 @@
 import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
 
+// Messages may contain a raw id or a populated user object. Compare a
+// normalised id so the alignment stays correct for both accounts.
+const getUserId = (value) => {
+  if (typeof value === 'string' || typeof value === 'number') return String(value);
+  return value?._id ? String(value._id) : value?.id ? String(value.id) : null;
+};
+
+const isCurrentUser = (sender, currentUser) => {
+  const senderId = getUserId(sender);
+  const currentUserId = getUserId(currentUser);
+  return Boolean(senderId && currentUserId && senderId === currentUserId);
+};
+
 export default function Chat() {
   const { chats, messages, activeChatId, setActiveChatId, user, sendMessage } = useApp();
   const [input, setInput] = useState('');
 
-  const activeChat = chats.find(c => c._id === activeChatId);
+  const visibleChats = chats.filter(c =>
+    c.participants?.some(participant => getUserId(participant) === getUserId(user))
+  );
+  const activeChat = visibleChats.find(c => c._id === activeChatId);
   const chatMessages = messages[activeChatId] || [];
-  const otherUser = activeChat?.participants?.find(p => p._id !== user?._id);
+  const otherUser = activeChat?.participants?.find(p => getUserId(p) !== getUserId(user));
 
   const send = () => {
     if (!input.trim() || !activeChatId) return;
@@ -21,16 +37,16 @@ export default function Chat() {
       <aside className="w-72 flex-shrink-0 bg-white rounded-3xl border border-gray-100 shadow-card flex flex-col overflow-hidden">
         <div className="p-5 border-b border-gray-100">
           <h3 className="font-heading font-black text-xl text-gray-900">Hộp Thư</h3>
-          <p className="text-xs text-gray-400 mt-0.5">{chats.length} cuộc trò chuyện</p>
+          <p className="text-xs text-gray-400 mt-0.5">{visibleChats.length} cuộc trò chuyện</p>
         </div>
         <div className="flex-1 overflow-y-auto custom-scrollbar">
-          {chats.length === 0 ? (
+          {visibleChats.length === 0 ? (
             <div className="flex flex-col items-center justify-center h-full text-gray-300 gap-3 py-10">
               <span className="material-symbols-outlined text-5xl">inbox</span>
               <p className="text-sm">Chưa có tin nhắn nào</p>
             </div>
-          ) : chats.map(c => {
-            const other = c.participants?.find(p => p._id !== user?._id);
+          ) : visibleChats.map(c => {
+            const other = c.participants?.find(p => getUserId(p) !== getUserId(user));
             const isActive = c._id === activeChatId;
             return (
               <button
@@ -79,7 +95,7 @@ export default function Chat() {
             {/* Messages */}
             <div className="flex-1 p-6 overflow-y-auto custom-scrollbar space-y-5 bg-gradient-to-b from-gray-50/30 to-white">
               {chatMessages.map((m, i) => {
-                const isMe = m.sender === user?._id;
+                const isMe = isCurrentUser(m.sender, user);
                 return (
                   <div key={m._id || i} className={`flex ${isMe ? 'justify-end' : 'justify-start'}`}>
                     <div className={`flex flex-col ${isMe ? 'items-end' : 'items-start'} max-w-[70%]`}>

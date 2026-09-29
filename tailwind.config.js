@@ -18,8 +18,9 @@ export default {
         }
       },
       fontFamily: {
-        heading: ['Outfit', 'sans-serif'],
-        body: ['Inter', 'sans-serif'],
+        sans: ['"Be Vietnam Pro"', 'system-ui', 'sans-serif'],
+        heading: ['"Be Vietnam Pro"', 'system-ui', 'sans-serif'],
+        body: ['"Be Vietnam Pro"', 'system-ui', 'sans-serif'],
       },
       borderRadius: {
         '2xl': '1rem',

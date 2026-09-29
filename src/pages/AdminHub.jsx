@@ -165,7 +165,7 @@ export default function AdminHub() {
                     <div key={report._id} className={`bg-white rounded-2xl border shadow-sm overflow-hidden relative ${resolved ? 'opacity-60 border-gray-100' : 'border-red-100'}`}>
                       {resolved && (
                         <div className="absolute inset-0 bg-white/80 backdrop-blur-sm flex items-center justify-center z-10 rounded-2xl">
-                          <div className="transform rotate-[-8deg] border-4 border-green-500 text-green-600 font-heading font-black text-3xl uppercase px-6 py-2 rounded-xl tracking-widest">
+                          <div className="border-2 border-green-500 text-green-600 font-heading font-bold text-2xl uppercase px-5 py-2 rounded-lg tracking-wide">
                             {report.status === 'resolved' ? '✓ Đã Xử Lý' : '✗ Bỏ Qua'}
                           </div>
                         </div>

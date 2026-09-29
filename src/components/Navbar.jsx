@@ -6,7 +6,7 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="bg-white/70 backdrop-blur-xl sticky top-0 z-50 border-b border-gray-200/60 shadow-sm">
+    <header className="bg-white/90 backdrop-blur-xl sticky top-0 z-50 border-b border-gray-200/60 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between h-[72px] gap-4">
         {/* Logo */}
         <button
@@ -51,7 +51,7 @@ export default function Navbar() {
             );
           })}
           {user?.role === 'buyer' && (
-            <button onClick={() => setCurrentView('checkout')} className={`pb-0.5 bg-transparent border-none cursor-pointer hover:text-primary text-gray-500 font-bold uppercase tracking-wider`}>
+            <button onClick={() => setCurrentView('checkout')} className={`pb-0.5 bg-transparent border-none cursor-pointer hover:text-primary text-gray-500 font-bold tracking-wider`}>
               Đơn Hàng
             </button>
           )}
@@ -126,8 +126,54 @@ export default function Navbar() {
               Đăng nhập
             </button>
           )}
+
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            className="md:hidden p-2.5 text-gray-600 hover:text-primary hover:bg-primary/5 rounded-full transition-colors bg-transparent border-none cursor-pointer"
+            title="Mở menu"
+            aria-label="Mở menu"
+            aria-expanded={mobileOpen}
+          >
+            <span className="material-symbols-outlined text-[22px]">{mobileOpen ? 'close' : 'menu'}</span>
+          </button>
         </div>
       </div>
+
+      {mobileOpen && (
+        <div className="md:hidden border-t border-gray-100 bg-white px-4 py-4 shadow-lg animate-fade-in">
+          <div className="relative mb-3">
+            <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-lg">search</span>
+            <input
+              className="w-full bg-gray-100 border border-transparent focus:bg-white focus:border-primary/30 py-2.5 pl-10 pr-3 outline-none text-sm rounded-xl"
+              placeholder="Tìm sản phẩm..."
+              type="text"
+              value={searchQuery}
+              onChange={(e) => {
+                setSearchQuery(e.target.value);
+                setCurrentView('catalog');
+              }}
+            />
+          </div>
+          <nav className="grid grid-cols-2 gap-2 text-sm font-bold">
+            {[
+              ['homepage', 'Trang chủ'],
+              ['catalog', 'Cửa hàng'],
+              ...(user?.role === 'buyer' ? [['checkout', 'Đơn hàng']] : []),
+              ...(user?.role === 'seller' ? [['seller', 'Kênh bán']] : []),
+              ...(user?.role === 'admin' ? [['admin', 'Quản trị']] : []),
+              ...(user?.role !== 'seller' && user?.role !== 'admin' ? [['ai-stylist', 'AI Stylist']] : []),
+            ].map(([view, label]) => (
+              <button
+                key={view}
+                onClick={() => { setCurrentView(view); setMobileOpen(false); }}
+                className={`rounded-xl px-4 py-3 text-left transition-colors border-none cursor-pointer ${currentView === view ? 'bg-primary/10 text-primary' : 'bg-gray-50 text-gray-600 hover:bg-primary/5 hover:text-primary'}`}
+              >
+                {label}
+              </button>
+            ))}
+          </nav>
+        </div>
+      )}
     </header>
   );
 }

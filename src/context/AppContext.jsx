@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext } from 'react';
+import React, { createContext, useState, useContext, useEffect, useRef } from 'react';
 import {
   MOCK_USERS, MOCK_LISTINGS, MOCK_ORDERS,
   MOCK_CONVERSATIONS, MOCK_MESSAGES, MOCK_REVIEWS,
@@ -11,6 +11,7 @@ export const AppContextProvider = ({ children }) => {
   // ── Auth State ──
   const [user, setUser] = useState(null);
   const [currentView, setCurrentViewRaw] = useState('homepage');
+  const viewHistoryRef = useRef(['homepage']);
 
   // ── Data State (in-memory, mutable) ──
   const [products, setProducts] = useState([...MOCK_LISTINGS]);
@@ -85,9 +86,31 @@ export const AppContextProvider = ({ children }) => {
 
   // ── Navigation ──
   const setCurrentView = (view) => {
+    if (view === currentView) return;
+    viewHistoryRef.current.push(view);
     setCurrentViewRaw(view);
     window.history.pushState({ view }, '', `?view=${view}`);
   };
+
+  const goBack = () => {
+    if (viewHistoryRef.current.length > 1) {
+      window.history.back();
+      return;
+    }
+    setCurrentView('homepage');
+  };
+
+  useEffect(() => {
+    const handlePopState = (event) => {
+      const view = event.state?.view || new URLSearchParams(window.location.search).get('view') || 'homepage';
+      viewHistoryRef.current = viewHistoryRef.current.slice(0, -1);
+      setCurrentViewRaw(view);
+    };
+
+    window.history.replaceState({ view: 'homepage' }, '', window.location.href);
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
 
   // ── Auth ──
   const loginUser = (email, password) => {
@@ -353,7 +376,7 @@ export const AppContextProvider = ({ children }) => {
       // Auth
       user, loginUser, registerUser, logoutUser, updateUser,
       // Navigation
-      currentView, setCurrentView,
+      currentView, setCurrentView, goBack,
       // Products
       products, setProducts, fetchListings, createListing, updateListing, deleteListing,
       selectedProduct, setSelectedProduct,

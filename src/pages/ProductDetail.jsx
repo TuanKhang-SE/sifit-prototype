@@ -35,7 +35,7 @@ export default function ProductDetail() {
             />
             {isSold && (
               <div className="absolute inset-0 bg-gray-900/60 backdrop-blur-sm flex items-center justify-center z-10">
-                <div className="bg-white/10 backdrop-blur-md border border-white/20 px-10 py-4 rounded-2xl transform -rotate-12 shadow-2xl">
+                <div className="bg-white/10 backdrop-blur-md border border-white/20 px-10 py-4 rounded-2xl shadow-2xl">
                   <span className="text-red-400 font-heading font-black text-5xl uppercase tracking-[0.2em]">ĐÃ BÁN</span>
                 </div>
               </div>
