@@ -33,7 +33,7 @@ function MainLayout() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#f8f9fb] text-[#191c1e]">
+    <div className="flex flex-col min-h-screen bg-transparent text-[#17221e]">
       <Navbar />
       <main className="flex-grow">{renderView()}</main>
       <Footer />

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
 
 export default function ShopProfile() {
-  const { currentSellerId, getSellerData, setSelectedProduct, setCurrentView } = useApp();
+  const { currentSellerId, getSellerData, setSelectedProduct, setCurrentView, goBack } = useApp();
   const [activeTab, setActiveTab] = useState('products');
 
   const { seller, listings, reviews } = getSellerData(currentSellerId);
@@ -12,7 +12,7 @@ export default function ShopProfile() {
       <div className="max-w-4xl mx-auto px-6 py-20 text-center text-gray-400">
         <span className="material-symbols-outlined text-5xl text-gray-200 block mb-4">store</span>
         <p>Không tìm thấy thông tin shop này.</p>
-        <button onClick={() => setCurrentView('catalog')} className="mt-4 px-5 py-2 bg-primary text-white rounded-full text-sm font-bold cursor-pointer border-none">Quay lại Shop</button>
+        <button onClick={goBack} className="mt-4 px-5 py-2 bg-primary text-white rounded-full text-sm font-bold cursor-pointer border-none">Quay lại Shop</button>
       </div>
     );
   }

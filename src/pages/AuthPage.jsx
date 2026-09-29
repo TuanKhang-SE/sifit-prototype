@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
 
 export default function AuthPage() {
-  const { loginUser, registerUser, setCurrentView } = useApp();
+  const { loginUser, registerUser, goBack } = useApp();
   const [isLogin, setIsLogin] = useState(true);
   const [form, setForm] = useState({ name: '', email: '', password: '', role: 'buyer' });
   const [error, setError] = useState('');
@@ -105,7 +105,7 @@ export default function AuthPage() {
           </div>
         </div>
 
-        <button onClick={() => setCurrentView('homepage')} className="mt-6 mx-auto flex items-center gap-2 text-sm text-gray-400 hover:text-gray-700 transition-colors bg-transparent border-none cursor-pointer">
+        <button onClick={goBack} className="mt-6 mx-auto flex items-center gap-2 text-sm text-gray-400 hover:text-gray-700 transition-colors bg-transparent border-none cursor-pointer">
           <span className="material-symbols-outlined text-base">arrow_back</span>
           Quay về trang chủ
         </button>
