@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
+import LocalizedContent from '../components/LocalizedContent';
 
 // Messages may contain a raw id or a populated user object. Compare a
 // normalised id so the alignment stays correct for both accounts.
@@ -32,7 +33,8 @@ export default function Chat() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-8 h-[calc(100vh-160px)] flex gap-6 animate-fade-in">
+    <LocalizedContent>
+    <div className="chat-workspace max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-8 h-[calc(100vh-160px)] flex gap-6 animate-fade-in">
       {/* ── Conversation list ── */}
       <aside className="w-72 flex-shrink-0 bg-white rounded-3xl border border-gray-100 shadow-card flex flex-col overflow-hidden">
         <div className="p-5 border-b border-gray-100">
@@ -140,5 +142,6 @@ export default function Chat() {
         )}
       </section>
     </div>
+    </LocalizedContent>
   );
 }

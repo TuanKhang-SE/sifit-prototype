@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
+import LocalizedContent from '../components/LocalizedContent';
 
 export default function ShopProfile() {
   const { currentSellerId, getSellerData, setSelectedProduct, setCurrentView, goBack } = useApp();
@@ -9,15 +10,18 @@ export default function ShopProfile() {
 
   if (!seller) {
     return (
+      <LocalizedContent>
       <div className="max-w-4xl mx-auto px-6 py-20 text-center text-gray-400">
         <span className="material-symbols-outlined text-5xl text-gray-200 block mb-4">store</span>
         <p>Không tìm thấy thông tin shop này.</p>
         <button onClick={goBack} className="mt-4 px-5 py-2 bg-primary text-white rounded-full text-sm font-bold cursor-pointer border-none">Quay lại Shop</button>
       </div>
+      </LocalizedContent>
     );
   }
 
   return (
+    <LocalizedContent>
     <div className="animate-fade-in">
       {/* Shop Cover */}
       <div className="bg-white border-b border-gray-100 shadow-sm">
@@ -144,5 +148,6 @@ export default function ShopProfile() {
         )}
       </div>
     </div>
+    </LocalizedContent>
   );
 }

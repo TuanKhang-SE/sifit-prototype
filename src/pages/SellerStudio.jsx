@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
+import LocalizedContent from '../components/LocalizedContent';
+import { useWorkspaceTranslation } from '../context/useWorkspaceTranslation';
 
 const TABS = [
   { id: 'overview', label: 'Tổng quan', icon: 'monitoring' },
@@ -15,6 +17,7 @@ const STATUS_COLORS = { active: 'bg-green-100 text-green-700', pending: 'bg-yell
 const EMPTY_FORM = { title: '', price: '', category: 'Tops', size: 'M', brand: "Levi's", condition: 85, color: '', material: '', defects: '', images: [''] };
 
 export default function SellerStudio() {
+  const tr = useWorkspaceTranslation();
   const { user, updateUser, products, createListing, updateListing, deleteListing, orders, updateOrderStatus, packages, activePackage, setActivePackage, setStats } = useApp();
   const [activeTab, setActiveTab] = useState('overview');
   const [editingId, setEditingId] = useState(null);
@@ -34,10 +37,10 @@ export default function SellerStudio() {
     if (editingId) {
       updateListing(editingId, listingData);
       setEditingId(null);
-      alert('Cập nhật thành công!');
+      alert(tr('Cập nhật thành công!'));
     } else {
       createListing(listingData);
-      alert('Đăng sản phẩm thành công!');
+      alert(tr('Đăng sản phẩm thành công!'));
     }
     setForm(EMPTY_FORM);
     setActiveTab('listings');
@@ -51,13 +54,14 @@ export default function SellerStudio() {
 
   const handleShip = (orderId) => {
     const d = shipData[orderId] || {};
-    if (!d.carrier || !d.tracking) { alert('Vui lòng nhập đơn vị và mã vận đơn!'); return; }
+    if (!d.carrier || !d.tracking) { alert(tr('Vui lòng nhập đơn vị và mã vận đơn!')); return; }
     updateOrderStatus(orderId, { status: 'shipping', shippingCarrier: d.carrier, trackingNumber: d.tracking });
     setExpandedOrderId(null);
-    alert('Xác nhận vận chuyển thành công!');
+    alert(tr('Xác nhận vận chuyển thành công!'));
   };
 
   return (
+    <LocalizedContent>
     <div className="min-h-screen bg-gray-50 animate-fade-in">
       {/* Top bar */}
       <div className="bg-white border-b shadow-sm px-6 py-3.5 flex items-center justify-between">
@@ -301,7 +305,7 @@ export default function SellerStudio() {
                             <button onClick={() => handleEdit(p)} className="text-blue-500 hover:bg-blue-50 p-1.5 rounded-lg cursor-pointer bg-transparent border-none transition-colors" title="Sửa">
                               <span className="material-symbols-outlined text-base">edit</span>
                             </button>
-                            <button onClick={() => { if (confirm('Xóa sản phẩm này?')) deleteListing(p._id); }} className="text-red-400 hover:bg-red-50 p-1.5 rounded-lg cursor-pointer bg-transparent border-none transition-colors" title="Xóa">
+                            <button onClick={() => { if (confirm(tr('Xóa sản phẩm này?'))) deleteListing(p._id); }} className="text-red-400 hover:bg-red-50 p-1.5 rounded-lg cursor-pointer bg-transparent border-none transition-colors" title="Xóa">
                               <span className="material-symbols-outlined text-base">delete</span>
                             </button>
                           </div>
@@ -356,7 +360,7 @@ export default function SellerStudio() {
           {activeTab === 'shopprofile' && (
             <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 max-w-lg">
               <h2 className="font-heading font-black text-2xl mb-6">Hồ Sơ Shop</h2>
-              <form onSubmit={(e) => { e.preventDefault(); updateUser(profileData); alert('Cập nhật thành công!'); }} className="space-y-5">
+              <form onSubmit={(e) => { e.preventDefault(); updateUser(profileData); alert(tr('Cập nhật thành công!')); }} className="space-y-5">
                 <div className="flex items-center gap-5 p-4 bg-gray-50 rounded-2xl">
                   <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-white shadow-sm bg-primary flex items-center justify-center">
                     {profileData.avatar ? <img src={profileData.avatar} className="w-full h-full object-cover" alt="" onError={e => e.target.style.display = 'none'} /> : <span className="font-heading font-black text-2xl text-white">{user?.name?.charAt(0).toUpperCase()}</span>}
@@ -386,5 +390,6 @@ export default function SellerStudio() {
         </main>
       </div>
     </div>
+    </LocalizedContent>
   );
 }

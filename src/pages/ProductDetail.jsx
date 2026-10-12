@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
+import LocalizedContent from '../components/LocalizedContent';
 import ReportModal from '../components/ReportModal';
 
 export default function ProductDetail() {
@@ -14,6 +15,7 @@ export default function ProductDetail() {
   const isSeller = user?.role === 'seller';
 
   return (
+    <LocalizedContent>
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-10 animate-fade-in">
       {/* Breadcrumb */}
       <nav className="flex text-gray-400 text-xs font-bold uppercase mb-8 items-center tracking-widest gap-2">
@@ -191,5 +193,6 @@ export default function ProductDetail() {
 
       <ReportModal isOpen={reportOpen} onClose={() => setReportOpen(false)} />
     </div>
+    </LocalizedContent>
   );
 }

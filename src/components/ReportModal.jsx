@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
+import LocalizedContent from './LocalizedContent';
 
 const REASON_LABELS = {
   fake_product: 'Hàng giả / Không đúng hàng hiệu',
@@ -25,6 +26,7 @@ export default function ReportModal({ isOpen, onClose }) {
   if (!isOpen) return null;
 
   return (
+    <LocalizedContent>
     <div className="fixed inset-0 bg-gray-900/60 backdrop-blur-sm flex items-center justify-center z-50 p-4 animate-fade-in">
       <div className="bg-white rounded-3xl shadow-2xl max-w-md w-full overflow-hidden">
         <div className="p-6 border-b border-gray-100 flex items-center justify-between">
@@ -76,5 +78,6 @@ export default function ReportModal({ isOpen, onClose }) {
         </form>
       </div>
     </div>
+    </LocalizedContent>
   );
 }

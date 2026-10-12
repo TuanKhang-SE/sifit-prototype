@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useApp } from '../context/AppContext';
+import LocalizedContent from '../components/LocalizedContent';
 
 export default function AiStylist() {
   const { aiMessages, isAiTyping, sendAiMessage, setSelectedProduct, setCurrentView, addToCart } = useApp();
@@ -17,7 +18,8 @@ export default function AiStylist() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 py-6 h-[calc(100vh-140px)] flex flex-col animate-fade-in">
+    <LocalizedContent>
+    <div className="ai-workspace max-w-4xl mx-auto px-4 sm:px-6 py-6 h-[calc(100vh-140px)] flex flex-col animate-fade-in">
       <div className="text-center mb-6">
         <h1 className="font-heading font-black text-3xl text-gray-900 flex items-center justify-center gap-2">
           <span className="material-symbols-outlined text-4xl text-amber-500 fill">auto_awesome</span>
@@ -109,5 +111,6 @@ export default function AiStylist() {
         </div>
       </div>
     </div>
+    </LocalizedContent>
   );
 }

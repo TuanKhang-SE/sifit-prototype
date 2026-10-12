@@ -12,6 +12,10 @@ import AdminHub from './pages/AdminHub';
 import ShopProfile from './pages/ShopProfile';
 import AuthPage from './pages/AuthPage';
 import AiStylist from './pages/AiStylist';
+import { LanguageProvider } from './context/LanguageContext';
+import InfoPage from './pages/InfoPage';
+import SellPage from './pages/SellPage';
+import CleanOutGuide from './pages/CleanOutGuide';
 
 function MainLayout() {
   const { currentView } = useApp();
@@ -26,25 +30,28 @@ function MainLayout() {
       case 'ai-stylist': return <AiStylist />;
       case 'checkout': return <CheckoutTracker />;
       case 'seller': return <SellerStudio />;
+      case 'sell': return <SellPage />;
+      case 'sell-guide': return <CleanOutGuide />;
       case 'admin': return <AdminHub />;
       case 'auth': return <AuthPage />;
+      case 'info': return <InfoPage />;
       default: return <Homepage />;
     }
   };
 
   return (
     <div className="flex flex-col min-h-screen bg-transparent text-[#17221e]">
-      <Navbar />
-      <main className="flex-grow">{renderView()}</main>
-      <Footer />
+      {currentView !== 'auth' && <Navbar />}
+      <main className={`flex-grow ${['detail', 'chat', 'shop', 'ai-stylist', 'checkout', 'seller', 'admin'].includes(currentView) ? 'workspace-screen' : ''}`}>{renderView()}</main>
+      {currentView !== 'auth' && <Footer />}
     </div>
   );
 }
 
 export default function App() {
   return (
-    <AppContextProvider>
+    <LanguageProvider><AppContextProvider>
       <MainLayout />
-    </AppContextProvider>
+    </AppContextProvider></LanguageProvider>
   );
 }

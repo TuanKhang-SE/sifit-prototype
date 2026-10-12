@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
+import LocalizedContent from '../components/LocalizedContent';
 
 export default function AdminHub() {
   const { users, products, reports, stats, toggleBlockUser, resolveReport } = useApp();
@@ -8,6 +9,7 @@ export default function AdminHub() {
   const pendingReports = reports.filter(r => r.status === 'pending');
 
   return (
+    <LocalizedContent>
     <div className="min-h-screen bg-gray-50 animate-fade-in">
       <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Header */}
@@ -203,5 +205,6 @@ export default function AdminHub() {
         </div>
       </div>
     </div>
+    </LocalizedContent>
   );
 }

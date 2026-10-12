@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
+import LocalizedContent from '../components/LocalizedContent';
+import { useWorkspaceTranslation } from '../context/useWorkspaceTranslation';
 
 const STATUS_STEPS = ['pending', 'processing', 'shipping', 'completed'];
 const STATUS_LABELS = { pending: 'Chờ xác nhận', processing: 'Đang chuẩn bị', shipping: 'Đang vận chuyển', completed: 'Đã nhận hàng', cancelled: 'Đã hủy' };
 const STATUS_COLORS = { pending: 'bg-yellow-100 text-yellow-700', processing: 'bg-blue-100 text-blue-700', shipping: 'bg-orange-100 text-orange-700', completed: 'bg-green-100 text-green-700', cancelled: 'bg-red-100 text-red-600' };
 
 export default function CheckoutTracker() {
+  const tr = useWorkspaceTranslation();
   const { user, updateUser, cart, removeFromCart, orders, createOrder, updateOrderStatus, checkoutProduct, setCheckoutProduct, setSelectedProduct, setCurrentView, submitReview } = useApp();
   const [activeTab, setActiveTab] = useState(checkoutProduct || cart.length > 0 ? 'checkout' : 'orders');
   const [orderFilter, setOrderFilter] = useState('all');
@@ -28,12 +31,12 @@ export default function CheckoutTracker() {
   const placeOrder = (e) => {
     e.preventDefault();
     const items = checkoutProduct ? [checkoutProduct] : cart.filter(i => selectedItems.includes(i._id));
-    if (items.length === 0) { alert('Chọn ít nhất 1 sản phẩm!'); return; }
+    if (items.length === 0) { alert(tr('Chọn ít nhất 1 sản phẩm!')); return; }
     items.forEach(item => createOrder({ listingId: item._id, shippingAddress: shipping }));
     if (!checkoutProduct) items.forEach(item => removeFromCart(item._id));
     setCheckoutProduct(null);
     setSelectedItems([]);
-    alert('Đặt hàng thành công! 🎉');
+    alert(tr('Đặt hàng thành công! 🎉'));
     setActiveTab('orders');
   };
 
@@ -46,6 +49,7 @@ export default function CheckoutTracker() {
   });
 
   return (
+    <LocalizedContent>
     <div className="min-h-screen bg-gray-50 animate-fade-in">
       <div className="max-w-6xl mx-auto px-4 py-8 flex gap-6">
         {/* Sidebar */}
@@ -85,7 +89,7 @@ export default function CheckoutTracker() {
           {activeTab === 'profile' && (
             <div className="bg-white rounded-2xl border border-gray-200 p-6">
               <h2 className="font-heading font-bold text-xl mb-6 border-b pb-4">Hồ Sơ Của Tôi</h2>
-              <form onSubmit={(e) => { e.preventDefault(); updateUser({ ...profileData, addresses: [addressData] }); alert('Cập nhật thành công!'); }} className="space-y-4 max-w-xl">
+              <form onSubmit={(e) => { e.preventDefault(); updateUser({ ...profileData, addresses: [addressData] }); alert(tr('Cập nhật thành công!')); }} className="space-y-4 max-w-xl">
                 <div className="flex items-center gap-4 p-4 bg-gray-50 rounded-2xl">
                   <img src={profileData.avatar || 'https://i.pravatar.cc/150'} className="w-16 h-16 rounded-full object-cover border-2 border-white shadow-sm" alt="" />
                   <div>
@@ -306,5 +310,6 @@ export default function CheckoutTracker() {
         </main>
       </div>
     </div>
+    </LocalizedContent>
   );
 }

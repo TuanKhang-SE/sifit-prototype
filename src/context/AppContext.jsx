@@ -1,4 +1,6 @@
 import React, { createContext, useState, useContext, useEffect, useRef } from 'react';
+import { useLanguage } from './LanguageContext';
+import { translateWorkspace } from '../data/workspaceTranslations';
 import {
   MOCK_USERS, MOCK_LISTINGS, MOCK_ORDERS,
   MOCK_CONVERSATIONS, MOCK_MESSAGES, MOCK_REVIEWS,
@@ -8,10 +10,17 @@ import {
 const AppContext = createContext();
 
 export const AppContextProvider = ({ children }) => {
+  const { locale } = useLanguage();
+  const tr = value => locale === 'en' ? translateWorkspace(value) : value;
   // ── Auth State ──
   const [user, setUser] = useState(null);
-  const [currentView, setCurrentViewRaw] = useState('homepage');
-  const viewHistoryRef = useRef(['homepage']);
+  const initialView = useRef(new URLSearchParams(window.location.search).get('view') || 'homepage').current;
+  const [currentView, setCurrentViewRaw] = useState(initialView);
+  const [authMode, setAuthMode] = useState('login');
+  const [authRole, setAuthRole] = useState('buyer');
+  const [infoPage, setInfoPage] = useState('about');
+  const [guideSection, setGuideSection] = useState(window.location.hash.slice(1));
+  const viewHistoryRef = useRef([initialView]);
 
   // ── Data State (in-memory, mutable) ──
   const [products, setProducts] = useState([...MOCK_LISTINGS]);
@@ -51,7 +60,7 @@ export const AppContextProvider = ({ children }) => {
     setTimeout(() => {
       let replyText = '';
       let recommendedListings = [];
-      const lowerText = text.toLowerCase();
+      const lowerText = text.toLowerCase().replace(/beach|summer|hot/g, 'biển').replace(/winter|cold|warm/g, 'đông').replace(/party|formal|elegant/g, 'tiệc');
 
       if (aiStep === 0) {
         setAiIntent(lowerText);
@@ -90,6 +99,31 @@ export const AppContextProvider = ({ children }) => {
     viewHistoryRef.current.push(view);
     setCurrentViewRaw(view);
     window.history.pushState({ view }, '', `?view=${view}`);
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  };
+
+  const openAuth = (mode = 'login', role = 'buyer') => {
+    setAuthMode(mode);
+    setAuthRole(role);
+    setCurrentView('auth');
+  };
+
+  const openSellGuide = (section = '') => {
+    setGuideSection(section);
+    setCurrentView('sell-guide');
+    if (!section) {
+      window.history.replaceState({ view: 'sell-guide' }, '', '?view=sell-guide');
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    }
+  };
+
+  const browse = (options = {}) => {
+    setSearchQuery(options.query || '');
+    setFilters({ categories: options.category ? [options.category] : [], brands: options.brand ? [options.brand] : [],
+      sizes: [], condition: options.premium ? 90 : 0, priceMax: options.lastChance ? 500000 : 10000000,
+      material: options.material || '', women: !!options.women, department: options.department || '' });
+    setSortOption(options.lastChance ? 'Giá: Thấp → Cao' : 'Hàng Mới Về');
+    setCurrentView('catalog');
   };
 
   const goBack = () => {
@@ -107,10 +141,10 @@ export const AppContextProvider = ({ children }) => {
       setCurrentViewRaw(view);
     };
 
-    window.history.replaceState({ view: 'homepage' }, '', window.location.href);
+    window.history.replaceState({ view: initialView }, '', window.location.href);
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
-  }, []);
+  }, [initialView]);
 
   // ── Auth ──
   const loginUser = (email, password) => {
@@ -186,10 +220,10 @@ export const AppContextProvider = ({ children }) => {
 
   // ── Cart ──
   const addToCart = (product) => {
-    if (!user) { alert('Vui lòng đăng nhập để thêm vào giỏ hàng!'); return; }
-    if (cart.find(p => p._id === product._id)) { alert('Sản phẩm đã có trong giỏ hàng!'); return; }
+    if (!user) { openAuth(); return; }
+    if (cart.find(p => p._id === product._id)) { alert(tr('Sản phẩm đã có trong giỏ hàng!')); return; }
     setCart(prev => [...prev, product]);
-    alert('Đã thêm vào giỏ hàng! 🛒');
+    alert(tr('Đã thêm vào giỏ hàng! 🛒'));
   };
 
   const removeFromCart = (listingId) => {
@@ -197,6 +231,7 @@ export const AppContextProvider = ({ children }) => {
   };
 
   const handleInstantBuy = (product) => {
+    if (!user) { openAuth(); return; }
     setCheckoutProduct(product);
     setCurrentView('checkout');
   };
@@ -250,7 +285,7 @@ export const AppContextProvider = ({ children }) => {
 
   // ── Chat ──
   const startChat = (product) => {
-    if (!user) { alert('Vui lòng đăng nhập để chat!'); setCurrentView('auth'); return; }
+    if (!user) { openAuth(); return; }
     const existingConv = chats.find(c =>
       c.listing?._id === product._id &&
       c.participants.some(p => p._id === user._id)
@@ -300,7 +335,7 @@ export const AppContextProvider = ({ children }) => {
 
   // ── Reports ──
   const addReport = (reason, details) => {
-    if (!user) { alert('Vui lòng đăng nhập!'); return; }
+    if (!user) { openAuth(); return; }
     const newReport = {
       _id: `report_${Date.now()}`,
       reporter: { _id: user._id, name: user.name },
@@ -311,7 +346,7 @@ export const AppContextProvider = ({ children }) => {
     };
     setReports(prev => [newReport, ...prev]);
     setStats(prev => ({ ...prev, pendingReports: prev.pendingReports + 1 }));
-    alert('Báo cáo vi phạm đã được ghi nhận! Ban quản trị sẽ xem xét.');
+    alert(tr('Báo cáo vi phạm đã được ghi nhận! Ban quản trị sẽ xem xét.'));
     setProducts(prev => prev.map(p =>
       p._id === selectedProduct?._id ? { ...p, status: 'reported' } : p
     ));
@@ -368,7 +403,7 @@ export const AppContextProvider = ({ children }) => {
     setOrders(prev => prev.map(o =>
       o._id === orderId ? { ...o, isReviewed: true } : o
     ));
-    alert('Cảm ơn bạn đã đánh giá! ⭐');
+    alert(tr('Cảm ơn bạn đã đánh giá! ⭐'));
   };
 
   return (
@@ -376,7 +411,7 @@ export const AppContextProvider = ({ children }) => {
       // Auth
       user, loginUser, registerUser, logoutUser, updateUser,
       // Navigation
-      currentView, setCurrentView, goBack,
+      currentView, setCurrentView, goBack, authMode, authRole, openAuth, browse, infoPage, setInfoPage, guideSection, setGuideSection, openSellGuide,
       // Products
       products, setProducts, fetchListings, createListing, updateListing, deleteListing,
       selectedProduct, setSelectedProduct,
