@@ -1,0 +1,1579 @@
+[
+  {
+    "_id": "men_15970",
+    "title": "Áo sơ mi nam · Turtle Check Navy Blue Shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Navy Blue",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-15970.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/7a5b82d1372a7a5c6de67ae7a314fd91_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Turtle Check Men Navy Blue Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_39386",
+    "title": "Quần jeans nam · Peter England Party Blue Jeans",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Blue",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-39386.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/4850873d0c417e6480a26059f83aac29_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Peter England Men Party Blue Jeans",
+      "articleType": "Jeans",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_21379",
+    "title": "Quần thể thao nam · Manchester United Solid Black Track Pants",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-21379.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/8153dc35d9a5420eeb93922067137db6_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Manchester United Men Solid Black Track Pants",
+      "articleType": "Track Pants",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_53759",
+    "title": "Áo thun nam · Puma Grey T-shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Grey",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-53759.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/Puma-Men-Grey-T-shirt_32668f8a61454d0cc028a808cf21b383_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Puma Men Grey T-shirt",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_1855",
+    "title": "Áo thun nam · Inkfruit Chain Reaction T-shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Grey",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-1855.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/9c1b19682ecf926c296f520d5d6e0972_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Inkfruit Mens Chain Reaction T-shirt",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_30805",
+    "title": "Áo sơ mi nam · Fabindia Striped Green Shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Green",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-30805.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/06e9d4231254fdb2c7fe967ad413ad7b_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Fabindia Men Striped Green Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_9204",
+    "title": "Giày casual nam · Puma Future Cat Remix SF Black Casual Shoes",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-9204.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/051d64772f1b38ff476fbf0a807f365a_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Puma Men Future Cat Remix SF Black Casual Shoes",
+      "articleType": "Casual Shoes",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_18653",
+    "title": "Dép nam · Fila Cush Flex Black Slippers",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-18653.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/53690e3f396f411e184b249672d6ebae_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Fila Men Cush Flex Black Slippers",
+      "articleType": "Flip Flops",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_12967",
+    "title": "Sandal nam · ADIDAS Spry M Black Sandals",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-12967.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/c5a22e9ccf9b10e0a89ffbbf3e386584_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "ADIDAS Men Spry M Black Sandals",
+      "articleType": "Sandals",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_13089",
+    "title": "Áo sweatshirt nam · ADIDAS Lfc Auth Hood Grey Sweatshirts",
+    "category": "Outerwear",
+    "gender": "men",
+    "color": "Grey",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-13089.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/59912a0287751ff0475c8748dbcf4ea0_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "ADIDAS Men Lfc Auth Hood Grey Sweatshirts",
+      "articleType": "Sweatshirts",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_9036",
+    "title": "Giày tây nam · Buckaroo Flores Black Formal Shoes",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-9036.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/06edc2da9c6d103d299e5e8dafc5b6b9_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Buckaroo Men Flores Black Formal Shoes",
+      "articleType": "Formal Shoes",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_7990",
+    "title": "Áo thun nam · Fila 's Round Neck Navy Blue T-shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Navy Blue",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-7990.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/296a8c388d05d67346db88af27d3b763_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Fila Men's Round Neck Navy Blue T-shirt",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_37812",
+    "title": "Áo sơ mi nam · John Players Navy Blue Shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Navy Blue",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-37812.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/3af9f145845d8453a066322de35980af_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "John Players Men Navy Blue Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_56825",
+    "title": "Áo sơ mi nam · John Players Brown Shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Brown",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-56825.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/John-Players-Men-Brown-Shirt_7eec3b0568f65dc8f39a534376538551_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "John Players Men Brown Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_39988",
+    "title": "Giày casual nam · Gas Europa White Shoes",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "White",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-39988.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/9c3d77147758ab10f12caf6184fe13ef_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Gas Men Europa White Shoes",
+      "articleType": "Casual Shoes",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_3168",
+    "title": "Giày thể thao nam · Nike 's Incinerate MSL White Blue Shoe",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "White",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-3168.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/4eff2353c62ec8b7bca9fbbaf5996bd2_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Nike Men's Incinerate MSL White Blue Shoe",
+      "articleType": "Sports Shoes",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_18005",
+    "title": "Quần short nam · Puma Long Logo Black Bermuda",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-18005.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/91ca48e3204f23cd376fad7f186875bf_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Puma Men Long Logo Black Bermuda",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_10268",
+    "title": "Giày tây nam · Clarks Hang Work Leather Black Formal Shoes",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-10268.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/2976e4095e7b3ae2de99df54d2adeaaa_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Clarks Men Hang Work Leather Black Formal Shoes",
+      "articleType": "Formal Shoes",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_59435",
+    "title": "Giày tây nam · Arrow Black Formal Shoes",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-59435.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/Arrow-Men-Black-Formal-Shoes_70a3c7c185338a5636c8c0e668829bb6_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Arrow Men Black Formal Shoes",
+      "articleType": "Formal Shoes",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_5891",
+    "title": "Áo thun nam · Puma 's Stripe Polo Black T-shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-5891.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/02e4e32cd9d09052f0ec3d46fa747d39_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Puma Men's Stripe Polo Black T-shirt",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_10866",
+    "title": "Áo thun nam · Wrangler Motor Rider Red T-Shirts",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Red",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-10866.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/b34550bc6415dcd66892de4ef2837fd9_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Wrangler Men Motor Rider Red T-Shirts",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_22198",
+    "title": "Giày casual nam · Timberland Black Casual Shoes",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-22198.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/70e74ca34b3b534b19d6b006d5bfad0a_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Timberland Men Black Casual Shoes",
+      "articleType": "Casual Shoes",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_29570",
+    "title": "Giày casual nam · Vans Classic Slip-On Purple & Black Shoes",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "Purple",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-29570.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/49f884ddf4420d869ad143857d3bc33d_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Vans Men Classic Slip-On Purple & Black Shoes",
+      "articleType": "Casual Shoes",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_6628",
+    "title": "Giày thể thao nam · ADIDAS 's Lowell White Silver Shoe",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "White",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-6628.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/0707b75d2d44e9cec9d27c944294ddbe_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "ADIDAS Men's Lowell White Silver Shoe",
+      "articleType": "Sports Shoes",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_26538",
+    "title": "Giày casual nam · ID Red Shoes",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "Red",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-26538.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/6a6ebc47eaf2fe034bcfd94060a285ba_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "ID Men Red Shoes",
+      "articleType": "Casual Shoes",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_49495",
+    "title": "Giày casual nam · Vans Khaki Shoes",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "Khaki",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-49495.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/Vans-Men-Khaki-Shoes_dcaf7c703e9c0396650529df2b2a8893_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Vans Men Khaki Shoes",
+      "articleType": "Casual Shoes",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_23876",
+    "title": "Áo sweatshirt nam · ADIDAS Blue Sweatshirt",
+    "category": "Outerwear",
+    "gender": "men",
+    "color": "Blue",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-23876.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/fcd52c6506b43f3af116a62c2ea81204_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "ADIDAS Men Blue Sweatshirt",
+      "articleType": "Sweatshirts",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_19123",
+    "title": "Dép nam · Lotto XL Water Silver Slippers",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "Silver",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-19123.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/69482728a521cbd2ba571e36016d5f63_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Lotto Men XL Water Man Silver Slippers",
+      "articleType": "Flip Flops",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_13419",
+    "title": "Áo thun nam · United Colors of Benetton Solid Pink Polo T-shirts",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Pink",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-13419.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/8d7f0bbb0bdefcbcc692bcdf4a6400ee_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "United Colors of Benetton Men Solid Pink Polo T-shirts",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_43369",
+    "title": "Dép nam · Reebok Black Possession Flip Flops",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-43369.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/647838a2e988ab55b76c9aa9ddd15ad7_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Reebok Men Black Possession Flip Flops",
+      "articleType": "Flip Flops",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_33822",
+    "title": "Giày thể thao nam · Puma Axis White & Grey Sports Shoes",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "White",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-33822.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/52ad8ae288ba080d88a116b3c70305ec_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Puma Men Axis White & Grey Sports Shoes",
+      "articleType": "Sports Shoes",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_11940",
+    "title": "Sandal nam · Ganuchi Casual Black Sandals",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-11940.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/b23f1e70aec0102c360fb9dfdc476023_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Ganuchi Men Casual Black Sandals",
+      "articleType": "Sandals",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_9694",
+    "title": "Áo thun nam · Classic Polo Vulcan White Polo Tshirts",
+    "category": "Tops",
+    "gender": "men",
+    "color": "White",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-9694.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/9b9622c9c440e59a67c876cf07706f3c_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Classic Polo Men Vulcan White Polo Tshirts",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_23882",
+    "title": "Giày thể thao nam · Fila Destiny Grey Sports Shoes",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "Grey",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-23882.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/498da65eeee9a23f2049449258384d55_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Fila Men Destiny Grey Sports Shoes",
+      "articleType": "Sports Shoes",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_34835",
+    "title": "Giày thể thao nam · ADIDAS Blue Chill Sports Shoes",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "Blue",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-34835.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/c0abfa74fe61af6ba9e5f4936f45e6c7_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "ADIDAS Men Blue Chill Sports Shoes",
+      "articleType": "Sports Shoes",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_15984",
+    "title": "Áo sơ mi nam · Turtle Check Yellow Shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Yellow",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-15984.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/1049df82b306da238c324c6c7031b135_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Turtle Check Men Yellow Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_33648",
+    "title": "Sandal nam · Lotto Ridge Brown Sandals",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "Brown",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-33648.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/42344fe581af7a4c62d2a39ceb57be24_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Lotto Men Ridge Brown Sandals",
+      "articleType": "Sandals",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_59297",
+    "title": "Áo sơ mi nam · U.S. Polo Assn. White & Navy Blue Shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "White",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-59297.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/US-Polo-Assn-Men-White---Navy-Blue-Shirt_233bed1565b9ac72f62fb685a2223f3c_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "U.S. Polo Assn. Men White & Navy Blue Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_7158",
+    "title": "Áo sơ mi nam · Scullers Green Check Shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Green",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-7158.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/9b2dc2cfc35d37aee2f4d46532384605_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Scullers Men  Green Check Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_18495",
+    "title": "Sandal nam · Puma Fashion Cat White Slipper",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "White",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-18495.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/c78acc78b83e4f2e014215d2a302f04b_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Puma Men Fashion Cat White Slipper",
+      "articleType": "Sandals",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_19547",
+    "title": "Áo sweatshirt nam · United Colors of Benetton Solid Blue Sweatshirt",
+    "category": "Outerwear",
+    "gender": "men",
+    "color": "Blue",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-19547.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/2641289161a53042c64ced38cadb099b_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "United Colors of Benetton Men Solid Blue Sweatshirt",
+      "articleType": "Sweatshirts",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_41866",
+    "title": "Sandal nam · Estd. 1977 Beige & Green Sandals",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "Beige",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-41866.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/7adfef9d7001cdcb9a58822c0c8b615f_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Estd. 1977 Men Beige & Green Sandals",
+      "articleType": "Sandals",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_44528",
+    "title": "Sandal nam · Coolers Black Sandals",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-44528.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/5fdccf41dafc022f36adea9a7df6751c_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Coolers Men Black Sandals",
+      "articleType": "Sandals",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_16392",
+    "title": "Áo sơ mi nam · Levis Check Red Shirts",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Red",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-16392.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/9584fab8cde60a77e797973020e5c91d_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Levis Men Check Red Shirts",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_6617",
+    "title": "Áo sơ mi nam · Spykar Black and white Check Shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-6617.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/5c0c7cee1d5905a18f6a8d4821ae21aa_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Spykar Men Black and white Check Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_42042",
+    "title": "Giày thể thao nam · Nike Air Relentless 2 MSL White Sports Shoes",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "White",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-42042.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/16a858c7c58d665ba030df2f9f326086_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Nike Men Air Relentless 2 MSL White Sports Shoes",
+      "articleType": "Sports Shoes",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_23849",
+    "title": "Giày casual nam · ADIDAS Black Anzo Breeze Casual Shoes",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-23849.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/aca469db7fbac91473fc2a810461889d_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "ADIDAS Men Black Anzo Breeze Casual Shoes",
+      "articleType": "Casual Shoes",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_10065",
+    "title": "Áo thun nam · Puma ducati logo tee Yellow Tshirts",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Yellow",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-10065.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/ef754e63472dece06abfa6d6c1266d91_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Puma Men ducati logo tee Yellow Tshirts",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_24250",
+    "title": "Giày casual nam · Numero Uno White Casual Shoes",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "White",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-24250.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/ff82e800185f09437bdd38606dbd4ec6_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Numero Uno Men White Casual Shoes",
+      "articleType": "Casual Shoes",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_5092",
+    "title": "Áo thun nam · Wrangler 's Minstrel Shoulder Loop Purple T-shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Purple",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-5092.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/f9622342fedb746c6515647f128b94a6_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Wrangler Men's Minstrel Shoulder Loop Purple T-shirt",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_10859",
+    "title": "Áo thun nam · Wrangler Furious Rides Navy Blue T-Shirts",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Navy Blue",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-10859.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/cc57b520818a0ada689545d2bdd025d9_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Wrangler Men Furious Rides Navy Blue T-Shirts",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_15517",
+    "title": "Giày casual nam · Rockport LLandro Red Casual Shoes",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "Red",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-15517.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/0ea0e6130d5d4c093e0e516f9b43ced6_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Rockport Men LLandro Red Casual Shoes",
+      "articleType": "Casual Shoes",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_10257",
+    "title": "Quần dài nam · John Miller Solid Type Black Trousers",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-10257.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/bbddb8510d402639e0a038bde5ec08bb_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "John Miller Men Solid Type Black Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_22395",
+    "title": "Áo sơ mi nam · Mark Taylor Striped Blue Shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Blue",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-22395.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/e01152d30659f4099b46cb0c1fcb918b_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Mark Taylor Men Striped Blue Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_23247",
+    "title": "Giày tây nam · Arrow Formal Black Shoe",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-23247.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/0201105e4604bc784525d9cf0e972c40_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Arrow Men Formal Black Shoe",
+      "articleType": "Formal Shoes",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_12500",
+    "title": "Áo sơ mi nam · United Colors of Benetton Short Black Shirts",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-12500.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/47e0bf9f4a04bd6f5901c0f4fc65e54d_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "United Colors of Benetton Men Short Black Shirts",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_10633",
+    "title": "Giày tây nam · Carlton London Formal Brown Formal Shoes",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "Brown",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-10633.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/b195b911f558c0232e22849d1ca73193_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Carlton London Men Formal Brown Formal Shoes",
+      "articleType": "Formal Shoes",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_14293",
+    "title": "Áo thun nam · Classic Polo Stripes Blue Tshirts",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Blue",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-14293.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/8e4099bc672a376b156e1fe903fd5e16_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Classic Polo Men Stripes Blue Tshirts",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_17416",
+    "title": "Giày thể thao nam · Lotto Atlantica Black Sports Shoe",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-17416.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/1279efc8b61fb461a804f0c1f82f276b_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Lotto Men Atlantica Black Sports Shoe",
+      "articleType": "Sports Shoes",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_17624",
+    "title": "Quần thể thao nam · ADIDAS Solid Navy Blue Track Pant",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Navy Blue",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-17624.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/98252134c6398e50aeebd873e6eafceb_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "ADIDAS Men Solid Navy Blue Track Pant",
+      "articleType": "Track Pants",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_35574",
+    "title": "Dép nam · Gliders Esquire Red Flip Flops",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "Red",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-35574.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/9c1df994bfd66e4485b82d0e74066d98_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Gliders Men Esquire Red Flip Flops",
+      "articleType": "Flip Flops",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_13284",
+    "title": "Quần short nam · Gini and Jony Kids Boys Solid Black Shorts",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-13284.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/1d2eaf1491e0bf4906165ab1eaff3ad1_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Gini and Jony Kids Boys Solid Black Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_54543",
+    "title": "Giày thể thao nam · F Sports White Outlander Sports Shoes",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "White",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-54543.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/F-Sports-Men-White-Outlander-Sports-Shoes_b600b7c68b5e9dd8b56dcd8732ce0fda_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "F Sports Men White Outlander Sports Shoes",
+      "articleType": "Sports Shoes",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_32751",
+    "title": "Giày casual nam · FILA Liga II Black Shoes",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-32751.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/ea051d39d65bfdcba994e6cd49061bd7_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "FILA Men Liga II Black Shoes",
+      "articleType": "Casual Shoes",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_45603",
+    "title": "Giày tây nam · Arrow Black Formal Shoes",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-45603.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/8f3b9f4c5f554e39681567b22985966e_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Arrow Men Black Formal Shoes",
+      "articleType": "Formal Shoes",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_4524",
+    "title": "Giày thể thao nam · Puma 's YugoRun Black White Shoe",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-4524.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/fae0ae76d008674551fbdbb64988ea51_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Puma Men's YugoRun Black White Shoe",
+      "articleType": "Sports Shoes",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_41859",
+    "title": "Sandal nam · Estd. 1977 Black Sandals",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-41859.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/2a07ce87fedfca8928f12f3ddf6b7632_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Estd. 1977 Men Black Sandals",
+      "articleType": "Sandals",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_21180",
+    "title": "Dép nam · ADIDAS Adi Cells Black Flip Flops",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-21180.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/b057c9e8d5ccc63369807a12f67a39ac_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "ADIDAS Men Adi Cells Black Flip Flops",
+      "articleType": "Flip Flops",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_39943",
+    "title": "Giày casual nam · GAS Brown Count Casual Shoes",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "Brown",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-39943.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/f2d705addd04fcf5516aef873254441e_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "GAS Men Brown Count Casual Shoes",
+      "articleType": "Casual Shoes",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_44517",
+    "title": "Dép nam · Coolers Brown Pokar Flip Flops",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "Brown",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-44517.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/Coolers-Men-POKAR-Brown-Flip-Flops_8b247db935e7cfffb8f5a0b8d578f7bf_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Coolers Men Brown Pokar Flip Flops",
+      "articleType": "Flip Flops",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_8913",
+    "title": "Giày thể thao nam · Puma Cabana Racer Sketch White Sports Shoes",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "White",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-8913.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/c7a70ae4f57ca4c605f4fabb82c735fc_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Puma Men Cabana Racer Sketch White Sports Shoes",
+      "articleType": "Sports Shoes",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_16530",
+    "title": "Áo sơ mi nam · Locomotive Check Red Shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Red",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-16530.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/e87ae94ffdf37c089daaad8d451f6995_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Locomotive Men Check Red Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_22705",
+    "title": "Giày casual nam · Nike White Capri II Casual Shoe",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "White",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-22705.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/9f8463e724322e0b47cc9f615acab635_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Nike Men White Capri II Casual Shoe",
+      "articleType": "Casual Shoes",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_7167",
+    "title": "Áo sơ mi nam · Scullers Scul Purple White Shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Purple",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-7167.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/11dcaeada4fab2e575c449e922425c5d_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Scullers Men Scul Purple White Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_12190",
+    "title": "Áo sơ mi nam · Basics Blue Slim Fit Checked Shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Blue",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-12190.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/2811fe105e63b5795a6442edb85bb6cd_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Basics Men Blue Slim Fit Checked Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_22537",
+    "title": "Sandal nam · Gas Eldorado Tan Casual Sandals",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "Tan",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-22537.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/465863ba7b810b5ef6c516fe91c77308_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Gas Men Eldorado Tan Casual  Sandals",
+      "articleType": "Sandals",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_11527",
+    "title": "Áo thun nam · United Colors of Benetton Olive Tshirts",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Olive",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-11527.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/6c598ee94ff155384130481aec05525e_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "United Colors of Benetton Men Olive Tshirts",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_14055",
+    "title": "Áo sơ mi nam · Flying Machine Check Green Shirts",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Green",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-14055.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/6934c2d1bc11313536fd82a1192a1d33_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Flying Machine Men Check Green Shirts",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_7731",
+    "title": "Dép nam · Puma 's Winglet II Grey Yellow White Flip Flop",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "Grey",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-7731.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/9473ae18face7603f7bdb4b6fda3d8e2_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Puma Men's Winglet II Grey Yellow White Flip Flop",
+      "articleType": "Flip Flops",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_22153",
+    "title": "Sandal nam · Lee Cooper Brown Casual Sandals",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "Brown",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-22153.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/99808c9bdfee6165a0cec81d0219c1a1_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Lee Cooper Men Brown Casual Sandals",
+      "articleType": "Sandals",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_43958",
+    "title": "Sandal nam · Puma Olive Techno Ind Sandal",
+    "category": "Footwear",
+    "gender": "men",
+    "color": "Olive",
+    "garmentPhotoType": "flat-lay",
+    "images": [
+      "/images/catalog/men-43958.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/Puma-Men-Olive-Techno-Ind-Sandal_3e7aa0b204f4317a017dfbefe260700b_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Puma Men Olive Techno Ind Sandal",
+      "articleType": "Sandals",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_8779",
+    "title": "Áo sơ mi nam · Indigo Nation Club Satin Hot Stepper Navy Blue Shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Navy Blue",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-8779.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/f3dc8c5e7e7d7394150506a3f2f417c0_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Indigo Nation Men Club Satin Hot Stepper Navy Blue Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  },
+  {
+    "_id": "men_11143",
+    "title": "Áo sơ mi nam · Scullers Price Catch Black Shirts",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "model",
+    "images": [
+      "/images/catalog/men-11143.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/62f33289f2a1cbc88d6f8557a2c33638_images.jpg",
+      "dataset": "https://huggingface.co/datasets/ashraq/fashion-product-images-small",
+      "originalTitle": "Scullers Men Price Catch Black Shirts",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only"
+    }
+  }
+]

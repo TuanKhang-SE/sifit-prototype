@@ -1,6 +1,8 @@
 // UI copy for the existing marketplace tools. Listing descriptions, messages,
 // names, input values, and stored status/filter values remain the original data.
+import { stylistTranslations, translateStylistDynamic } from './stylistTranslations';
 export const workspaceTranslations = {
+  ...stylistTranslations,
   'Gói Đẩy Tin Nhanh': 'Quick Boost plan', 'Gói VIP Chuyên Nghiệp': 'Professional VIP plan',
   'Đẩy lên đầu trang 3 lần/ngày': 'Boost listings to the top 3 times per day',
   'Icon "Nổi Bật" trên ảnh sản phẩm': 'Featured badge on listing photos', 'Hỗ trợ bán nhanh gấp đôi': 'Tools to help your listings stand out',
@@ -92,6 +94,7 @@ export function translateWorkspace(value) {
   const clean = value.replace(/\s+/g, ' ').trim();
   if (!clean) return value;
   let target = lookup.get(clean.toLocaleLowerCase('vi'));
+  if (!target) target = translateStylistDynamic(clean);
   if (!target) {
     const count = clean.match(/^(Đang bán|Đánh giá)\s*\((\d+)\)$/i);
     if (count) target = `${count[1].toLocaleLowerCase('vi') === 'đang bán' ? 'Listings' : 'Reviews'} (${count[2]})`;

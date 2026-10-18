@@ -1,0 +1,2602 @@
+[
+  {
+    "_id": "everyday_3954",
+    "title": "Áo thun nữ · Jealous 21 Women's Pink T-shirt",
+    "category": "Tops",
+    "gender": "women",
+    "color": "Pink",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-3954.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/b56e261f9206aa95e42c43f4e62d0e5a_images.jpg",
+      "originalTitle": "Jealous 21 Women's Pink T-shirt",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "66e80fcb62903c2f4ba2bb8d751c1c62fea902fa65f6d85457e64384d3f85737"
+  },
+  {
+    "_id": "everyday_38630",
+    "title": "Áo thun nữ · Nike Women Purple Polo T-shirt",
+    "category": "Tops",
+    "gender": "women",
+    "color": "Purple",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-38630.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/206a0614c4644cd8816576efd47d60d8_images.jpg",
+      "originalTitle": "Nike Women Purple Polo T-shirt",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "b75ac6e40f706d81dd8d9fff36180df4034da2f1529f38b9aefc7ca5cd8cff1a"
+  },
+  {
+    "_id": "everyday_2288",
+    "title": "Áo thun nữ · Nike Women Black T-shirt",
+    "category": "Tops",
+    "gender": "women",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-2288.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/135f9aa8141d682fc218393049c70324_images.jpg",
+      "originalTitle": "Nike Women Black T-shirt",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "32c4afc0c259c1ae7115931d67cc466fdc4b291013d72e25697416991e4b1d1c"
+  },
+  {
+    "_id": "everyday_32563",
+    "title": "Quần tây nữ · ONLY Women directoire blue Trousers",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-32563.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/ONLY-Women-directoire-blue-Trousers_9ad40a06ae4b8c071f84e12599c1c9b7_images.jpg",
+      "originalTitle": "ONLY Women directoire blue Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "7584a1ac69bd235250065acc1c0cda3a3b0414c120eb10d65787a1230e8edc6b"
+  },
+  {
+    "_id": "everyday_15341",
+    "title": "Quần short nữ · Nike Women Solid Pink Shorts",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Pink",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-15341.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/f105cf31753c2cbdf23e8722dc83a019_images.jpg",
+      "originalTitle": "Nike Women Solid Pink Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "60c057d27c5d3727cf8577da24c2ce2e023ae2799d25640a1b50ab2caf82cfa9"
+  },
+  {
+    "_id": "everyday_9835",
+    "title": "Áo thun nữ · Little Miss Women Printed Grey T-shirt",
+    "category": "Tops",
+    "gender": "women",
+    "color": "Grey",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-9835.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/e2604389938f13f2cc1a772bba320a45_images.jpg",
+      "originalTitle": "Little Miss Women Printed Grey T-shirt",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "f5c23f771191c5c11d664c7b0844ab64fd74c7dc3173df1f5a688a0f407ce992"
+  },
+  {
+    "_id": "everyday_44341",
+    "title": "Áo thun nam · Indian Terrain Men Blue T-shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-44341.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/f202fe30bd9441e163b7fbcfcb53e8c2_images.jpg",
+      "originalTitle": "Indian Terrain Men Blue T-shirt",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "b8ab585f8dfb5bfd0cac96074205786b8c525c90a6484ae052f420eddd451892"
+  },
+  {
+    "_id": "everyday_4386",
+    "title": "Áo thun nam · Wrangler Cowboy Photo T-shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Grey",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-4386.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/dc7e36dcafbb8aeb71dc2ebbd4427ca7_images.jpg",
+      "originalTitle": "Wrangler Cowboy Photo T-shirt",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "72127b968f714c379cb81bcd9b90d056a9bfb01074e3a7b635969fb0d2161cea"
+  },
+  {
+    "_id": "everyday_7503",
+    "title": "Áo thun nam · Nike Men's As Icon Blue T-shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-7503.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/4642a9cf2604998cd7665a76a2bf87c1_images.jpg",
+      "originalTitle": "Nike Men's As Icon Blue T-shirt",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "05684a1ebe980b262ececfa90c2a413ccaf395d476f36059716b11b569a78b68"
+  },
+  {
+    "_id": "everyday_13426",
+    "title": "Áo thun nam · United Colors of Benetton Men Stripes Red  Polo T-shirts",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Red",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-13426.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/6723c5b48a019f7940ac913e35240620_images.jpg",
+      "originalTitle": "United Colors of Benetton Men Stripes Red  Polo T-shirts",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "9e0622a76f30fabcc95e272f55c3a5e6c95fc74a029725ff7222cf0b55edf383"
+  },
+  {
+    "_id": "everyday_7963",
+    "title": "Áo thun nam · Puma Men's Large Logo Graphic White French T-shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "White",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-7963.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/7f50a98d2319c37ba993f4bd39ec1df9_images.jpg",
+      "originalTitle": "Puma Men's Large Logo Graphic White French T-shirt",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "3d85c6fd8a6480511f6f2c266d30e5a1c39c0292aeda11dd8bb94b9753185a4e"
+  },
+  {
+    "_id": "everyday_20258",
+    "title": "Áo thun nam · Wrangler Men Polo Charcoal T-shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Brown",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-20258.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/bf97cd1840466577838074675a9cbe1f_images.jpg",
+      "originalTitle": "Wrangler Men Polo Charcoal T-shirt",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "ffe95e5341b760a77c06723de71d0f4aa3dfd83a67cf60d2e07a0b2b75f1a3e8"
+  },
+  {
+    "_id": "everyday_13248",
+    "title": "Quần tây nam · Palm Tree Kids Boy Solid Brown Trousers",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Brown",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-13248.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/5f064c454ce1578a2a667d28872a0453_images.jpg",
+      "originalTitle": "Palm Tree Kids Boy Solid Brown Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "fcad56199c4b253e8bcc82e814fea8eebf8b122ae9ed29e901ac49b41ed3c0ae"
+  },
+  {
+    "_id": "everyday_5862",
+    "title": "Áo thun nam · ADIDAS Men's Stripe Black T-shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-5862.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/9f9f083996862e825eb0ffb32ed9db31_images.jpg",
+      "originalTitle": "ADIDAS Men's Stripe Black T-shirt",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "22984a78a022f0ef1ec2566375563441cd039303b442c0c801981c9d5e856062"
+  },
+  {
+    "_id": "everyday_58726",
+    "title": "Áo thun nam · Puma Men Grey T-shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Grey",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-58726.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/Puma-Men-Grey-T-shirt_cf275e8d9abdab9e307d6adbf8fc6d9f_images.jpg",
+      "originalTitle": "Puma Men Grey T-shirt",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "4e3aa1d348c9773c7477ddd45db5643cca5cec4c580675b8259ef56f759b67e6"
+  },
+  {
+    "_id": "everyday_2049",
+    "title": "Áo thun nam · ADIDAS Men's Slim Fit White T-shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "White",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-2049.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/5b7333bbf40e95f4c57e24d65903288d_images.jpg",
+      "originalTitle": "ADIDAS Men's Slim Fit White T-shirt",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "f1d9b14819e125e48233e2c72a9b197fec559a7ffe90854ef3d79ea2447ce197"
+  },
+  {
+    "_id": "everyday_38637",
+    "title": "Áo thun nam · Nike Men Red Delhi T-shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Red",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-38637.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/048477a26c1da1d6aa87134c253ab97b_images.jpg",
+      "originalTitle": "Nike Men Red Delhi T-shirt",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "c97eb04527a110be276541c55ef80824b9a7223d9e4ed83ae196a01f413a756d"
+  },
+  {
+    "_id": "everyday_31588",
+    "title": "Áo thun nam · Mark Taylor Men Printed Maroon T-shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Maroon",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-31588.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/d6c2a243dd5227d7ae5d10156477c38a_images.jpg",
+      "originalTitle": "Mark Taylor Men Printed Maroon T-shirt",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "1fcd21e2f6254b22fe23e685136528ab59b82c10b3ccebaa3aadb140f28e2015"
+  },
+  {
+    "_id": "everyday_3953",
+    "title": "Áo thun nữ · Jealous 21 Women's Red Peace T-shirt",
+    "category": "Tops",
+    "gender": "women",
+    "color": "Red",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-3953.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/812fff8546b72c2f4bea1cf9a0ac0f13_images.jpg",
+      "originalTitle": "Jealous 21 Women's Red Peace T-shirt",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "4125d621f4a613463f461641f21189d4b07294aeec4e8d2fc74bc8537bcf03fb"
+  },
+  {
+    "_id": "everyday_32903",
+    "title": "Quần short nữ · Allen Solly Women Red Shorts",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Red",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-32903.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/Allen-Solly-Women-Red-Shorts_a99033bbbb95bbf0b9cc2945a99e5f18_images.jpg",
+      "originalTitle": "Allen Solly Women Red Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "f8c08a87100cbbcf24a1c83c8d5b59e3b641dc032b92196de8a54bb3215a5aea"
+  },
+  {
+    "_id": "everyday_56822",
+    "title": "Quần tây nam · John Players Men Beige Shorts",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Beige",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-56822.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/John-Players-Men-Beige-Shorts_121cc979460c6139c92c31e560abc152_images.jpg",
+      "originalTitle": "John Players Men Beige Shorts",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "e3cbe9d06e4573e91ecfdd2955a131648a4ae4208fae5b1372865c39f0d2ccfa"
+  },
+  {
+    "_id": "everyday_19786",
+    "title": "Áo thun nam · U.S. Polo Assn. Men Solid Navy Blue Tshirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Navy Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-19786.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/4dcc3b32e48ebb49502a3384edff6ccf_images.jpg",
+      "originalTitle": "U.S. Polo Assn. Men Solid Navy Blue Tshirt",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "b7b43c6e9687ce66b8153bdfa8f830a0977750adff7105dd63ddd836e42e89e3"
+  },
+  {
+    "_id": "everyday_27614",
+    "title": "Quần tây nam · Scullers Men Beige Trousers",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Beige",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-27614.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/40b830e01b25eee921ea6c1ba16f1629_images.jpg",
+      "originalTitle": "Scullers Men Beige Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "82898894161b83a3668c3ce91a6fff02f36bdfeb4fe5af479600102ac92beed7"
+  },
+  {
+    "_id": "everyday_27426",
+    "title": "Quần short nữ · Jockey Women Grey Melange Shorts",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Grey Melange",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-27426.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/assets/images/27426/2016/2/8/11454933652080-Jockey-Women-Grey-Melange-Shorts-1291454933651500-1.jpg",
+      "originalTitle": "Jockey Women Grey Melange Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "ff7d0ca4bf2acd8c745ac26fd9e43a5e242a3eb4f71aadd48221150d29f1c9ee"
+  },
+  {
+    "_id": "everyday_6280",
+    "title": "Áo thun nam · UCB Men's Making Light Pink T-shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Pink",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-6280.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/841e642f22d1031b940126b54f3fe2bc_images.jpg",
+      "originalTitle": "UCB Men's Making Light Pink T-shirt",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "fc33b2eb4491b8a00b3e6213c43fb5654594cdc56814c641e132e739c5e8ff18"
+  },
+  {
+    "_id": "everyday_7352",
+    "title": "Áo thun nam · Tantra Men's Whatever Purple T-shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Purple",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-7352.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/d4622bdcbde3a2544ce0ba6c4ae4541b_images.jpg",
+      "originalTitle": "Tantra Men's Whatever Purple T-shirt",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "5a9e0ffb42889f71c83f0022218f141da938776ab97f31da092bd2e93d04a6ce"
+  },
+  {
+    "_id": "everyday_32590",
+    "title": "Quần short nữ · ONLY Women Brown Shorts",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Brown",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-32590.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/36fea288ee96091dc00afe5c45ba4805_images.jpg",
+      "originalTitle": "ONLY Women Brown Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "99bfc677aea8d4fb2583aa01b9a9b7cbbb03ee73f226204754806d85ec349bc2"
+  },
+  {
+    "_id": "everyday_12197",
+    "title": "Áo thun nam · Basics Men Orange Polo T-shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Orange",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-12197.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/18df81e244e799aeac9f715dd9465b2d_images.jpg",
+      "originalTitle": "Basics Men Orange Polo T-shirt",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "7ea03523b0f244a919a792ba4ee4c7d9c4eb06850a3845acdd389b2fe9773a90"
+  },
+  {
+    "_id": "everyday_6274",
+    "title": "Áo thun nữ · UCB Women's Crystal Benetton Green T-shirt",
+    "category": "Tops",
+    "gender": "women",
+    "color": "Green",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-6274.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/UCB-Womens-Crystal-Benetton-Green-T-shirt_b968dc92b9557aa699a993e633f3ec77_images.jpg",
+      "originalTitle": "UCB Women's Crystal Benetton Green T-shirt",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "bd3d09d07b0871c2e0ba43e5044fdc17a30779e5cdbf6d627c07bb0d4c7ce22b"
+  },
+  {
+    "_id": "everyday_26164",
+    "title": "Quần tây nam · John Miller Men Striped Grey Trousers",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Grey",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-26164.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/5b8f4d8f89d556b20cdba75bad71a23e_images.jpg",
+      "originalTitle": "John Miller Men Striped Grey Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "275372641421cc1fd67c9a7d51a3c3e4e2c4413c24a5575528111e4278177632"
+  },
+  {
+    "_id": "everyday_15174",
+    "title": "Áo thun nam · Arrow Men Yellow Polo T-shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Yellow",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-15174.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/241cb3c033e40196e1c7ce5f21f20ad5_images.jpg",
+      "originalTitle": "Arrow Men Yellow Polo T-shirt",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "39f02c4d471e9ca8ae10cdd280e423a342a32d793334a8422624f424cd5d4768"
+  },
+  {
+    "_id": "everyday_53761",
+    "title": "Áo thun nam · Puma Men Green and Blue T-shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Green",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-53761.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/Puma-Men-Green-and-Blue-Striped-Polo-T-shirt_a59ed8a1d192b9095cb5904aae3d2783_images.jpg",
+      "originalTitle": "Puma Men Green and Blue T-shirt",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "f4bca8e9dc82affb9de526e3bd68ae65fbaef569e6d2732e8320596119d5c3c1"
+  },
+  {
+    "_id": "everyday_32564",
+    "title": "Quần tây nữ · ONLY Women Orange Trousers",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Orange",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-32564.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/ONLY-Women-Orange-Trousers_317f0e045fb28b45820102148bdc4f7b_images.jpg",
+      "originalTitle": "ONLY Women Orange Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "964a70bcfbe9a7a25872ac36c3db8243f44142e81420d74d15c80975392678d8"
+  },
+  {
+    "_id": "everyday_9832",
+    "title": "Áo thun nữ · Little Miss Women Printed Rust T-shirt",
+    "category": "Tops",
+    "gender": "women",
+    "color": "Orange",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-9832.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/b4912a94db18a093e185d9e4c2649edf_images.jpg",
+      "originalTitle": "Little Miss Women Printed Rust T-shirt",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "96a04b802f13dace9e90437b8a3e34c960c93190c8bc0bb1d9d375d5515f56c8"
+  },
+  {
+    "_id": "everyday_23072",
+    "title": "Quần tây nam · Arrow Men Navy Blue Solid Trousers",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Navy Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-23072.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/64c62f3e3406deb5326d7bf6f4c417f4_images.jpg",
+      "originalTitle": "Arrow Men Navy Blue Solid Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "fad40f646bd0999eec8af81500c5191f88600cb38966d2469f3ce7c1a4f2f23a"
+  },
+  {
+    "_id": "everyday_28467",
+    "title": "Áo thun nữ · Urban Yoga Women Printed Rust T-shirt",
+    "category": "Tops",
+    "gender": "women",
+    "color": "Rust",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-28467.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/8f19a26145719f3b827d29e1d82dc969_images.jpg",
+      "originalTitle": "Urban Yoga Women Printed Rust T-shirt",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "cce51d0f14be4f67ddf01fbcfd6c56a75d42763d97d17a8bdf2965eb7f5a8004"
+  },
+  {
+    "_id": "everyday_16368",
+    "title": "Quần tây nam · Peter England Men Stripes Charcoal Trouser",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Charcoal",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-16368.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/9fbf62acb109790ee9cf91bf5594cf5c_images.jpg",
+      "originalTitle": "Peter England Men Stripes Charcoal Trouser",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "e4d0d04021e3e5bc928ab604ac965d9e20cb13276732e11341658288a12a0413"
+  },
+  {
+    "_id": "everyday_26951",
+    "title": "Áo thun nữ · Jealous 21 Women Printed Teal T-shirt",
+    "category": "Tops",
+    "gender": "women",
+    "color": "Teal",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-26951.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/8661e9c00b03eafaf8f718a1ed058c5c_images.jpg",
+      "originalTitle": "Jealous 21 Women Printed Teal T-shirt",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "0ae58879ec8f203d79fcc87f3ae7e948f459ea4b5a0fa66dd0e334cc06baccd7"
+  },
+  {
+    "_id": "everyday_54915",
+    "title": "Áo thun nam · Do u speak Cream Men T-shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Cream",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-54915.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/Do-u-speak-Off-White-Men-T-shirt_61eae1ea7af11b36fa4ed14a9f99f234_images.jpg",
+      "originalTitle": "Do u speak Cream Men T-shirt",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "69feb7a57986fdb7c519edb38743944da80ddcab1f8efb2c6988ae3bba5c91de"
+  },
+  {
+    "_id": "everyday_27848",
+    "title": "Áo thun nữ · Scullers For Her Navy Blue T-shirt",
+    "category": "Tops",
+    "gender": "women",
+    "color": "Navy Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-27848.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/Scullers-For-Her-Navy-Blue-T-shirt_56f07e32d99ec5e5474b65264e544103_images.jpg",
+      "originalTitle": "Scullers For Her Navy Blue T-shirt",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "8a3ef4d7730d0794b4b87cc866ae34fa9310262c58953ea1491d8076a29c4aca"
+  },
+  {
+    "_id": "everyday_27622",
+    "title": "Quần tây nam · Scullers Men Grey Trousers",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Grey",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-27622.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/79ab8e426bec027b33c9e2ccac1096f1_images.jpg",
+      "originalTitle": "Scullers Men Grey Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "20d772796278fb60c77aacb3338a3d1e6708de32adf71b61541f5cf351c362c2"
+  },
+  {
+    "_id": "everyday_26152",
+    "title": "Quần tây nam · John Miller Men Striped Grey Trousers",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Grey",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-26152.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/bf2cc8065bd15d652e9309cba750c6db_images.jpg",
+      "originalTitle": "John Miller Men Striped Grey Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "75a244c003b0f4754112f5a4ae9ba357f10a4a8c64849da84bc0792e277d0dbb"
+  },
+  {
+    "_id": "everyday_6070",
+    "title": "Áo thun nữ · UCB Women's Young Pigment Blue T-shirt",
+    "category": "Tops",
+    "gender": "women",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-6070.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/3d1229d4a695a5fa5da1233b3778f424_images.jpg",
+      "originalTitle": "UCB Women's Young Pigment Blue T-shirt",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "68b13d1725ae9f47a6b28bf052ecd44537fe6e5cab61a512cbb2d7770367f813"
+  },
+  {
+    "_id": "everyday_59403",
+    "title": "Áo thun nữ · Tokyo Talkies Women White T-shirt",
+    "category": "Tops",
+    "gender": "women",
+    "color": "White",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-59403.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/Tokyo-Talkies-Women-White-T-shirt_bf24debeba0c5e8aae5aa167e99b6443_images.jpg",
+      "originalTitle": "Tokyo Talkies Women White T-shirt",
+      "articleType": "Tshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "0874f91758fd45c20121753c500e51586af05615d5e63ca0ae0bc6db02c0b648"
+  },
+  {
+    "_id": "everyday_29780",
+    "title": "Quần tây nam · Basics Men Black Trousers",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-29780.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/d23c26edc978ff13614ff3035705982d_images.jpg",
+      "originalTitle": "Basics Men Black Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "e0d181d1b1bf8a276c957a1d8ad56600f8d59550df22fdebbabd78d4e8408389"
+  },
+  {
+    "_id": "everyday_28460",
+    "title": "Quần short nữ · Urban Yoga Women Pink Shorts",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Pink",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-28460.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/44f0716e5b5d34fff6c4230113004cab_images.jpg",
+      "originalTitle": "Urban Yoga Women Pink Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "597e1080d59e2333e8fd8649b236333a9e911aa2c7b3cbbf6598c0757074e9a9"
+  },
+  {
+    "_id": "everyday_23088",
+    "title": "Quần tây nam · Arrow Sport Men Dk.Grey Brown Trousers",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Grey",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-23088.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/0c5b2bf7e0492911cfc472ffa2f3ef44_images.jpg",
+      "originalTitle": "Arrow Sport Men Dk.Grey Brown Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "c23ace0cbc3e2eb6d588dbe2e435405af90fbcf0281861449a982e88203fecc6"
+  },
+  {
+    "_id": "everyday_10261",
+    "title": "Quần tây nam · John Miller Men Slim Brown Trousers",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Brown",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-10261.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/43689446729c4a4b9f6872f4f31593ce_images.jpg",
+      "originalTitle": "John Miller Men Slim Brown Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "cd35db05816fabc9d4850541e56cda6aca639a03dab468092af347241f4b9e3f"
+  },
+  {
+    "_id": "everyday_27625",
+    "title": "Quần short nam · Scullers Men Grey Shorts",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Grey",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-27625.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/1d48a740b52980e02294280c42140d77_images.jpg",
+      "originalTitle": "Scullers Men Grey Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "bb472e781512aa536bb9c233d47c3ca231925c61ebb26936a5212a42e28a13ac"
+  },
+  {
+    "_id": "everyday_57136",
+    "title": "Quần tây nữ · Elle Women Black Trousers",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-57136.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/Elle-Women-Black-Trousers_70c834b2f56887df3ce0d292beb39fad_images.jpg",
+      "originalTitle": "Elle Women Black Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "314448d77bdbcac40cc1a41a182379cd7aa24b35cbcb8e4705540ce903283ce8"
+  },
+  {
+    "_id": "everyday_14695",
+    "title": "Quần tây nam · Basics Men Black Trousers",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-14695.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/956f5a417cd60f1bac07de6b11b776a6_images.jpg",
+      "originalTitle": "Basics Men Black Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "2ada93475abeadcbffb15444eb528aeecb62140405923b1c5d3d984a649879a6"
+  },
+  {
+    "_id": "everyday_51605",
+    "title": "Quần tây nữ · Kraus Jeans Women Black Trousers",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-51605.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/ea68b1f87fcf6eebf860870241c78429_images.jpg",
+      "originalTitle": "Kraus Jeans Women Black Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "1be562a3e9d22bea88030a388c1e70d4671d7110fecadef26a2756ef110728f5"
+  },
+  {
+    "_id": "everyday_27027",
+    "title": "Quần short nữ · Jealous 21 Women Blue Shorts",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-27027.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/995dabdb57e37d34d3b873fc2e70a2fc_images.jpg",
+      "originalTitle": "Jealous 21 Women Blue Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "7c2e14978ce8f46bb08047ed9f2767de108b0f9df3c916d0405efd8858b4164a"
+  },
+  {
+    "_id": "everyday_27215",
+    "title": "Quần short nam · Doodle Kids Boy Striped Blue Shorts",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-27215.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/99a267010ab471a6d6f5b2a9429de11c_images.jpg",
+      "originalTitle": "Doodle Kids Boy Striped Blue Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "89018a2c187369db88456655a3170570dd1300e5fedac2210921b0cf22a786df"
+  },
+  {
+    "_id": "everyday_58571",
+    "title": "Quần short nam · Puma Men Black Shorts",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-58571.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/Puma-Men-Black-Short_18d7937fb5d087ebe34d60c3818484bc_images.jpg",
+      "originalTitle": "Puma Men Black Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "dc0549a98968ef9a16d616a51e3d62f2296913110c0c6420dc7a6db6f6f75f03"
+  },
+  {
+    "_id": "everyday_4787",
+    "title": "Quần short nam · ADIDAS Men's Bas Esx Black Short",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-4787.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/145dcad3efcae0173e87fb381fc4f8f0_images.jpg",
+      "originalTitle": "ADIDAS Men's Bas Esx Black Short",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "0f98edd784426f7a17cd0873c59a3541765bee7b2a95fe0b321d4d0bd5c41f25"
+  },
+  {
+    "_id": "everyday_5003",
+    "title": "Quần short nữ · Gini and Jony Girl's Arella Blue Kidswear",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-5003.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/4f0851704c708d135d68467d456bff2e_images.jpg",
+      "originalTitle": "Gini and Jony Girl's Arella Blue Kidswear",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "15eeb5ea41dcbd1bb31b6debc3be7ad9fa17215cb6d339aa2d9bf66e20579507"
+  },
+  {
+    "_id": "everyday_15116",
+    "title": "Quần tây nam · Arrow Men TR Finish Grey Trousers",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Grey",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-15116.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/c265c2dba08de27cc7c8acc5e197ba13_images.jpg",
+      "originalTitle": "Arrow Men TR Finish Grey Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "9df2db31add6a6c855fa1bf1037f0c50c7d8e54fa3d9cabf9c4eb163a682bfa1"
+  },
+  {
+    "_id": "everyday_14659",
+    "title": "Quần tây nam · Probase Men Solid LT.Khaki Trousers",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Khaki",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-14659.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/1862d11e53911a6cf3552e31326b3639_images.jpg",
+      "originalTitle": "Probase Men Solid LT.Khaki Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "ae6d0ea79d38e093c11751a70e9783a311fd9e1f25286c31101e9a6ebd11ea28"
+  },
+  {
+    "_id": "everyday_48380",
+    "title": "Quần tây nam · French Connection Men Charcoal Trousers",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-48380.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/4e695fc0308b4a99e2cb470e9a384ba9_images.jpg",
+      "originalTitle": "French Connection Men Charcoal Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "98a72765cea2b24c1a5aa8330f8962b0187e0824446c879de094f380cb086cd7"
+  },
+  {
+    "_id": "everyday_8949",
+    "title": "Quần tây nam · Indigo Nation Men ID Printed Grey Trousers",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Grey",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-8949.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/7c2f89105836e38e2018cdd0da1475dc_images.jpg",
+      "originalTitle": "Indigo Nation Men ID Printed Grey Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "8ee690ec8d838bd10513112bfa9e567a6bda73be6d0fe658d1590bb1db01ca62"
+  },
+  {
+    "_id": "everyday_15129",
+    "title": "Quần tây nam · Arrow Sport Men Solid DK.Grey Trousers",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Grey",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-15129.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/0ea06234bad90a414474a37f79608880_images.jpg",
+      "originalTitle": "Arrow Sport Men Solid DK.Grey Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "b2e5efa7c21325213ff1725e35108a6b711cd942d7beda9109883b7aade50173"
+  },
+  {
+    "_id": "everyday_9892",
+    "title": "Quần tây nam · Indian Terrain Men Laffer Off-White Trousers",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "White",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-9892.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/07a9e19374bc113284a2952742fee7e2_images.jpg",
+      "originalTitle": "Indian Terrain Men Laffer Off-White Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "44e273ef1330a89d278aa11791103a9a76018f97bf299510f872a912e61350b3"
+  },
+  {
+    "_id": "everyday_5451",
+    "title": "Quần short nam · Nike Men's Tempo Blue Short",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-5451.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/6dd86b77a702ba1fef78823760d5ee98_images.jpg",
+      "originalTitle": "Nike Men's Tempo Blue Short",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "1bed708452f832ca6165795d9bd6b2486af3a369ccd7b84d96fdcd97920ffc94"
+  },
+  {
+    "_id": "everyday_10660",
+    "title": "Quần short nữ · Doodle Girl Hot shorts ice wash Blue Shorts",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-10660.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/0f1831a32cc338697d090f0d05d85b8c_images.jpg",
+      "originalTitle": "Doodle Girl Hot shorts ice wash Blue Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "7f0957b2e1e8662fa216e0a01835928282f883c6e78c628e68138736b72e8fe8"
+  },
+  {
+    "_id": "everyday_22590",
+    "title": "Quần short nam · Nike Men Solid Grey Shorts",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Grey",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-22590.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/a7233b8d68f96fcb45f6f438a6549ea8_images.jpg",
+      "originalTitle": "Nike Men Solid Grey Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "0dc035a529aa53bd1ea2f9f759dffe5df1fde0058c9935773d36732a91ddd4bb"
+  },
+  {
+    "_id": "everyday_15749",
+    "title": "Quần tây nam · Highlander Men Solid Navy Blue Trousers",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Navy Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-15749.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/6315e10104ddab3af2c2a405643f1424_images.jpg",
+      "originalTitle": "Highlander Men Solid Navy Blue Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "d10adf00665f9e438c6ff6118fad16c2f45d2d69b8fd92f2bdc9cf0be2ee4fdb"
+  },
+  {
+    "_id": "everyday_15127",
+    "title": "Quần tây nam · Arrow Sport Men Solid  Brown Trousers",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Brown",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-15127.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/c9048da20bb1b21b92cd061f8afe11fd_images.jpg",
+      "originalTitle": "Arrow Sport Men Solid  Brown Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "0b13000d83bfe186b0f3117d0cecd7fac8072100df8dc67dfa17f3c9f0b96099"
+  },
+  {
+    "_id": "everyday_5456",
+    "title": "Quần short nam · Nike Men's Basic Woven Med Blue Short",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Navy Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-5456.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/36ee4332024113724ef29c9999c9d864_images.jpg",
+      "originalTitle": "Nike Men's Basic Woven Med Blue Short",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "78b58e209a2deccaf200466bbc6d49ffb7255bc6c8b37c01b5cdd0c0e790fefd"
+  },
+  {
+    "_id": "everyday_8947",
+    "title": "Quần tây nam · Indigo Nation Men ID Printed Grey Trousers",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Grey",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-8947.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/54bad8f8149abb2c62521e316c2267ab_images.jpg",
+      "originalTitle": "Indigo Nation Men ID Printed Grey Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "13c8c00f4ab9c1247c088ab2ad21698edeb0e1f458bb486423aebde75dc639c6"
+  },
+  {
+    "_id": "everyday_7557",
+    "title": "Quần short nam · Nike Men's Tempo 5 Green Short",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Green",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-7557.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/38b31d4fd23158696f95b8d2d09d2f7a_images.jpg",
+      "originalTitle": "Nike Men's Tempo 5 Green Short",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "24b2e75887d9d266d2fccb25a50d9f36c4eca243cc1f38d02c51019e7f12398a"
+  },
+  {
+    "_id": "everyday_34250",
+    "title": "Quần short nam · Proline Charcoal Grey Shorts",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Charcoal",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-34250.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/4d7c2bb436444c19974f825bbd5df765_images.jpg",
+      "originalTitle": "Proline Charcoal Grey Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "6a2339a9d79a59b94281c03140949beb8cd7ded600f26fe93e0d9fa900524e13"
+  },
+  {
+    "_id": "everyday_14657",
+    "title": "Quần tây nam · Probase Men Solid DK.Grey Trousers",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Grey",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-14657.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/a4a1e136d60855130467e3bd5b09bf60_images.jpg",
+      "originalTitle": "Probase Men Solid DK.Grey Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "5cb158b4a0cabcd95c1ee3c3b0b79b1038d233b468066198527442182cf49de9"
+  },
+  {
+    "_id": "everyday_44315",
+    "title": "Quần tây nam · Indian Terrain Men Blue Trousers",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-44315.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/e76cebed7e13e26fa01135c81d942f81_images.jpg",
+      "originalTitle": "Indian Terrain Men Blue Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "fb5170b76ff4cf4bc7032b2ca3afa1228c0dc5729c8f0aed19392855675dbdda"
+  },
+  {
+    "_id": "everyday_15118",
+    "title": "Quần tây nam · Arrow Men Stripes Black Trousers",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-15118.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/45a30308655bff7245712b361e3b2970_images.jpg",
+      "originalTitle": "Arrow Men Stripes Black Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "570ba6f5939b430a63ed36f85dac0d64def3433379a68c263e19057fbabd8795"
+  },
+  {
+    "_id": "everyday_23089",
+    "title": "Quần tây nam · Arrow Men Beige Trousers",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Beige",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-23089.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/50f2fa55d32aa63163de14cf4a570f98_images.jpg",
+      "originalTitle": "Arrow Men Beige Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "cee783b7f9dc5c7aeb57157a415d8b35a501bfba7734cb051d4bf2be520974b8"
+  },
+  {
+    "_id": "everyday_4980",
+    "title": "Quần short nữ · Palm Tree Girl's Benita Blue Kidswear",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-4980.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/b791e8e0efd2b9b9b596e4e1100e4408_images.jpg",
+      "originalTitle": "Palm Tree Girl's Benita Blue Kidswear",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "eeccc8d7a86294952c3d1a5648eaee87c4f30e48567ba314a64590fc334399d3"
+  },
+  {
+    "_id": "everyday_33815",
+    "title": "Quần tây nam · Van Heusen Men Classic Pleated Black Trousers",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-33815.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/50ed1e6315e05b074501ba6a07f68fb2_images.jpg",
+      "originalTitle": "Van Heusen Men Classic Pleated Black Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "901a901e4de0e422887e41593a679f1fc19a42a06d206fa5ec5ce47751a46322"
+  },
+  {
+    "_id": "everyday_22369",
+    "title": "Quần tây nam · Highlander Men Solid Navy Blue Trouser",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Navy Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-22369.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/85d5426d6af452bbac68b97d36b69759_images.jpg",
+      "originalTitle": "Highlander Men Solid Navy Blue Trouser",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "ff5e72efeca8b9abbe3cc3def1ba2c3614839d001467da1d1cc9a1a5b8ff7ae5"
+  },
+  {
+    "_id": "everyday_29781",
+    "title": "Quần tây nam · Basics Men Steel Charcoal Trousers",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Charcoal",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-29781.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/Basics-Men-Black-Trousers_933642c36815ba35cea488b6e5f624f5_images.jpg",
+      "originalTitle": "Basics Men Steel Charcoal Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "1aaa966663700ad03bf2e1e5a55de0610b89b660736b5a18bc3a88156e0c42d6"
+  },
+  {
+    "_id": "everyday_57137",
+    "title": "Quần tây nữ · Elle Women Khaki Trousers",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Khaki",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-57137.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/Elle-Women-Khaki-Trousers_e9fc02c1c68b1394d92050e65a1158dc_images.jpg",
+      "originalTitle": "Elle Women Khaki Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "e2f50d14a905149ae62f1d90a04e7a1c9ae84561baef8683c9b79f69e6fab286"
+  },
+  {
+    "_id": "everyday_10260",
+    "title": "Quần tây nam · John Miller Men Line Grey Trousers",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Grey",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-10260.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/6d890dd17beee5ef98ddc8ecf5c69201_images.jpg",
+      "originalTitle": "John Miller Men Line Grey Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "d4792197c7bc6a7acebf5d138ce9b1629e06ef201b9ed46665beaad5b3f77f18"
+  },
+  {
+    "_id": "everyday_10052",
+    "title": "Quần short nữ · Puma Women Trunk Black Shorts",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-10052.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/575ec204c6922cbdf81a7303d8bf8f23_images.jpg",
+      "originalTitle": "Puma Women Trunk Black Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "ab0868c20fef7f6ce1543a2a8d423ca9e8d79cbd4e02cea9d4a598718ca04b33"
+  },
+  {
+    "_id": "everyday_23042",
+    "title": "Quần tây nam · Arrow Men Navy Blue Trousers",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Navy Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-23042.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/577a55203d68c076801ee6547f1fc4e7_images.jpg",
+      "originalTitle": "Arrow Men Navy Blue Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "cfbb4c567844be04c5419d6ffcf157aa50286c004ebc26012c233b1a9e22ca7c"
+  },
+  {
+    "_id": "everyday_26508",
+    "title": "Quần tây nam · Arrow Sport Men Brown Trousers",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Brown",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-26508.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/1d13719ad94bf2e34d47a9e482d95f76_images.jpg",
+      "originalTitle": "Arrow Sport Men Brown Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "d15f62a27d3427be23611b4ff0421d87a67867ea87f9ad66bb8cb0d7abd3b0af"
+  },
+  {
+    "_id": "everyday_16369",
+    "title": "Quần tây nam · Peter England Men Solid Grey Trouser",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Grey",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-16369.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/3df7dddd89d93c66ef25155bdf85f01c_images.jpg",
+      "originalTitle": "Peter England Men Solid Grey Trouser",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "ccd4b0cad739009328f90cbd15568b892876798627d7d903de4512c46acbb128"
+  },
+  {
+    "_id": "everyday_21382",
+    "title": "Quần short nam · Manchester United Men Solid White Shorts",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "White",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-21382.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/432f00e8e9cd2ca76c210b8a50dc785e_images.jpg",
+      "originalTitle": "Manchester United Men Solid White Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "cc467614fff3365d3b4a6468573afc23879b3f279163f974240d93e4e92d8651"
+  },
+  {
+    "_id": "everyday_28459",
+    "title": "Quần short nữ · Urban Yoga Women Purple Shorts",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Purple",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-28459.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/06b071d19cc46c7d71c663418c7eaf23_images.jpg",
+      "originalTitle": "Urban Yoga Women Purple Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "ccc674027790bfb2c7843814771adb745f4c7bbc8088152b9aaddd90956d7cf6"
+  },
+  {
+    "_id": "everyday_27623",
+    "title": "Quần short nam · Scullers Men Beige Shorts",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Beige",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-27623.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/e5c4d1d6162192568cf3b0f8cad15a6f_images.jpg",
+      "originalTitle": "Scullers Men Beige Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "7cca373a779b90f4c37bceae2c1fbbc5cae91d5b9fbb2f19c8b05a42c23258a2"
+  },
+  {
+    "_id": "everyday_7533",
+    "title": "Quần short nam · Nike Men's As T90 Black Short",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-7533.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/50dc273ecb1ddcba7d109640483a1d73_images.jpg",
+      "originalTitle": "Nike Men's As T90 Black Short",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "a7b493ab00b342212f28fc6944735453a511caaa3e0f464ce4293560670a488d"
+  },
+  {
+    "_id": "everyday_13249",
+    "title": "Quần tây nam · Palm Tree Kids Boy Solid Brown Trousers",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Brown",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-13249.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/Palm-Tree-Kids-Boy-Solid-Brown-Trousers_80a7a44c67c90cd05255b58ac84d366e_images.jpg",
+      "originalTitle": "Palm Tree Kids Boy Solid Brown Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "8e2df60ba2d1bc4e1913a077086b2a5c97cf8f65f7b8171d4d41646658e55df7"
+  },
+  {
+    "_id": "everyday_57139",
+    "title": "Quần tây nữ · Elle Women Black Etra Slim Fit Trousers",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-57139.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/Elle-Women-Black-Etra-Slim-Fit-Trousers_5af7a7ff4aaf94c4ee2545a1fd207fc3_images.jpg",
+      "originalTitle": "Elle Women Black Etra Slim Fit Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "9e00d3ca4b28d1546b71f3e140f4c3a70a57aa123d1fcacba71f8e511d4ba315"
+  },
+  {
+    "_id": "everyday_23073",
+    "title": "Quần tây nam · Arrow Men Grey Trousers",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Grey",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-23073.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/b3fb684873bf4f798a50c9c1fcaa680a_images.jpg",
+      "originalTitle": "Arrow Men Grey Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "cd0fc789a35927a701566e6976c05a5f441bfd01c8b223d52270b0533d8b9f6b"
+  },
+  {
+    "_id": "everyday_4989",
+    "title": "Quần short nữ · Gini and Jony Girl's Fenil Bright Green Kidswear",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Green",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-4989.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/3f50352e53d564fd4a4e8f25cb4f256c_images.jpg",
+      "originalTitle": "Gini and Jony Girl's Fenil Bright Green Kidswear",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "a82916a01eb5fecba22d1e2648c9e9177e2710acc50d27f8306fe54f4dc92198"
+  },
+  {
+    "_id": "everyday_15340",
+    "title": "Quần short nữ · Nike Women Solid Black Shorts",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-15340.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/8a520319c09dc051667dff42fec1d7eb_images.jpg",
+      "originalTitle": "Nike Women Solid Black Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "9886a19b9482e09cdcee785c65f68db0b7a65bca7dbca9debaf878d3bf617860"
+  },
+  {
+    "_id": "everyday_32562",
+    "title": "Quần tây nữ · ONLY Women Olive Trousers",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Olive",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-32562.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/ONLY-Women-Olive-Trousers_c1803c261bfd8cd0e7b07445932b4df7_images.jpg",
+      "originalTitle": "ONLY Women Olive Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "d6b4408d30ba2c8044326976de0ef4698ad032094524f78a8ef0cae0ba8eaa9b"
+  },
+  {
+    "_id": "everyday_9894",
+    "title": "Quần tây nam · Indian Terrain Men Sid Black Trousers",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-9894.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/65f743c1269da1e6f53e5f5d82a3b067_images.jpg",
+      "originalTitle": "Indian Terrain Men Sid Black Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "bfbd2adc4f3beddbf7f2bce9f53097e533b6a91cfe1baf8e0ae2098c47d9f92f"
+  },
+  {
+    "_id": "everyday_34251",
+    "title": "Quần short nam · Proline Navy Shorts",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Navy Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-34251.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/467261dd6e0a4b39135099075ed1bca4_images.jpg",
+      "originalTitle": "Proline Navy Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "2ae2da3c4cee162124ce35260b8c5c397c0a491f8580e3e1b5cdc4b4a7bf0ca7"
+  },
+  {
+    "_id": "everyday_10661",
+    "title": "Quần short nữ · Doodle Girl Hot  Ice Wash Blue Shorts",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-10661.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/e434b40d70e5cb5759c752276d4e5af4_images.jpg",
+      "originalTitle": "Doodle Girl Hot  Ice Wash Blue Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "65cccf016d9fcdbd4675e6826e07a8ac8f81a7117e27341dae97e1acaf2ff7a2"
+  },
+  {
+    "_id": "everyday_5450",
+    "title": "Quần short nam · Nike Men's Blue Short",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-5450.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/5a669fe6a49191f041d94e681c520de6_images.jpg",
+      "originalTitle": "Nike Men's Blue Short",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "7493ad3b8f81cdffe1151f91bdef9cc1cc59dd615db410b60e5c3d1c00e26d22"
+  },
+  {
+    "_id": "everyday_13222",
+    "title": "Quần short nam · Palm Tree Kids Boys Washed Blue Shorts",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-13222.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/e9e1e88ba08df1677fc99ed015d91b3a_images.jpg",
+      "originalTitle": "Palm Tree Kids Boys Washed Blue Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "252c1b2529ec3d2fe264c785ba3a8a5790609b6e2afda35a1d0ab9d9e0cf2db5"
+  },
+  {
+    "_id": "everyday_44922",
+    "title": "Quần short nam · Puma Men Red Cat Logo Shorts",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Red",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-44922.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/377f6f18bcaa5ebbaed332bb4359b717_images.jpg",
+      "originalTitle": "Puma Men Red Cat Logo Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "4ab5ac631337fb908c4b3621953fe9d11d7c2e76065d895134c9a4cc869c219a"
+  },
+  {
+    "_id": "everyday_51603",
+    "title": "Quần tây nữ · Kraus Jeans Women Beige Trousers",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Beige",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-51603.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/123aac367ef81073f9b26584b73fcce4_images.jpg",
+      "originalTitle": "Kraus Jeans Women Beige Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "110d57a6f6824d53e23470b7766b120544aeba9a34cd6a7e55084bc2af9c3111"
+  },
+  {
+    "_id": "everyday_30634",
+    "title": "Quần short nam · Nike Men Black Shorts",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-30634.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/42f6d3632908535c4c099a4d68070984_images.jpg",
+      "originalTitle": "Nike Men Black Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "fe20e6abf504efca9b549ad9890a4903e5734ad47271a0a52454628017a5b96d"
+  },
+  {
+    "_id": "everyday_4786",
+    "title": "Quần short nam · ADIDAS Men's Cr_Aess 3s Hsj Black White Short",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-4786.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/f2e21ffe05b305def81b1f8f0589a373_images.jpg",
+      "originalTitle": "ADIDAS Men's Cr_Aess 3s Hsj Black White Short",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "8eb3c0d3c28eda2ec1f14a9d2ebc4ef1590eac1c8e99ca047c9aa5008e9c84b2"
+  },
+  {
+    "_id": "everyday_9099",
+    "title": "Quần short nam · ADIDAS Men Cfc H Sho Blue Shorts",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-9099.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/37b4f24a17912052704e36729144424b_images.jpg",
+      "originalTitle": "ADIDAS Men Cfc H Sho Blue Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "1ead46c4404106748e79ee2264d8706ef768de8685cd26b2f198331ae08b4399"
+  },
+  {
+    "_id": "everyday_5002",
+    "title": "Quần short nữ · Gini and Jony Girl's Jolene Pink Kidswear",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Pink",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-5002.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/1a81eda82e2103286aad671c21c8e821_images.jpg",
+      "originalTitle": "Gini and Jony Girl's Jolene Pink Kidswear",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "57090390739b2fb4182b4eeb612f5914e138cccf656054d056b8cd4365ccd259"
+  },
+  {
+    "_id": "everyday_27214",
+    "title": "Quần short nam · Doodle Kids Boy  Brown Shorts",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Brown",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-27214.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/feeb852c356117900cf29c459064311d_images.jpg",
+      "originalTitle": "Doodle Kids Boy  Brown Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "54bc119934e4bc690df1f87e402d94c0438eb001c70bb2ac9e109ba70aa8ac36"
+  },
+  {
+    "_id": "everyday_7875",
+    "title": "Quần short nam · Proline Men Black Comfort Fit Sports Shorts",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-7875.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/ad174b2b45827bfa3f9c695babb95d8f_images.jpg",
+      "originalTitle": "Proline Men Black Comfort Fit Sports Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "1225e9a58af6173a8b32f5957d7dce2436a67e90584ba752fd13cf45b9af7a84"
+  },
+  {
+    "_id": "everyday_26240",
+    "title": "Quần short nam · Proline Grey Shorts",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Grey",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-26240.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/3c9901b817b8c217a2887e8f1b4962de_images.jpg",
+      "originalTitle": "Proline Grey Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "6530decb4c8a6cb0bdb1004be40d087215a689a0e8254075c15538834f55ecf3"
+  },
+  {
+    "_id": "everyday_14940",
+    "title": "Quần short nam · Status Quo Men Solid Black Shorts",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-14940.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/99f3aee9773a8a50785b18907150c7d4_images.jpg",
+      "originalTitle": "Status Quo Men Solid Black Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "2746280a090e5e3da4a4c7731488095b5749e46353fbfde25b6b2f0c354ba49f"
+  },
+  {
+    "_id": "everyday_9782",
+    "title": "Quần short nam · ADIDAS Men M Basic White Shorts",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "White",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-9782.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/4720abdd3bc79336b8c83dbb04ca6453_images.jpg",
+      "originalTitle": "ADIDAS Men M Basic White Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "8cd8f2105f3c8e2cb62940bec024e6cc6fbc07f6b160b71f38357173201ac74a"
+  },
+  {
+    "_id": "everyday_2193",
+    "title": "Quần short nam · ADIDAS Men Navy Short",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Navy Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-2193.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/78eeac463fa60bbd3d5e154373774cde_images.jpg",
+      "originalTitle": "ADIDAS Men Navy Short",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "cd27c6d956c66e7f253b087b8548255d8aefe92cbddc73c0e0e04f1792636ece"
+  },
+  {
+    "_id": "everyday_43044",
+    "title": "Quần short nam · Nike Men Charcoal Grey Shorts",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Charcoal",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-43044.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/e7bdf8f83947932728ba599a7c158667_images.jpg",
+      "originalTitle": "Nike Men Charcoal Grey Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "d8307e450932c4084cf98e1d705f051e437533cc62937fae1f1eb533e20e70a6"
+  },
+  {
+    "_id": "everyday_48458",
+    "title": "Quần short nam · French Connection Men Blue & White Check Shorts",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-48458.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/French-Connection-Men-Blue---White-Check-Shorts_beac1afcd0b3b7149418e3338d1d4ea9_images.jpg",
+      "originalTitle": "French Connection Men Blue & White Check Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "033088c259a72cfc949a6dcc20be0654168f8d961e2508fdb174058b84bafb75"
+  },
+  {
+    "_id": "everyday_48460",
+    "title": "Quần short nam · French Connection Men Green & White Check Cargo Shorts",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Green",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-48460.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/9dc18e521bf97717d480e48f4cca858e_images.jpg",
+      "originalTitle": "French Connection Men Green & White Check Cargo Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "d7158cfca4dd029724eb7893c0f18f73cef6a3273cde2569392f8488f3b20702"
+  },
+  {
+    "_id": "everyday_32649",
+    "title": "Quần short nam · Nike Men Black Shorts",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-32649.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/5ea1ae9c921b355c0bd98bdbfe142dbe_images.jpg",
+      "originalTitle": "Nike Men Black Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "39cc49bc885ddb126f18a4d045c56bd5da259fd53bf941d3062cdb936f367076"
+  },
+  {
+    "_id": "everyday_57824",
+    "title": "Quần tây nữ · United Colors of Benetton Green Trouser",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Green",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-57824.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/United-Colors-of-Benetton-Green-Trouser_29005e896e9d76a457a7f1c280ca4448_images.jpg",
+      "originalTitle": "United Colors of Benetton Green Trouser",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "183f484552c6410ad604b031eea0a509ea35240f86278c1a2391749e7e7a2492"
+  },
+  {
+    "_id": "everyday_32444",
+    "title": "Quần short nam · ADIDAS Men Navy Blue Shorts",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Navy Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-32444.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/efa062b802497e6a1bb76ce2025f2035_images.jpg",
+      "originalTitle": "ADIDAS Men Navy Blue Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "22ec1e68e69db43d9934babdab13f9eb329a14ac311be8f0ca3bfebe668b15a8"
+  },
+  {
+    "_id": "everyday_9348",
+    "title": "Quần short nam · Puma Men Bermudas Navy Blue Shorts",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Navy Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-9348.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/d19a0276c4c2f73de3d1df43c2659ca6_images.jpg",
+      "originalTitle": "Puma Men Bermudas Navy Blue Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "6ef976df685c3becc192269336ca1ff3c99e662e7bd0612fd180bfb53e2f768e"
+  },
+  {
+    "_id": "everyday_25030",
+    "title": "Quần short nam · Nike Men Speed Fly Navy Blue Shorts",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Navy Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-25030.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/9d558171fbc5c8b8617673d2796ab756_images.jpg",
+      "originalTitle": "Nike Men Speed Fly Navy Blue Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "8e61e1b9e1d4a9defcde5269c516c6b788d2da01f657a92e402d2618e5e140f0"
+  },
+  {
+    "_id": "everyday_4808",
+    "title": "Quần short nam · ADIDAS Men's Prophecy Black Yellow Short",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-4808.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/c4b157ea670bd2dae89675963aa78b7d_images.jpg",
+      "originalTitle": "ADIDAS Men's Prophecy Black Yellow Short",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "cab968a6b7195c0f16f0404652a510654398338eac7a50fa85db0e17eca371da"
+  },
+  {
+    "_id": "everyday_51377",
+    "title": "Quần short nam · Myntra Men Khaki Shorts",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Khaki",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-51377.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/cdd90e3214b78714858921ed2ae5d9b0_images.jpg",
+      "originalTitle": "Myntra Men Khaki Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "521e4e7b3d47051b9b43ad08d4d884369b708219bec87f8044de9190d77c873e"
+  },
+  {
+    "_id": "everyday_38582",
+    "title": "Quần short nam · Nike Men Black Breakline Med Shorts",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-38582.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/8dfd49f3afaa60aad832b9f1c8d48155_images.jpg",
+      "originalTitle": "Nike Men Black Breakline Med Shorts",
+      "articleType": "Shorts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "1f063579a7e9db4c356950c4aff07f56bc1d21133dfcf01de6562efba57a9ad9"
+  },
+  {
+    "_id": "everyday_44667",
+    "title": "Quần tây nữ · Wills Lifestyle Women Black Trousers",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-44667.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/084926806c964d30275b4ecfa606a661_images.jpg",
+      "originalTitle": "Wills Lifestyle Women Black Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "76cdf4c798079b0918324fa4b2e65259054d48890c817e5d6303097049085a5a"
+  },
+  {
+    "_id": "everyday_27904",
+    "title": "Quần tây nữ · Scullers For Her Grey Trousers",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Grey",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-27904.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/e5a6dd4c4dca7fb6709da3e26bb53d20_images.jpg",
+      "originalTitle": "Scullers For Her Grey Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "c46a63e026c21f5fce62feb3fb284fd7bd7ef18c9a8371b9ac7d43620564abb3"
+  },
+  {
+    "_id": "everyday_27903",
+    "title": "Quần tây nữ · Scullers For Her Beige Trousers",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Beige",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-27903.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/7826191c99520fdfd348167449a71bdd_images.jpg",
+      "originalTitle": "Scullers For Her Beige Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "bf974b4083fbab045c0770bb0b40765dff66246cd666547cf1a4545679995adb"
+  },
+  {
+    "_id": "everyday_48495",
+    "title": "Quần tây nữ · French Connection Women Olive Trousers",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Olive",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-48495.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/French-Connection-Men-Olive-Trousers_d76e5de2c4bdf773670a121bbd4be8d0_images.jpg",
+      "originalTitle": "French Connection Women Olive Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "df6e84f9a080732670d19ea08d95aa7ee88afdadf035b202a14b3bbda2c12bd5"
+  },
+  {
+    "_id": "everyday_27902",
+    "title": "Quần tây nữ · Scullers For Her Women Black Trousers",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-27902.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/354c33cc32c2fa21d71ea54bf7925c14_images.jpg",
+      "originalTitle": "Scullers For Her Women Black Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "8d1ced025cf8c655fd312d1950eae81620ac332f08dbd992c7008d97e622ef05"
+  },
+  {
+    "_id": "everyday_44666",
+    "title": "Quần tây nữ · Wills Lifestyle Women Brown Trousers",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Brown",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/everyday-44666.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/15ead08e050418347da572452d07ed75_images.jpg",
+      "originalTitle": "Wills Lifestyle Women Brown Trousers",
+      "articleType": "Trousers",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "57b2413020fd7a916396be6b058dcf5d182c2136584abe22a941268eaf0c1d78"
+  }
+]

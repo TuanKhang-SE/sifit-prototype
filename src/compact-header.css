@@ -1,0 +1,30 @@
+/* Imported with Navbar so these overrides apply after the storefront CSS. */
+.store-header.is-compact .header-main { display:flex; height:64px; min-height:64px; gap:20px; padding-block:0; }
+.store-header.is-compact .brand-logo { width:125px; height:48px; flex-shrink:0; }
+.store-header.is-compact .shop-sell { display:none; }
+.store-header.is-compact .header-tools { margin:0 0 0 auto; flex:1; gap:18px; }
+.store-header.is-compact .header-search { width:min(28vw,310px); height:34px; border-radius:8px; }
+.store-header.is-compact .account-actions { gap:12px; }
+.store-header.is-compact .compact-menu { display:flex; padding:6px; background:none; border:0; }
+.store-header.is-compact .header-bottom { display:none; }
+.store-header.is-compact .header-bottom.compact-expanded { display:block; position:absolute; top:64px; left:0; right:0; width:100%; background:white; padding:12px 40px; box-shadow:0 12px 20px #17221e12; }
+.store-header.is-compact .mobile-menu { display:none; }
+.store-header.is-compact .header-categories.is-open { display:flex; flex-wrap:wrap; position:static; padding:0; gap:10px 24px; box-shadow:none; border:0; }
+.store-header.is-compact .header-categories button { padding:8px 0; }
+.compact-drawer-actions { display:flex; align-items:center; gap:20px; border-bottom:1px solid #eef1ea; padding-bottom:10px; margin-bottom:10px; font-size:11px; color:#006c49; }
+.compact-drawer-search { display:none; }
+@media(max-width:760px) {
+  .store-header.is-compact .header-main { height:56px; min-height:56px; gap:8px; }
+  .store-header.is-compact .brand-logo { width:88px; height:38px; }
+  .store-header.is-compact .header-tools { gap:10px; flex:0; }
+  .store-header.is-compact .header-search, .store-header.is-compact .ai-button, .store-header.is-compact .account-button, .store-header.is-compact .nav-divider, .store-header.is-compact .signup-link { display:none; }
+  .store-header.is-compact .language-switch select { max-width:68px; font-size:10px; }
+  .store-header.is-compact .language-switch > .material-symbols-outlined { display:none; }
+  .store-header.is-compact .account-actions { gap:10px; font-size:10px; }
+  .store-header.is-compact .header-bottom.compact-expanded { top:56px; padding:14px 18px; }
+  .store-header.is-compact .header-categories.is-open { display:grid; grid-template-columns:1fr 1fr; }
+  .compact-drawer-actions { flex-wrap:wrap; }
+  .compact-drawer-search { display:flex; flex:1 0 100%; border:1px solid #e0e7da; border-radius:8px; height:36px; }
+  .compact-drawer-search input { background:none; border:0; font-size:11px; min-width:0; flex:1; padding:8px; }
+  .compact-drawer-search button { display:flex; align-items:center; padding:5px 9px; }
+}

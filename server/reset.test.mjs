@@ -1,0 +1,50 @@
+import test, { after } from 'node:test';
+import assert from 'node:assert/strict';
+import { mkdtemp, rm } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import path from 'node:path';
+import { periods } from './quota.mjs';
+import { demoControlsEnabled } from './demoControls.mjs';
+
+const directory = await mkdtemp(path.join(tmpdir(), 'sifit-reset-test-'));
+process.env.SIFIT_DATA_DIR = directory;
+process.env.SIFIT_API_PORT = '0';
+process.env.TRYON_MODE = 'demo';
+process.env.NODE_ENV = 'test';
+process.env.SIFIT_DEMO_CONTROLS = 'true';
+const { server } = await import('./index.mjs');
+const { db, persist } = await import('./store.mjs');
+await new Promise(resolve => server.listening ? resolve() : server.once('listening', resolve));
+const base = `http://127.0.0.1:${server.address().port}/api`;
+after(async () => {
+  await new Promise(resolve => server.close(resolve));
+  assert.equal(path.dirname(directory), path.resolve(tmpdir()));
+  await rm(directory, { recursive: true, force: true });
+});
+test('reset disabled in live, production and by explicit setting', () => {
+  assert.equal(demoControlsEnabled('live', { NODE_ENV: 'development' }), false);
+  assert.equal(demoControlsEnabled('demo', { NODE_ENV: 'production' }), false);
+  assert.equal(demoControlsEnabled('demo', { SIFIT_DEMO_CONTROLS: 'false' }), false);
+  assert.equal(demoControlsEnabled('demo', { NODE_ENV: 'development' }), true);
+});
+test('authenticated demo reset restores allowance, preserves portraits/history, isolates users and paid usage', async () => {
+  const userId = 'user_buyer_01';
+  const other = 'user_buyer_02';
+  db.usage.push(...Array.from({ length: 5 }, () => ({ userId, mode: 'demo', ...periods(), refunded: false })), { userId, mode: 'live', ...periods(), refunded: false }, { userId: other, mode: 'demo', ...periods(), refunded: false });
+  db.modelAttempts.push({ userId, ...periods() }, { userId: other, ...periods() });
+  db.profiles[userId] = { id: 'saved-portrait', measurements: {}, composition: 'white-plinth-v1' };
+  db.jobs.example = { id: 'example', userId, mode: 'demo', status: 'completed', cost: 1 };
+  persist();
+  assert.equal((await fetch(`${base}/stylist/demo/reset`, { method: 'POST' })).status, 401);
+  const login = await fetch(`${base}/auth/login`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email: 'buyer@sifit.com', password: '123456' }) });
+  const cookie = login.headers.get('set-cookie').split(';')[0];
+  const response = await fetch(`${base}/stylist/demo/reset`, { method: 'POST', headers: { Cookie: cookie } });
+  assert.equal(response.status, 200);
+  const data = await response.json();
+  assert.equal(data.quota.remaining, 5); assert.equal(data.quota.monthlyUsed, 0); assert.equal(data.modelAttemptsLeft, null);
+  assert.equal(db.profiles[userId].id, 'saved-portrait'); assert.ok(db.jobs.example);
+  assert.equal(db.usage.find(u => u.mode === 'live').refunded, false);
+  assert.equal(db.usage.find(u => u.userId === other).refunded, false);
+  assert.ok(db.modelAttempts.some(u => u.userId === other));
+  assert.ok(db.usage.filter(u => u.userId === userId && u.mode === 'demo').every(u => u.demoResetAt));
+});

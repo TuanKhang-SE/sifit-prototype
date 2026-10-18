@@ -1,3 +1,4 @@
+import { importedCatalog } from './importedCatalog.js';
 // ============================================================
 //  SIFIT PROTOTYPE — Mock Data
 //  Dữ liệu giả hoàn chỉnh cho tất cả màn hình demo
@@ -387,6 +388,7 @@ export const MOCK_LISTINGS = [
     reviewCount: 2,
     createdAt: '2024-07-08T09:00:00Z',
   },
+  ...importedCatalog,
 ];
 
 // ──────────────────────────────────────────────

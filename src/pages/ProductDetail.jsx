@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
 import LocalizedContent from '../components/LocalizedContent';
 import ReportModal from '../components/ReportModal';
+import { supportsTryOn } from '../services/stylistApi';
 
 export default function ProductDetail() {
-  const { selectedProduct, setCurrentView, addToCart, handleInstantBuy, startChat, user, viewShopProfile, getProductReviews } = useApp();
+  const { selectedProduct, setCurrentView, addToCart, handleInstantBuy, startChat, user, viewShopProfile, getProductReviews, openTryOn } = useApp();
   const [reportOpen, setReportOpen] = useState(false);
   const [activeImg, setActiveImg] = useState(0);
 
@@ -33,7 +34,7 @@ export default function ProductDetail() {
             <img
               src={selectedProduct.images?.[activeImg] || 'https://via.placeholder.com/600x800'}
               alt={selectedProduct.title}
-              className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+              className={`w-full h-full ${selectedProduct.source ? 'object-contain bg-white' : 'object-cover transition-transform duration-1000 group-hover:scale-105'}`}
             />
             {isSold && (
               <div className="absolute inset-0 bg-gray-900/60 backdrop-blur-sm flex items-center justify-center z-10">
@@ -51,7 +52,7 @@ export default function ProductDetail() {
                   onClick={() => setActiveImg(i)}
                   className={`aspect-[3/4] w-16 overflow-hidden rounded-xl border-2 cursor-pointer transition-all ${activeImg === i ? 'border-primary shadow-emerald-sm' : 'border-transparent hover:border-gray-300'}`}
                 >
-                  <img src={img} alt="" className="w-full h-full object-cover" />
+                  <img src={img} alt="" className={`w-full h-full ${selectedProduct.source ? 'object-contain bg-white' : 'object-cover'}`} />
                 </button>
               ))}
             </div>
@@ -96,6 +97,7 @@ export default function ProductDetail() {
           </div>
 
           {/* Condition box */}
+
           <div className="bg-amber-50 border border-amber-100 p-5 rounded-2xl mb-8 flex gap-4">
             <span className="material-symbols-outlined text-amber-500 mt-0.5 fill text-xl">info</span>
             <div>
@@ -122,7 +124,7 @@ export default function ProductDetail() {
                 <button onClick={() => handleInstantBuy(selectedProduct)} className="btn-primary w-full text-center">
                   Mua Ngay
                 </button>
-                <div className="grid grid-cols-2 gap-3">
+                <div className="product-detail-actions">
                   <button onClick={() => addToCart(selectedProduct)} className="btn-outline text-center py-3.5 text-xs">
                     Thêm Giỏ Hàng
                   </button>
@@ -130,6 +132,7 @@ export default function ProductDetail() {
                     <span className="material-symbols-outlined text-base">chat</span>
                     Mặc Cả
                   </button>
+                {supportsTryOn(selectedProduct, 'max') && <button onClick={() => openTryOn(selectedProduct)} className="product-ai-action"><span className="material-symbols-outlined" aria-hidden="true">auto_awesome</span>Thử đồ với AI</button>}
                 </div>
               </>
             )}

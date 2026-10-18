@@ -1,6 +1,7 @@
 import React, { createContext, useState, useContext, useEffect, useRef } from 'react';
 import { useLanguage } from './LanguageContext';
 import { translateWorkspace } from '../data/workspaceTranslations';
+import { api, post } from '../services/stylistApi';
 import {
   MOCK_USERS, MOCK_LISTINGS, MOCK_ORDERS,
   MOCK_CONVERSATIONS, MOCK_MESSAGES, MOCK_REVIEWS,
@@ -14,6 +15,12 @@ export const AppContextProvider = ({ children }) => {
   const tr = value => locale === 'en' ? translateWorkspace(value) : value;
   // ── Auth State ──
   const [user, setUser] = useState(null);
+  const [authLoading, setAuthLoading] = useState(true);
+  const authReturnRef = useRef(null);
+  const pendingTryOnRef = useRef(null);
+  const [tryOnProductId, setTryOnProductId] = useState(null);
+  const [cartToast, setCartToast] = useState(null);
+  useEffect(() => { if (!cartToast) return; const timer = setTimeout(() => setCartToast(null), 3500); return () => clearTimeout(timer); }, [cartToast]);
   const initialView = useRef(new URLSearchParams(window.location.search).get('view') || 'homepage').current;
   const [currentView, setCurrentViewRaw] = useState(initialView);
   const [authMode, setAuthMode] = useState('login');
@@ -41,7 +48,7 @@ export const AppContextProvider = ({ children }) => {
   const [currentSellerId, setCurrentSellerId] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [filters, setFilters] = useState({
-    categories: [], brands: [], sizes: [], condition: 0, priceMax: 10000000,
+    categories: [], brands: [], sizes: [], condition: 0, priceMax: 10000000, gender: 'all',
   });
   const [sortOption, setSortOption] = useState('Hàng Mới Về');
 
@@ -54,6 +61,7 @@ export const AppContextProvider = ({ children }) => {
   const [aiIntent, setAiIntent] = useState('');
 
   const sendAiMessage = (text) => {
+    if (!user) { openAuth(); return; }
     setAiMessages(prev => [...prev, { role: 'user', text }]);
     setIsAiTyping(true);
 
@@ -103,6 +111,7 @@ export const AppContextProvider = ({ children }) => {
   };
 
   const openAuth = (mode = 'login', role = 'buyer') => {
+    if (currentView !== 'auth') authReturnRef.current = currentView === 'ai-stylist' ? 'ai-stylist' : null;
     setAuthMode(mode);
     setAuthRole(role);
     setCurrentView('auth');
@@ -121,7 +130,7 @@ export const AppContextProvider = ({ children }) => {
     setSearchQuery(options.query || '');
     setFilters({ categories: options.category ? [options.category] : [], brands: options.brand ? [options.brand] : [],
       sizes: [], condition: options.premium ? 90 : 0, priceMax: options.lastChance ? 500000 : 10000000,
-      material: options.material || '', women: !!options.women, department: options.department || '' });
+      material: options.material || '', gender: options.gender || (options.women ? 'women' : 'all'), women: !!options.women, department: options.department || '' });
     setSortOption(options.lastChance ? 'Giá: Thấp → Cao' : 'Hàng Mới Về');
     setCurrentView('catalog');
   };
@@ -147,37 +156,56 @@ export const AppContextProvider = ({ children }) => {
   }, [initialView]);
 
   // ── Auth ──
-  const loginUser = (email, password) => {
-    const found = MOCK_USERS.find(u => u.email === email && u.password === password);
-    if (!found) return { success: false, message: 'Email hoặc mật khẩu không đúng.' };
-    if (found.blocked) return { success: false, message: 'Tài khoản này đã bị khóa.' };
-    setUser(found);
-    if (found.role === 'seller') setCurrentView('seller');
-    else if (found.role === 'admin') setCurrentView('admin');
-    else setCurrentView('homepage');
+  const loadAccount = (account) => {
+    setUser(account);
+    let saved = [];
+    try { saved = JSON.parse(localStorage.getItem(`sifit-cart-${account._id}`) || '[]'); } catch { /* empty cart */ }
+    const valid = Array.isArray(saved) ? saved.map(id => products.find(p => p._id === id)).filter(Boolean) : [];
+    const pending = pendingTryOnRef.current;
+    if (pending && !valid.some(p => p._id === pending._id)) valid.push(pending);
+    pendingTryOnRef.current = null;
+    setCart(valid);
+  };
+
+  useEffect(() => {
+    let active = true;
+    api('/auth/session').then(({ user: account }) => { if (active) loadAccount(account); }).catch(() => {}).finally(() => { if (active) setAuthLoading(false); });
+    return () => { active = false; };
+    // Restore once; subsequent changes go through login/logout.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    try { if (user) localStorage.setItem(`sifit-cart-${user._id}`, JSON.stringify(cart.map(p => p._id))); }
+    catch { /* Storage may be disabled; the current session still works. */ }
+  }, [cart, user]);
+
+  const finishAuth = (account) => {
+    loadAccount(account);
+    const destination = authReturnRef.current || (account.role === 'seller' ? 'seller' : account.role === 'admin' ? 'admin' : 'homepage');
+    authReturnRef.current = null;
+    setCurrentView(destination);
     return { success: true };
   };
 
-  const registerUser = (name, email, password, role) => {
-    if (MOCK_USERS.find(u => u.email === email)) {
-      return { success: false, message: 'Email này đã được sử dụng.' };
-    }
-    const newUser = {
-      _id: `user_${Date.now()}`, name, email, password, role,
-      avatar: `https://i.pravatar.cc/150?img=${Math.floor(Math.random() * 70) + 1}`,
-      phone: '', blocked: false, averageRating: 0, reviewCount: 0,
-      addresses: [], createdAt: new Date().toISOString(),
-    };
-    MOCK_USERS.push(newUser);
-    setUser(newUser);
-    setUsers(prev => [...prev, newUser]);
-    if (role === 'seller') setCurrentView('seller');
-    else setCurrentView('homepage');
-    return { success: true };
+  const loginUser = async (email, password) => {
+    try { const { user: account } = await post('/auth/login', { email, password }); return finishAuth(account); }
+    catch (error) { return { success: false, message: error.message }; }
   };
 
-  const logoutUser = () => {
+  const registerUser = async (name, email, password, role) => {
+    try {
+      const { user: account } = await post('/auth/register', { name, email, password, role });
+      setUsers(prev => [...prev, account]);
+      return finishAuth(account);
+    } catch (error) { return { success: false, message: error.message }; }
+  };
+
+  const logoutUser = async () => {
+    try { await post('/auth/logout', {}); } catch (error) { alert(error.message); return; }
     setUser(null);
+    setTryOnProductId(null);
+    pendingTryOnRef.current = null;
     setCart([]);
     setActiveChatId(null);
     setCheckoutProduct(null);
@@ -221,13 +249,25 @@ export const AppContextProvider = ({ children }) => {
   // ── Cart ──
   const addToCart = (product) => {
     if (!user) { openAuth(); return; }
-    if (cart.find(p => p._id === product._id)) { alert(tr('Sản phẩm đã có trong giỏ hàng!')); return; }
+    if (cart.find(p => p._id === product._id)) { setCartToast({ message: tr('Sản phẩm đã có trong giỏ hàng!'), id: Date.now() }); return; }
     setCart(prev => [...prev, product]);
-    alert(tr('Đã thêm vào giỏ hàng! 🛒'));
+    setCartToast({ message: tr('Đã thêm vào giỏ hàng! 🛒'), id: Date.now() });
   };
 
   const removeFromCart = (listingId) => {
     setCart(prev => prev.filter(p => p._id !== listingId));
+  };
+
+  const openTryOn = (product) => {
+    setTryOnProductId(product._id);
+    if (!user) {
+      pendingTryOnRef.current = product;
+      openAuth();
+      authReturnRef.current = 'ai-stylist';
+      return;
+    }
+    setCart(prev => prev.some(p => p._id === product._id) ? prev : [...prev, product]);
+    setCurrentView('ai-stylist');
   };
 
   const handleInstantBuy = (product) => {
@@ -409,14 +449,14 @@ export const AppContextProvider = ({ children }) => {
   return (
     <AppContext.Provider value={{
       // Auth
-      user, loginUser, registerUser, logoutUser, updateUser,
+      user, authLoading, loginUser, registerUser, logoutUser, updateUser,
       // Navigation
       currentView, setCurrentView, goBack, authMode, authRole, openAuth, browse, infoPage, setInfoPage, guideSection, setGuideSection, openSellGuide,
       // Products
       products, setProducts, fetchListings, createListing, updateListing, deleteListing,
       selectedProduct, setSelectedProduct,
       // Cart
-      cart, setCart, addToCart, removeFromCart,
+      cart, setCart, addToCart, removeFromCart, cartToast, setCartToast,
       handleInstantBuy,
       checkoutProduct, setCheckoutProduct,
       // Orders
@@ -437,7 +477,7 @@ export const AppContextProvider = ({ children }) => {
       // Reviews
       submitReview,
       // AI Stylist
-      aiMessages, isAiTyping, sendAiMessage,
+      aiMessages, isAiTyping, sendAiMessage, openTryOn, tryOnProductId, setTryOnProductId,
     }}>
       {children}
     </AppContext.Provider>

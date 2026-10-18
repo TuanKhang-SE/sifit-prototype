@@ -1,0 +1,3511 @@
+[
+
+  {
+    "_id": "local_04",
+    "title": "Áo blouse đen thêu hoa",
+    "category": "Tops",
+    "images": [
+      "/images/catalog/local-04.webp"
+    ],
+    "source": {
+      "platform": "User supplied",
+      "file": "843474584_1752450933552796_9069872378146302155_n.jpg"
+    }
+  },
+  {
+    "_id": "local_05",
+    "title": "Quần đen ống rộng",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/local-05.webp"
+    ],
+    "source": {
+      "platform": "User supplied",
+      "file": "843842782_2188971848723795_9131328264731968341_n.jpg"
+    }
+  },
+  {
+    "_id": "local_06",
+    "title": "Quần cargo trắng",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/local-06.webp"
+    ],
+    "source": {
+      "platform": "User supplied",
+      "file": "844149486_1666650918497470_7676068103969585279_n.jpg"
+    }
+  },
+  {
+    "_id": "local_07",
+    "title": "Áo sơ mi denim xanh đậm",
+    "category": "Tops",
+    "images": [
+      "/images/catalog/local-07.webp"
+    ],
+    "source": {
+      "platform": "User supplied",
+      "file": "844231139_4663486277303933_1234428190313408180_n.jpg"
+    }
+  },
+  {
+    "_id": "local_08",
+    "title": "Áo khoác denim đen",
+    "category": "Outerwear",
+    "images": [
+      "/images/catalog/local-08.webp"
+    ],
+    "source": {
+      "platform": "User supplied",
+      "file": "845941552_1102458362175334_2280677506541687298_n.jpg"
+    }
+  },
+  {
+    "_id": "local_09",
+    "title": "Đầm sát nách caro trắng",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/local-09.webp"
+    ],
+    "source": {
+      "platform": "User supplied",
+      "file": "846407553_1927324054910199_5050852917887417932_n.jpg"
+    }
+  },
+  {
+    "_id": "local_10",
+    "title": "Đầm caro cổ V",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/local-10.webp"
+    ],
+    "source": {
+      "platform": "User supplied",
+      "file": "846825422_2311907789627721_216832150111242846_n.jpg"
+    }
+  },
+  {
+    "_id": "local_11",
+    "title": "Áo khoác denim đen khóa kéo",
+    "category": "Outerwear",
+    "images": [
+      "/images/catalog/local-11.webp"
+    ],
+    "source": {
+      "platform": "User supplied",
+      "file": "ao-khoac-jean-nam-tinh-chinh-hang-hiddle-8.webp"
+    }
+  },
+  {
+    "_id": "local_12",
+    "title": "Quần short denim xanh",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/local-12.webp"
+    ],
+    "source": {
+      "platform": "User supplied",
+      "file": "vn-11134207-7ra0g-ma0b2uxa7bbuf3.webp"
+    }
+  },
+  {
+    "_id": "fashion_001",
+    "title": "Áo crop đen họa tiết",
+    "category": "Tops",
+    "images": [
+      "/images/catalog/fashion-001.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0001.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.45,
+        0.52
+      ]
+    }
+  },
+  {
+    "_id": "fashion_002",
+    "title": "Quần short xanh neon",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-002.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0001.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.53,
+        0.49,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_003",
+    "title": "Áo crop hoa hồng",
+    "category": "Tops",
+    "images": [
+      "/images/catalog/fashion-003.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0003.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.53,
+        0.43
+      ]
+    }
+  },
+  {
+    "_id": "fashion_004",
+    "title": "Chân váy đỏ",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-004.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0003.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.44,
+        0.53,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_005",
+    "title": "Áo blouse tay phồng nâu",
+    "category": "Tops",
+    "images": [
+      "/images/catalog/fashion-005.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0004.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.51,
+        0.43
+      ]
+    }
+  },
+  {
+    "_id": "fashion_006",
+    "title": "Chân váy maxi đen",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-006.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0004.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.57,
+        0.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_007",
+    "title": "Đầm đen ánh kim",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-007.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0005.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.57,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_008",
+    "title": "Áo corset denim xanh",
+    "category": "Tops",
+    "images": [
+      "/images/catalog/fashion-008.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0006.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.53,
+        0.51
+      ]
+    }
+  },
+  {
+    "_id": "fashion_009",
+    "title": "Chân váy denim bất đối xứng",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-009.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0006.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.54,
+        0.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_010",
+    "title": "Áo crop hoa tím",
+    "category": "Tops",
+    "images": [
+      "/images/catalog/fashion-010.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0007.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.48,
+        0.48
+      ]
+    }
+  },
+  {
+    "_id": "fashion_011",
+    "title": "Chân váy xòe tím",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-011.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0007.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.51,
+        0.42,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_012",
+    "title": "Đầm satin tím cổ V",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-012.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0008.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.57,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_013",
+    "title": "Đầm hồng tay phồng",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-013.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0009.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.59,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_014",
+    "title": "Đầm hoa vàng",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-014.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0010.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.56,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_015",
+    "title": "Đầm đỏ chấm bi",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-015.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0011.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.57,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_016",
+    "title": "Đầm cam đất thắt eo",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-016.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0012.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.57,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_017",
+    "title": "Đầm blazer xanh satin",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-017.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0013.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.55,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_018",
+    "title": "Áo khoác trench xanh nhạt",
+    "category": "Outerwear",
+    "images": [
+      "/images/catalog/fashion-018.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0014.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.56,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_019",
+    "title": "Áo crop hai dây nâu",
+    "category": "Tops",
+    "images": [
+      "/images/catalog/fashion-019.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0015.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.48,
+        0.43
+      ]
+    }
+  },
+  {
+    "_id": "fashion_020",
+    "title": "Áo blazer nâu ngắn",
+    "category": "Outerwear",
+    "images": [
+      "/images/catalog/fashion-020.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0015.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.61,
+        0.0,
+        1.0,
+        0.52
+      ]
+    }
+  },
+  {
+    "_id": "fashion_021",
+    "title": "Quần short họa tiết nâu",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-021.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0015.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.52,
+        0.55,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_022",
+    "title": "Đầm satin đỏ cổ yếm",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-022.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0016.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.55,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_023",
+    "title": "Đầm hồng cổ yếm",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-023.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0017.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.55,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_024",
+    "title": "Áo crop đen dài tay",
+    "category": "Tops",
+    "images": [
+      "/images/catalog/fashion-024.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0018.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.59,
+        0.48
+      ]
+    }
+  },
+  {
+    "_id": "fashion_025",
+    "title": "Chân váy caro vàng",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-025.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0018.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.06,
+        0.49,
+        0.54,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_026",
+    "title": "Áo hai dây hồng",
+    "category": "Tops",
+    "images": [
+      "/images/catalog/fashion-026.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0019.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.5,
+        0.42
+      ]
+    }
+  },
+  {
+    "_id": "fashion_027",
+    "title": "Chân váy hoa vàng",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-027.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0019.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.43,
+        0.53,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_028",
+    "title": "Áo crop hoa pastel",
+    "category": "Tops",
+    "images": [
+      "/images/catalog/fashion-028.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0020.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.52,
+        0.41
+      ]
+    }
+  },
+  {
+    "_id": "fashion_029",
+    "title": "Chân váy maxi xanh pastel",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-029.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0020.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.52,
+        0.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_030",
+    "title": "Áo blouse tím tay phồng",
+    "category": "Tops",
+    "images": [
+      "/images/catalog/fashion-030.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0021.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.58,
+        0.39
+      ]
+    }
+  },
+  {
+    "_id": "fashion_031",
+    "title": "Chân váy caro tím",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-031.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0021.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.52,
+        0.48,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_032",
+    "title": "Áo sơ mi trắng",
+    "category": "Tops",
+    "images": [
+      "/images/catalog/fashion-032.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0022.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.5,
+        0.52
+      ]
+    }
+  },
+  {
+    "_id": "fashion_033",
+    "title": "Quần dài đen basic",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-033.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0022.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.51,
+        0.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_034",
+    "title": "Áo blouse cam tay bồng",
+    "category": "Tops",
+    "images": [
+      "/images/catalog/fashion-034.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0023.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.57,
+        0.54
+      ]
+    }
+  },
+  {
+    "_id": "fashion_035",
+    "title": "Chân váy hoa xanh",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-035.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0023.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.1,
+        0.55,
+        0.54,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_036",
+    "title": "Đầm hoa hồng pastel",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-036.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0024.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.6,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_037",
+    "title": "Đầm đen phối tay xanh",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-037.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0025.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.6,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_038",
+    "title": "Đầm hoa vàng nền đen",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-038.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0026.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.61,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_039",
+    "title": "Áo sơ mi satin đỏ",
+    "category": "Tops",
+    "images": [
+      "/images/catalog/fashion-039.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0027.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.61,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_040",
+    "title": "Đầm ren tím",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-040.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0028.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.59,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_041",
+    "title": "Áo len crop tím xanh",
+    "category": "Tops",
+    "images": [
+      "/images/catalog/fashion-041.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0029.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.54,
+        0.36
+      ]
+    }
+  },
+  {
+    "_id": "fashion_042",
+    "title": "Chân váy tím pastel",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-042.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0029.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.37,
+        0.55,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_043",
+    "title": "Đầm blazer hồng",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-043.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0030.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.58,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_044",
+    "title": "Áo khoác tím cổ vest",
+    "category": "Outerwear",
+    "images": [
+      "/images/catalog/fashion-044.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0031.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.58,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_045",
+    "title": "Áo blazer be thắt eo",
+    "category": "Outerwear",
+    "images": [
+      "/images/catalog/fashion-045.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0033.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.58,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_046",
+    "title": "Áo len crop caro hồng",
+    "category": "Tops",
+    "images": [
+      "/images/catalog/fashion-046.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0034.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.48,
+        0.52
+      ]
+    }
+  },
+  {
+    "_id": "fashion_047",
+    "title": "Chân váy caro hồng",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-047.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0034.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.57,
+        0.46,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_048",
+    "title": "Đầm họa tiết xanh đen",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-048.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0035.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.6,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_049",
+    "title": "Đầm sơ mi xanh olive",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-049.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0036.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.59,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_050",
+    "title": "Đầm hoa kem",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-050.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0037.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.58,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_051",
+    "title": "Áo crop sơ mi hoa",
+    "category": "Tops",
+    "images": [
+      "/images/catalog/fashion-051.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0038.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.56,
+        0.36
+      ]
+    }
+  },
+  {
+    "_id": "fashion_052",
+    "title": "Chân váy maxi đen xếp ly",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-052.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0038.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.57,
+        0.39,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_053",
+    "title": "Đầm hai dây hoa kem",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-053.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0039.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.59,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_054",
+    "title": "Áo corset kem",
+    "category": "Tops",
+    "images": [
+      "/images/catalog/fashion-054.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0040.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.45,
+        0.44
+      ]
+    }
+  },
+  {
+    "_id": "fashion_055",
+    "title": "Đầm hai dây hoa đỏ",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-055.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0040.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.54,
+        0.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_056",
+    "title": "Áo khoác thể thao xanh",
+    "category": "Outerwear",
+    "images": [
+      "/images/catalog/fashion-056.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0041.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.55,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_057",
+    "title": "Áo blouse họa tiết ngựa vằn",
+    "category": "Tops",
+    "images": [
+      "/images/catalog/fashion-057.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0042.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.56,
+        0.73
+      ]
+    }
+  },
+  {
+    "_id": "fashion_058",
+    "title": "Chân váy satin kem",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-058.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0042.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.6,
+        0.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_059",
+    "title": "Quần dài đen ống rộng",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-059.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0043.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.58,
+        0.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_060",
+    "title": "Áo cardigan xanh nhạt",
+    "category": "Outerwear",
+    "images": [
+      "/images/catalog/fashion-060.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0044.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.54,
+        0.39
+      ]
+    }
+  },
+  {
+    "_id": "fashion_061",
+    "title": "Chân váy caro xanh",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-061.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0044.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.53,
+        0.46,
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "_id": "fashion_062",
+    "title": "Đầm xanh chấm bi",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-062.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0045.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.57,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_063",
+    "title": "Áo vest crop caro",
+    "category": "Outerwear",
+    "images": [
+      "/images/catalog/fashion-063.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0046.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.58,
+        0.51
+      ]
+    }
+  },
+  {
+    "_id": "fashion_064",
+    "title": "Chân váy đen xòe",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-064.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0046.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.54,
+        0.5,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_065",
+    "title": "Quần jeans phối đen",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-065.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0051.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.04,
+        0.04,
+        0.35,
+        0.94
+      ]
+    }
+  },
+  {
+    "_id": "fashion_066",
+    "title": "Áo crop đen sát nách",
+    "category": "Tops",
+    "images": [
+      "/images/catalog/fashion-066.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0051.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.36,
+        0.04,
+        0.61,
+        0.33
+      ]
+    }
+  },
+  {
+    "_id": "fashion_067",
+    "title": "Áo khoác biker bạc",
+    "category": "Outerwear",
+    "images": [
+      "/images/catalog/fashion-067.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0051.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.59,
+        0.19,
+        0.94,
+        0.68
+      ]
+    }
+  },
+  {
+    "_id": "fashion_068",
+    "title": "Áo sơ mi xanh sage",
+    "category": "Tops",
+    "images": [
+      "/images/catalog/fashion-068.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0052.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.19,
+        0.15,
+        0.55,
+        0.58
+      ]
+    }
+  },
+  {
+    "_id": "fashion_069",
+    "title": "Chân váy kem đính nút",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-069.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0052.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.61,
+        0.28,
+        0.82,
+        0.64
+      ]
+    }
+  },
+  {
+    "_id": "fashion_070",
+    "title": "Áo khoác trench tím",
+    "category": "Outerwear",
+    "images": [
+      "/images/catalog/fashion-070.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0053.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.02,
+        0.1,
+        0.45,
+        0.99
+      ]
+    }
+  },
+  {
+    "_id": "fashion_071",
+    "title": "Chân váy đen xẻ tà",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-071.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0053.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.7,
+        0.39,
+        0.96,
+        0.97
+      ]
+    }
+  },
+  {
+    "_id": "fashion_072",
+    "title": "Đầm hoa nhiều màu",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-072.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0054.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.55,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_073",
+    "title": "Áo khoác biker đen",
+    "category": "Outerwear",
+    "images": [
+      "/images/catalog/fashion-073.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0056.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.15,
+        0.08,
+        0.53,
+        0.52
+      ]
+    }
+  },
+  {
+    "_id": "fashion_074",
+    "title": "Quần trắng ống rộng",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-074.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0056.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.55,
+        0.11,
+        0.87,
+        0.91
+      ]
+    }
+  },
+  {
+    "_id": "fashion_075",
+    "title": "Đầm blazer hồng thắt eo",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-075.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0057.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.59,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_076",
+    "title": "Đầm blazer kem",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-076.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0059.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.59,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_077",
+    "title": "Đầm vàng ánh kim",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-077.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0060.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.1,
+        0.04,
+        0.37,
+        0.7
+      ]
+    }
+  },
+  {
+    "_id": "fashion_078",
+    "title": "Quần họa tiết đỏ đen",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-078.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0061.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.02,
+        0.1,
+        0.33,
+        0.94
+      ]
+    }
+  },
+  {
+    "_id": "fashion_079",
+    "title": "Áo crop trắng lệch vai",
+    "category": "Tops",
+    "images": [
+      "/images/catalog/fashion-079.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0061.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.37,
+        0.34,
+        0.75,
+        0.63
+      ]
+    }
+  },
+  {
+    "_id": "fashion_080",
+    "title": "Áo khoác caro đen trắng",
+    "category": "Outerwear",
+    "images": [
+      "/images/catalog/fashion-080.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0062.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.03,
+        0.31,
+        0.4,
+        0.69
+      ]
+    }
+  },
+  {
+    "_id": "fashion_081",
+    "title": "Áo khoác crop hồng hoa",
+    "category": "Outerwear",
+    "images": [
+      "/images/catalog/fashion-081.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0063.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.02,
+        0.0,
+        0.54,
+        0.72
+      ]
+    }
+  },
+  {
+    "_id": "fashion_082",
+    "title": "Chân váy hồng ánh kim",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-082.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0063.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.54,
+        0.53,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_083",
+    "title": "Áo khoác trench hồng nhạt",
+    "category": "Outerwear",
+    "images": [
+      "/images/catalog/fashion-083.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0064.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.53,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_084",
+    "title": "Đầm đen hai dây",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-084.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0064.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.5,
+        0.02,
+        0.76,
+        0.96
+      ]
+    }
+  },
+  {
+    "_id": "fashion_085",
+    "title": "Áo crop tím tay phồng",
+    "category": "Tops",
+    "images": [
+      "/images/catalog/fashion-085.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0065.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.03,
+        0.12,
+        0.57,
+        0.61
+      ]
+    }
+  },
+  {
+    "_id": "fashion_086",
+    "title": "Chân váy tím xếp tầng",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-086.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0065.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.6,
+        0.5,
+        0.96,
+        0.94
+      ]
+    }
+  },
+  {
+    "_id": "fashion_087",
+    "title": "Áo crop dài tay họa tiết xanh",
+    "category": "Tops",
+    "images": [
+      "/images/catalog/fashion-087.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0066.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.58,
+        0.61
+      ]
+    }
+  },
+  {
+    "_id": "fashion_088",
+    "title": "Quần xanh navy ống loe",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-088.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0066.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.6,
+        0.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_089",
+    "title": "Đầm trắng hoa nhẹ",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-089.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0067.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.6,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_090",
+    "title": "Áo crop hai dây đen",
+    "category": "Tops",
+    "images": [
+      "/images/catalog/fashion-090.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0068.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.5,
+        0.47
+      ]
+    }
+  },
+  {
+    "_id": "fashion_091",
+    "title": "Chân váy họa tiết bò sữa",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-091.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0068.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.53,
+        0.5,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_092",
+    "title": "Áo cardigan caro hồng",
+    "category": "Tops",
+    "images": [
+      "/images/catalog/fashion-092.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0069.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.51,
+        0.67
+      ]
+    }
+  },
+  {
+    "_id": "fashion_093",
+    "title": "Quần jeans xanh ống rộng",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-093.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0069.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.56,
+        0.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_094",
+    "title": "Đầm đen họa tiết hồng xanh",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-094.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0070.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.56,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_095",
+    "title": "Áo crop đính hạt vàng",
+    "category": "Tops",
+    "images": [
+      "/images/catalog/fashion-095.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0071.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.55,
+        0.44
+      ]
+    }
+  },
+  {
+    "_id": "fashion_096",
+    "title": "Chân váy họa tiết vintage",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-096.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0071.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.54,
+        0.49,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_097",
+    "title": "Áo blazer đen cổ điển",
+    "category": "Outerwear",
+    "images": [
+      "/images/catalog/fashion-097.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0072.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.06,
+        0.03,
+        0.42,
+        0.57
+      ]
+    }
+  },
+  {
+    "_id": "fashion_098",
+    "title": "Chân váy maxi đen",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-098.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0072.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.46,
+        0.19,
+        0.69,
+        0.87
+      ]
+    }
+  },
+  {
+    "_id": "fashion_099",
+    "title": "Đầm hoa vàng tay phồng",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-099.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0073.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.61,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_100",
+    "title": "Áo blazer caro xám",
+    "category": "Outerwear",
+    "images": [
+      "/images/catalog/fashion-100.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0074.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.08,
+        0.04,
+        0.43,
+        0.6
+      ]
+    }
+  },
+  {
+    "_id": "fashion_101",
+    "title": "Đầm trắng dáng dài",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-101.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0074.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.52,
+        0.04,
+        0.9,
+        0.96
+      ]
+    }
+  },
+  {
+    "_id": "fashion_102",
+    "title": "Áo khoác crop nâu",
+    "category": "Outerwear",
+    "images": [
+      "/images/catalog/fashion-102.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0075.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.08,
+        0.13,
+        0.35,
+        0.63
+      ]
+    }
+  },
+  {
+    "_id": "fashion_103",
+    "title": "Áo bralette đen",
+    "category": "Tops",
+    "images": [
+      "/images/catalog/fashion-103.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0075.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.42,
+        0.21,
+        0.61,
+        0.48
+      ]
+    }
+  },
+  {
+    "_id": "fashion_104",
+    "title": "Quần nâu ống loe",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-104.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0075.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.66,
+        0.17,
+        0.9,
+        0.9
+      ]
+    }
+  },
+  {
+    "_id": "fashion_105",
+    "title": "Áo len caro xanh",
+    "category": "Tops",
+    "images": [
+      "/images/catalog/fashion-105.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0076.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.52,
+        0.49
+      ]
+    }
+  },
+  {
+    "_id": "fashion_106",
+    "title": "Quần jeans xanh bạc",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-106.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0076.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.54,
+        0.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_107",
+    "title": "Đầm tím xếp tầng",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-107.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0078.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.66,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_108",
+    "title": "Áo len crop xanh",
+    "category": "Tops",
+    "images": [
+      "/images/catalog/fashion-108.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0079.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.49,
+        0.48
+      ]
+    }
+  },
+  {
+    "_id": "fashion_109",
+    "title": "Chân váy họa tiết xanh",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-109.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0079.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.5,
+        0.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_110",
+    "title": "Áo khoác tím cổ lông",
+    "category": "Outerwear",
+    "images": [
+      "/images/catalog/fashion-110.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0080.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.6,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_111",
+    "title": "Đầm hai dây hoa đỏ nền kem",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-111.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0081.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.6,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_112",
+    "title": "Áo blouse kem buộc eo",
+    "category": "Tops",
+    "images": [
+      "/images/catalog/fashion-112.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0082.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.59,
+        0.6
+      ]
+    }
+  },
+  {
+    "_id": "fashion_113",
+    "title": "Quần nâu ống rộng",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-113.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0082.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.64,
+        0.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_114",
+    "title": "Áo blazer sọc đen",
+    "category": "Outerwear",
+    "images": [
+      "/images/catalog/fashion-114.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0084.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.03,
+        0.09,
+        0.54,
+        0.64
+      ]
+    }
+  },
+  {
+    "_id": "fashion_115",
+    "title": "Quần da đen",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-115.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0084.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.57,
+        0.07,
+        0.95,
+        0.73
+      ]
+    }
+  },
+  {
+    "_id": "fashion_116",
+    "title": "Quần jeans xanh olive",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-116.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0085.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.56,
+        0.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_117",
+    "title": "Áo crop hai dây kem",
+    "category": "Tops",
+    "images": [
+      "/images/catalog/fashion-117.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0086.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.5,
+        0.44
+      ]
+    }
+  },
+  {
+    "_id": "fashion_118",
+    "title": "Quần da nâu",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-118.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0086.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.53,
+        0.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_119",
+    "title": "Chân váy maxi xếp ly nâu",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-119.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0088.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.56,
+        0.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_120",
+    "title": "Đầm cam nhạt lệch vai",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-120.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0089.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.62,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_121",
+    "title": "Áo blouse đen nơ lớn",
+    "category": "Tops",
+    "images": [
+      "/images/catalog/fashion-121.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0091.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.57,
+        0.64
+      ]
+    }
+  },
+  {
+    "_id": "fashion_122",
+    "title": "Quần caro đỏ",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-122.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0091.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.62,
+        0.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_123",
+    "title": "Đầm polo xanh nhạt",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-123.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0092.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.55,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_124",
+    "title": "Áo crop hoa vàng",
+    "category": "Tops",
+    "images": [
+      "/images/catalog/fashion-124.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0093.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.55,
+        0.47
+      ]
+    }
+  },
+  {
+    "_id": "fashion_125",
+    "title": "Chân váy vàng xếp tầng",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-125.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0093.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.54,
+        0.55,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_126",
+    "title": "Áo crop đỏ tay phồng",
+    "category": "Tops",
+    "images": [
+      "/images/catalog/fashion-126.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0094.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.6,
+        0.41
+      ]
+    }
+  },
+  {
+    "_id": "fashion_127",
+    "title": "Chân váy ánh kim bạc",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-127.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0094.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.43,
+        0.63,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_128",
+    "title": "Áo blazer caro pastel",
+    "category": "Outerwear",
+    "images": [
+      "/images/catalog/fashion-128.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0095.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.0,
+        0.59,
+        0.56
+      ]
+    }
+  },
+  {
+    "_id": "fashion_129",
+    "title": "Chân váy xanh xếp ly",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-129.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0095.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.57,
+        0.55,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_130",
+    "title": "Áo blazer hồng đậm",
+    "category": "Outerwear",
+    "images": [
+      "/images/catalog/fashion-130.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0096.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.01,
+        0.09,
+        0.52,
+        0.72
+      ]
+    }
+  },
+  {
+    "_id": "fashion_131",
+    "title": "Chân váy hồng đậm",
+    "category": "Bottoms",
+    "images": [
+      "/images/catalog/fashion-131.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0096.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.62,
+        0.41,
+        0.97,
+        0.8
+      ]
+    }
+  },
+  {
+    "_id": "fashion_132",
+    "title": "Boots đen dây xanh",
+    "category": "Footwear",
+    "images": [
+      "/images/catalog/fashion-132.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0001.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.51,
+        0.5,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_133",
+    "title": "Sandal đế cao hoa đỏ",
+    "category": "Footwear",
+    "images": [
+      "/images/catalog/fashion-133.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0003.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.6,
+        0.63,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_134",
+    "title": "Giày cao gót đen",
+    "category": "Footwear",
+    "images": [
+      "/images/catalog/fashion-134.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0004.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.14,
+        0.61,
+        0.51,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_135",
+    "title": "Giày cao gót đen đính đá",
+    "category": "Footwear",
+    "images": [
+      "/images/catalog/fashion-135.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0005.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.61,
+        0.52,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_136",
+    "title": "Boots xanh ánh kim",
+    "category": "Footwear",
+    "images": [
+      "/images/catalog/fashion-136.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0006.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.07,
+        0.59,
+        0.52,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_137",
+    "title": "Giày cao gót tím",
+    "category": "Footwear",
+    "images": [
+      "/images/catalog/fashion-137.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0007.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.67,
+        0.47,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_138",
+    "title": "Boots satin tím",
+    "category": "Footwear",
+    "images": [
+      "/images/catalog/fashion-138.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0008.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.61,
+        0.66,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_139",
+    "title": "Giày cao gót hồng",
+    "category": "Footwear",
+    "images": [
+      "/images/catalog/fashion-139.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0009.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.56,
+        0.66,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_140",
+    "title": "Sandal cao gót kem",
+    "category": "Footwear",
+    "images": [
+      "/images/catalog/fashion-140.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0010.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.65,
+        0.66,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_141",
+    "title": "Sandal trắng",
+    "category": "Footwear",
+    "images": [
+      "/images/catalog/fashion-141.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0011.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.63,
+        0.65,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_142",
+    "title": "Sandal cao gót ánh kim",
+    "category": "Footwear",
+    "images": [
+      "/images/catalog/fashion-142.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0012.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.64,
+        0.67,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_143",
+    "title": "Giày cao gót xanh satin",
+    "category": "Footwear",
+    "images": [
+      "/images/catalog/fashion-143.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0013.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.6,
+        0.67,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_144",
+    "title": "Boots đen cổ cao",
+    "category": "Footwear",
+    "images": [
+      "/images/catalog/fashion-144.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0014.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.63,
+        0.57,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_145",
+    "title": "Sandal họa tiết nâu",
+    "category": "Footwear",
+    "images": [
+      "/images/catalog/fashion-145.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0015.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.67,
+        0.48,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_146",
+    "title": "Giày cao gót đỏ satin",
+    "category": "Footwear",
+    "images": [
+      "/images/catalog/fashion-146.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0016.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.58,
+        0.66,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_147",
+    "title": "Boots cao gót hồng",
+    "category": "Footwear",
+    "images": [
+      "/images/catalog/fashion-147.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0017.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.58,
+        0.69,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_148",
+    "title": "Boots đen cổ thấp",
+    "category": "Footwear",
+    "images": [
+      "/images/catalog/fashion-148.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0018.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.62,
+        0.58,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_149",
+    "title": "Sandal cao gót kem",
+    "category": "Footwear",
+    "images": [
+      "/images/catalog/fashion-149.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0019.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.55,
+        0.66,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_150",
+    "title": "Boots lông hồng",
+    "category": "Footwear",
+    "images": [
+      "/images/catalog/fashion-150.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0020.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.07,
+        0.68,
+        0.49,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_151",
+    "title": "Sandal cao gót tím",
+    "category": "Footwear",
+    "images": [
+      "/images/catalog/fashion-151.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0021.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.67,
+        0.49,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_152",
+    "title": "Sneaker trắng cổ cao",
+    "category": "Footwear",
+    "images": [
+      "/images/catalog/fashion-152.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0022.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.0,
+        0.65,
+        0.38,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_153",
+    "title": "Giày cao gót đen đính hoa",
+    "category": "Footwear",
+    "images": [
+      "/images/catalog/fashion-153.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0023.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.64,
+        0.71,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_154",
+    "title": "Giày cao gót hoa hồng",
+    "category": "Footwear",
+    "images": [
+      "/images/catalog/fashion-154.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0024.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.67,
+        0.69,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_155",
+    "title": "Sandal đen đế cao",
+    "category": "Footwear",
+    "images": [
+      "/images/catalog/fashion-155.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0025.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.58,
+        0.63,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_156",
+    "title": "Boots cao gót họa tiết vàng",
+    "category": "Footwear",
+    "images": [
+      "/images/catalog/fashion-156.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0026.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.59,
+        0.63,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_157",
+    "title": "Giày cao gót đỏ mũi nhọn",
+    "category": "Footwear",
+    "images": [
+      "/images/catalog/fashion-157.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0027.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.64,
+        0.68,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_158",
+    "title": "Giày cao gót tím bóng",
+    "category": "Footwear",
+    "images": [
+      "/images/catalog/fashion-158.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0028.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.61,
+        0.64,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_159",
+    "title": "Sandal cao gót tím trong",
+    "category": "Footwear",
+    "images": [
+      "/images/catalog/fashion-159.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0029.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.62,
+        0.67,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_160",
+    "title": "Giày cao gót hồng nhạt",
+    "category": "Footwear",
+    "images": [
+      "/images/catalog/fashion-160.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0030.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.61,
+        0.6,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_161",
+    "title": "Boots tím họa tiết",
+    "category": "Footwear",
+    "images": [
+      "/images/catalog/fashion-161.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0031.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.61,
+        0.64,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "_id": "fashion_162",
+    "title": "Túi đen quai ngắn",
+    "category": "Accessories",
+    "images": [
+      "/images/catalog/fashion-162.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0001.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.5,
+        0.22,
+        1.0,
+        0.65
+      ]
+    }
+  },
+  {
+    "_id": "fashion_163",
+    "title": "Túi ánh kim bạc",
+    "category": "Accessories",
+    "images": [
+      "/images/catalog/fashion-163.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0007.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.5,
+        0.0,
+        1.0,
+        0.43
+      ]
+    }
+  },
+  {
+    "_id": "fashion_164",
+    "title": "Túi xách họa tiết nhiều màu",
+    "category": "Accessories",
+    "images": [
+      "/images/catalog/fashion-164.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0008.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.62,
+        0.38,
+        1.0,
+        0.65
+      ]
+    }
+  },
+  {
+    "_id": "fashion_165",
+    "title": "Túi hồng chần bông",
+    "category": "Accessories",
+    "images": [
+      "/images/catalog/fashion-165.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0009.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.59,
+        0.37,
+        1.0,
+        0.67
+      ]
+    }
+  },
+  {
+    "_id": "fashion_166",
+    "title": "Túi kem quai cong",
+    "category": "Accessories",
+    "images": [
+      "/images/catalog/fashion-166.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0010.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.61,
+        0.35,
+        1.0,
+        0.66
+      ]
+    }
+  },
+  {
+    "_id": "fashion_167",
+    "title": "Túi cói vàng",
+    "category": "Accessories",
+    "images": [
+      "/images/catalog/fashion-167.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0011.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.57,
+        0.39,
+        1.0,
+        0.65
+      ]
+    }
+  },
+  {
+    "_id": "fashion_168",
+    "title": "Túi hoa hồng vàng",
+    "category": "Accessories",
+    "images": [
+      "/images/catalog/fashion-168.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0012.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.6,
+        0.35,
+        1.0,
+        0.63
+      ]
+    }
+  },
+  {
+    "_id": "fashion_169",
+    "title": "Túi đen đính dây xích",
+    "category": "Accessories",
+    "images": [
+      "/images/catalog/fashion-169.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0013.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.55,
+        0.3,
+        1.0,
+        0.62
+      ]
+    }
+  },
+  {
+    "_id": "fashion_170",
+    "title": "Túi đen dáng hộp",
+    "category": "Accessories",
+    "images": [
+      "/images/catalog/fashion-170.webp"
+    ],
+    "source": {
+      "processing": "Reviewed region; largest connected product extracted with original colours",
+      "platform": "Hugging Face / Fashion-1K",
+      "url": "https://huggingface.co/datasets/Humanbased-AI/Fashion-1K/blob/main/images/0014.jpg",
+      "license": "OpenRAIL (dataset card)",
+      "crop": [
+        0.59,
+        0.28,
+        1.0,
+        0.55
+      ]
+    }
+  }
+]

@@ -1,5 +1,6 @@
 import React from 'react';
 import { AppContextProvider, useApp } from './context/AppContext';
+import CartToast from './components/CartToast';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Homepage from './pages/Homepage';
@@ -42,8 +43,9 @@ function MainLayout() {
   return (
     <div className="flex flex-col min-h-screen bg-transparent text-[#17221e]">
       {currentView !== 'auth' && <Navbar />}
+      <CartToast/>
       <main className={`flex-grow ${['detail', 'chat', 'shop', 'ai-stylist', 'checkout', 'seller', 'admin'].includes(currentView) ? 'workspace-screen' : ''}`}>{renderView()}</main>
-      {currentView !== 'auth' && <Footer />}
+      {currentView === 'ai-stylist' ? <details className="stylist-site-footer"><summary><span>© 2026 SiFit</span><span>SiFit <span className="material-symbols-outlined" aria-hidden="true">expand_more</span></span></summary><Footer/></details> : currentView !== 'auth' && <Footer />}
     </div>
   );
 }

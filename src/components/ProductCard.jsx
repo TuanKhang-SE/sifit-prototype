@@ -6,7 +6,7 @@ export default function ProductCard({ product }) {
   const { setSelectedProduct, setCurrentView, addToCart, user, openAuth } = useApp();
   const { t, locale } = useLanguage();
   const open = () => { setSelectedProduct(product); setCurrentView('detail'); };
-  return <article className="product-card">
+  return <article className={`product-card ${product.source ? 'product-single-item' : ''}`}>
     <div className="product-image-wrap"><button className="product-image-button" onClick={open} aria-label={`${t('details')}: ${product.title}`}><img src={product.images?.[0]} alt={product.title} loading="lazy" /></button>
       <span className="product-condition">{t('condition')} {product.condition}%</span>
       {user?.role !== 'seller' && <button className="product-quick-add" aria-label={`${t('addToCart')}: ${product.title}`} onClick={() => user ? addToCart(product) : openAuth()}><Icon name="add_shopping_cart" /></button>}

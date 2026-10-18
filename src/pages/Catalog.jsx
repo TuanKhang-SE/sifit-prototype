@@ -4,13 +4,15 @@ import { categories, matchesCategory } from '../data/categories';
 import ProductCard from '../components/ProductCard';
 import Icon from '../components/Icon';
 
-const BRANDS = ["Levi's", 'Nike', 'Zara', 'Stussy', 'Adidas', 'Uniqlo', 'Marni', 'Mango', 'COS', 'Massimo Dutti', 'Charles & Keith'];
+const DEFAULT_BRANDS = ["Levi's", 'Nike', 'Zara', 'Stussy', 'Adidas', 'Uniqlo', 'Marni', 'Mango', 'COS', 'Massimo Dutti', 'Charles & Keith'];
 const SIZES = ['XS', 'S', 'M', 'L', 'XL', 'XXL', 'Freesize', '38', '39', '40', '41', '42'];
 const normalize = value => (value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd').toLowerCase();
 
 export default function Catalog() {
   const { products, searchQuery, setSearchQuery, filters, setFilters, sortOption, setSortOption, activePackage, user, browse } = useApp();
   const { t } = useLanguage();
+  const selectedGender = filters.gender || (filters.women ? 'women' : 'all');
+  const BRANDS = [...new Set([...DEFAULT_BRANDS, ...products.map(p => p.brand).filter(Boolean)])];
   const toggle = (type, value) => setFilters(prev => ({ ...prev, [type]: prev[type].includes(value) ? prev[type].filter(x => x !== value) : [...prev[type], value] }));
   const filtered = products.filter(p => {
     if (p.status !== 'active' && p.status !== 'reported') return false;
@@ -19,7 +21,7 @@ export default function Catalog() {
     if (filters.brands.length && !filters.brands.some(brand => brand.toLowerCase() === p.brand?.toLowerCase())) return false;
     if (filters.sizes.length && !filters.sizes.includes(p.size)) return false;
     if (filters.material && !normalize(p.material).includes(normalize(filters.material))) return false;
-    if (filters.women && !['women', 'unisex'].includes(p.gender)) return false;
+    if (selectedGender !== 'all' && (selectedGender === 'unisex' ? p.gender !== 'unisex' : ![selectedGender, 'unisex'].includes(p.gender))) return false;
     if (filters.department === 'kids' && p.gender !== 'kids') return false;
     if (filters.department === 'juniors' && p.department !== 'juniors') return false;
     if (filters.department === 'maternity' && !/maternity|bau/.test(normalize(p.title))) return false;
@@ -37,10 +39,11 @@ export default function Catalog() {
   const activeFilters = [...filters.categories.map(value => [t(value), () => toggle('categories', value)]), ...filters.brands.map(value => [value, () => toggle('brands', value)]),
     ...(filters.material ? [[t(filters.material), () => setFilters(prev => ({ ...prev, material: '' }))]] : []),
     ...(searchQuery ? [[searchQuery, () => setSearchQuery('')]] : []),
-    ...(filters.women ? [[t('women'), () => setFilters(prev => ({ ...prev, women: false }))]] : []),
+    ...(selectedGender !== 'all' ? [[t(selectedGender), () => setFilters(prev => ({ ...prev, gender: 'all', women: false }))]] : []),
     ...(filters.department ? [[t(filters.department), () => setFilters(prev => ({ ...prev, department: '' }))]] : [])];
   return <section className="catalog-page wide-container">
     <p className="eyebrow green">SIFIT / THE PRE-LOVED EDIT</p><h1>{t('catalogTitle')}</h1>
+    <div className="catalog-gender-tabs" role="tablist" aria-label={t('gender')}>{['all', 'women', 'men', 'unisex'].map(gender => <button key={gender} role="tab" aria-selected={selectedGender === gender} onClick={() => setFilters(prev => ({ ...prev, gender, women: false }))}>{t(gender === 'all' ? 'allGenders' : gender)}</button>)}</div>
     <div className="catalog-toolbar"><p>{filtered.length} {t('results')}</p><select aria-label={t('newest')} value={sortOption} onChange={e => setSortOption(e.target.value)}><option value="Hàng Mới Về">{t('newest')}</option><option value="Giá: Thấp → Cao">{t('priceLow')}</option><option value="Giá: Cao → Thấp">{t('priceHigh')}</option></select></div>
     <div className="catalog-layout"><aside className="catalog-filters">
       <div className="filter-heading"><h2>{t('categories')}</h2><button onClick={() => browse()}>{t('clear')}</button></div>

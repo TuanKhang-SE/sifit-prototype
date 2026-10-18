@@ -4,17 +4,33 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "postinstall": "node scripts/setup-vision.mjs",
+    "setup:vision": "node scripts/setup-vision.mjs",
     "dev": "vite",
+    "dev:api": "node server/index.mjs",
+    "dev:all": "node scripts/dev.mjs",
+    "test:stylist": "node --test server/quota.test.mjs server/integration.test.mjs server/reset.test.mjs server/recommendations.test.mjs server/photoModes.test.mjs server/history.test.mjs server/workflow.test.mjs server/privacy.test.mjs server/geminiStylist.test.mjs server/outfit.test.mjs",
+    "test:portrait": "python server/portrait_test.py",
+    "test:stylist-ui": "node scripts/verify-stylist.mjs",
     "build": "vite build",
     "lint": "oxlint",
     "preview": "vite preview",
     "test:ui": "node scripts/verify-redesign.mjs",
-    "test:selling": "node scripts/verify-selling.mjs"
+    "test:selling": "node scripts/verify-selling.mjs",
+    "test:stylist-update": "node scripts/verify-stylist-update.mjs",
+    "test:stylist-personalization": "node scripts/verify-stylist-personalization.mjs",
+    "test:outfit-ui": "node scripts/verify-outfit-ui.mjs"
   },
   "dependencies": {
+    "@huggingface/transformers": "^4.3.1",
+    "@mediapipe/tasks-vision": "^1.1.0",
+    "dotenv": "^18.0.7",
+    "express": "^5.3.0",
+    "multer": "^2.4.0",
     "qrcode-generator": "^2.0.4",
     "react": "^19.2.7",
-    "react-dom": "^19.2.7"
+    "react-dom": "^19.2.7",
+    "sharp": "^0.35.5"
   },
   "devDependencies": {
     "@playwright/test": "^1.64.0",

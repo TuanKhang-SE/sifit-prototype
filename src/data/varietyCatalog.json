@@ -1,0 +1,2402 @@
+[
+  {
+    "_id": "variety_26122",
+    "title": "Áo sơ mi nam · John Miller Men Striped Blue Shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-26122.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/25430fb9204b8cf755808a878fb89385_images.jpg",
+      "originalTitle": "John Miller Men Striped Blue Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "93b22dd7772c86338c34643526f0fe9b8c44dca67233b07f978a6c3323fe6eec"
+  },
+  {
+    "_id": "variety_15329",
+    "title": "Áo len nam · Nike Men Solid White Sweaters",
+    "category": "Tops",
+    "gender": "men",
+    "color": "White",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-15329.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/4467e21ff2fc8878ee0a930813edd908_images.jpg",
+      "originalTitle": "Nike Men Solid White Sweaters",
+      "articleType": "Sweaters",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "5b2a83ccc8d86c74d08bfeecfd169ea4005e6059a9f97bbf1ecb60efaf0dea0f"
+  },
+  {
+    "_id": "variety_14986",
+    "title": "Áo sweatshirt nam · ADIDAS Men Printed Navy Blue Sweatshirts",
+    "category": "Outerwear",
+    "gender": "men",
+    "color": "Navy Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-14986.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/0e80b699b5f85ae46df6ec57a6fbc5c7_images.jpg",
+      "originalTitle": "ADIDAS Men Printed Navy Blue Sweatshirts",
+      "articleType": "Sweatshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "23fb1ee2a704e2899db4acf4387e50ebd694f94b9eaa30d7b551e6c4aa4cc86e"
+  },
+  {
+    "_id": "variety_22313",
+    "title": "Áo khoác nam · Wildcraft Men Black Fleece Jacket",
+    "category": "Outerwear",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-22313.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/Wildcraft-Women-Beige-Top_4043af7528a041cc01801ed259d52939_images.jpg",
+      "originalTitle": "Wildcraft Men Black Fleece Jacket",
+      "articleType": "Jackets",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "716086af9dfe410a3d0161a52850dd1752c853cecbeb62397814ed75902a7db8"
+  },
+  {
+    "_id": "variety_12044",
+    "title": "Quần jeans nam · Spykar Men Washed Blue Jeans",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-12044.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/8ad79313cba9eee717c884784632335f_images.jpg",
+      "originalTitle": "Spykar Men Washed Blue Jeans",
+      "articleType": "Jeans",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "0d2b651c8a99010d046c7e0a06b42892f9e393aae3b5f2011d7b25987264a186"
+  },
+  {
+    "_id": "variety_40405",
+    "title": "Váy liền nữ · Tonga Women Black Dress",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-40405.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/f4fe46c0483b9a013cef59abaf23a2af_images.jpg",
+      "originalTitle": "Tonga Women Black Dress",
+      "articleType": "Dresses",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "a5964abd8ce246badbb88c769f630f80361594d8f94cfb0d079400a1e19e8514"
+  },
+  {
+    "_id": "variety_57089",
+    "title": "Chân váy nữ · Elle Women Blue Skirt",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Navy Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-57089.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/Elle-Women-Blue-Skirt_b3e160afbe0b121082da35bf5cf83851_images.jpg",
+      "originalTitle": "Elle Women Blue Skirt",
+      "articleType": "Skirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "2c7afe22e25b4f44f1e1b5b1d4309b0c99b668acac6f71622d2d3daefe07ab0f"
+  },
+  {
+    "_id": "variety_51432",
+    "title": "Áo sơ mi nữ · Myntra Women White Check Shirt",
+    "category": "Tops",
+    "gender": "women",
+    "color": "White",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-51432.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/858fd1732a1b44396b663c3899fd57c5_images.jpg",
+      "originalTitle": "Myntra Women White Check Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "4d8e89a9dab711ff4e95aa62cc8e97b8bbb460188eb5d16bd9c0fe7e8daf89e0"
+  },
+  {
+    "_id": "variety_6880",
+    "title": "Áo khoác nữ · Forever New Women Long Black Jacket",
+    "category": "Outerwear",
+    "gender": "women",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-6880.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/dc32ed33c6d783860dc7b5e9f992c812_images.jpg",
+      "originalTitle": "Forever New Women Long Black Jacket",
+      "articleType": "Jackets",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "cd02eeb65932939cbd8d0bcd20a2e8bc3a48b8da5bdeb80bc7018dc1bc76175c"
+  },
+  {
+    "_id": "variety_20227",
+    "title": "Áo len nữ · Wrangler Women Solid Green Sweater",
+    "category": "Tops",
+    "gender": "women",
+    "color": "Green",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-20227.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/60a6e48d00b1f507b1449f688d915744_images.jpg",
+      "originalTitle": "Wrangler Women Solid Green Sweater",
+      "articleType": "Sweaters",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "2f7ff61e95cfb9474af8b00f8c9a3f97c883873e7fabbab6ad8144e569ecd64b"
+  },
+  {
+    "_id": "variety_17631",
+    "title": "Túi xách nữ · Puma Women Fitness Lux Grey Handbag",
+    "category": "Accessories",
+    "gender": "women",
+    "color": "Grey",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-17631.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/4f7a09f0026d3529a034a7e1c5a4298c_images.jpg",
+      "originalTitle": "Puma Women Fitness Lux Grey Handbag",
+      "articleType": "Handbags",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "a3ca3714061489bfd321665f791ce16d3a21997973fbf9d5d9fc6dce12ddcd27"
+  },
+  {
+    "_id": "variety_14674",
+    "title": "Áo sơ mi nam · Basics Men Yellow Slim Fit Shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Yellow",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-14674.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/cbb7350de3db223ce5edb826820ee77a_images.jpg",
+      "originalTitle": "Basics Men Yellow Slim Fit Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "55eb91eee34cbddfa0a59fd5ac5e96a174200a7ff10946583f3ceb9306cecd00"
+  },
+  {
+    "_id": "variety_20220",
+    "title": "Áo len nam · Wrangler Men Rib Navy Sweater",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Navy Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-20220.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/4566097aa067c307afa84316add829db_images.jpg",
+      "originalTitle": "Wrangler Men Rib Navy Sweater",
+      "articleType": "Sweaters",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "4ffd3fc3bdedaf5878eeb7f8d1dcce4297d57673d8753828141240d7bcf34355"
+  },
+  {
+    "_id": "variety_23119",
+    "title": "Áo sweatshirt nam · Quechua Men Warm Fleece Grey Sweatshirt",
+    "category": "Outerwear",
+    "gender": "men",
+    "color": "Grey",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-23119.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/6c92ee02f8ed5e4fe38319e77041e2f3_images.jpg",
+      "originalTitle": "Quechua Men Warm Fleece Grey Sweatshirt",
+      "articleType": "Sweatshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "14e32cc12eeba4b0a751827b7ae299e6fb7ad40aac5616ca66ecb36b785010a4"
+  },
+  {
+    "_id": "variety_9981",
+    "title": "Áo khoác nam · Nike Men As Sideline J Blue Jackets",
+    "category": "Outerwear",
+    "gender": "men",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-9981.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/9cfd06ea61fe3e1bdfd7d9102bbd912c_images.jpg",
+      "originalTitle": "Nike Men As Sideline J Blue Jackets",
+      "articleType": "Jackets",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "9c930cf542ad31924b1f5012101519d034b4c9229733f2bf228ac6adf0f8839f"
+  },
+  {
+    "_id": "variety_11289",
+    "title": "Quần jeans nam · Wrangler Men Blue Texas Jeans",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-11289.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/e4e6e6ab449f556a3878d6fa1eef1f86_images.jpg",
+      "originalTitle": "Wrangler Men Blue Texas Jeans",
+      "articleType": "Jeans",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "d855568e573853d3c3afc368e5ecb863649a0292a2cd8849e28d24c204245702"
+  },
+  {
+    "_id": "variety_37936",
+    "title": "Váy liền nữ · Mineral Women Orange Dress",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Orange",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-37936.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/22b1cca7f5e0ba2869680cb201b8ca1a_images.jpg",
+      "originalTitle": "Mineral Women Orange Dress",
+      "articleType": "Dresses",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "5815d7f6691a944deeb054758fb1861ef07877b1ef371374448692b7c6f0d654"
+  },
+  {
+    "_id": "variety_10654",
+    "title": "Chân váy nữ · Doodle Girl Denim skirt with belt Blue Skirts",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-10654.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/f486a91d2b018104e0e2e6ccc010bc9c_images.jpg",
+      "originalTitle": "Doodle Girl Denim skirt with belt Blue Skirts",
+      "articleType": "Skirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "5a5e36c1bf004b8534eaed2a94f7df2dc02b7af9c204542dff2f8871d30ff5ef"
+  },
+  {
+    "_id": "variety_32397",
+    "title": "Áo sơ mi nữ · Arrow Woman Pink Stiped Shirt",
+    "category": "Tops",
+    "gender": "women",
+    "color": "Pink",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-32397.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/7389317ad313edcb88808e5f1c3ebeed_images.jpg",
+      "originalTitle": "Arrow Woman Pink Stiped Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "c33021d33f6f20708cede18f3298fca6d3fafb28b6198e1a1139b99d7ab5f72c"
+  },
+  {
+    "_id": "variety_8478",
+    "title": "Áo khoác nữ · Forever New Women Vintage Blue Jackets",
+    "category": "Outerwear",
+    "gender": "women",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-8478.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/d02da8fda6a0495027b99a35c99c29f6_images.jpg",
+      "originalTitle": "Forever New Women Vintage Blue Jackets",
+      "articleType": "Jackets",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "99fd7fc19003cd618701b6f6ed1eb8249430b6f4cd6136022c3961b6b916cd89"
+  },
+  {
+    "_id": "variety_21162",
+    "title": "Áo len nữ · s.Oliver Women Solid Pink Sweater",
+    "category": "Tops",
+    "gender": "women",
+    "color": "Pink",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-21162.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/cd11c77580632d64c857466c22c81b47_images.jpg",
+      "originalTitle": "s.Oliver Women Solid Pink Sweater",
+      "articleType": "Sweaters",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "1505996d082cdb5f9aa13dae87aba78b0f1ef476ddc3fcee8ff69e7cf2e2d850"
+  },
+  {
+    "_id": "variety_10230",
+    "title": "Túi xách nữ · Murcia Women Claudia Brown Handbags",
+    "category": "Accessories",
+    "gender": "women",
+    "color": "Brown",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-10230.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/4ad3e51e04266a67befd0ed7c6ca479e_images.jpg",
+      "originalTitle": "Murcia Women Claudia Brown Handbags",
+      "articleType": "Handbags",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "fa50a57276fd73caee31af730a2647761803243070bca78ee62a9b58c9832c97"
+  },
+  {
+    "_id": "variety_14704",
+    "title": "Áo sơ mi nam · Genesis Men Stripes Black Shirts",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-14704.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/629b5f851633dd1d1f057d2be8aa4657_images.jpg",
+      "originalTitle": "Genesis Men Stripes Black Shirts",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "26e26ce1677e0c55b1b78bc4fa5854a884613d6ea5d776579118254cc7d8e3df"
+  },
+  {
+    "_id": "variety_13714",
+    "title": "Áo len nam · Proline Black Sleeveless Sweater",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-13714.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/884607877bec63f2d96c5a2f8ba938a1_images.jpg",
+      "originalTitle": "Proline Black Sleeveless Sweater",
+      "articleType": "Sweaters",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "b2c34a759d7993224e589b2f9d35bf66f669cd9172b35d48775802ddc07ecb05"
+  },
+  {
+    "_id": "variety_16443",
+    "title": "Áo sweatshirt nam · Levis Men Printed Black Sweatshirts",
+    "category": "Outerwear",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-16443.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/c96f74fc293c3082d1b81225e064c8df_images.jpg",
+      "originalTitle": "Levis Men Printed Black Sweatshirts",
+      "articleType": "Sweatshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "72d5cc3fefcb5fd7e9e9235060aa378e1281ee0f890dadd08496e2b3bddaedc2"
+  },
+  {
+    "_id": "variety_1579",
+    "title": "Áo khoác nam · Domyos Men Grey Second Skin Jacket",
+    "category": "Outerwear",
+    "gender": "men",
+    "color": "Grey",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-1579.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/367a460e21e0612fd5975399bcd8ae47_images.jpg",
+      "originalTitle": "Domyos Men Grey Second Skin Jacket",
+      "articleType": "Jackets",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "8eae32b936b3fe3ac919a523ac799d6c98fd605ff0baf9fc06d14087e6d6f570"
+  },
+  {
+    "_id": "variety_56849",
+    "title": "Quần jeans nam · John Players Men Navy Regular Fit Jeans",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Navy Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-56849.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/John-Players-Men-Navy-Regular-Fit-Jeans_1ed5b6055e71ade5f7fd9f28d7a2b3df_images.jpg",
+      "originalTitle": "John Players Men Navy Regular Fit Jeans",
+      "articleType": "Jeans",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "f68c4c4b6bd5274aa3eb7f6f1970812905518558a12b493dd77d7c917f22624c"
+  },
+  {
+    "_id": "variety_59975",
+    "title": "Váy liền nữ · Avirate Black & Purple Dress",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-59975.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/Avirate-Black---Purple-Dress_f957a7507df7b5ca858ca99770717c93_images.jpg",
+      "originalTitle": "Avirate Black & Purple Dress",
+      "articleType": "Dresses",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "78d98042046b2e5816252fcffd74f635533ffed9bd92b70ff06d9ec4fdd57043"
+  },
+  {
+    "_id": "variety_8499",
+    "title": "Chân váy nữ · Forever New Women Blossom  Pink Printed Skirt",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Pink",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-8499.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/7f24b849f4b3af3dc3f055f501325e15_images.jpg",
+      "originalTitle": "Forever New Women Blossom  Pink Printed Skirt",
+      "articleType": "Skirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "73ccd8c230364c6b817d8522d50ee6d774779b40b64a2aae528cfde1f7f56d0f"
+  },
+  {
+    "_id": "variety_34496",
+    "title": "Áo sơ mi nữ · Van Heusen Woman Blue Shirt",
+    "category": "Tops",
+    "gender": "women",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-34496.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/445a69cd40bdb5466854e23c1834ea73_images.jpg",
+      "originalTitle": "Van Heusen Woman Blue Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "9b9099e41cfc5257ede9f27832425e36a3c90f8195f1be73f8290e8ab0e29638"
+  },
+  {
+    "_id": "variety_19330",
+    "title": "Áo khoác nữ · United Colors of Benetton Women Solid Black Jacket",
+    "category": "Outerwear",
+    "gender": "women",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-19330.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/b118bfa11ac3a97539bae0bc8fe15b8b_images.jpg",
+      "originalTitle": "United Colors of Benetton Women Solid Black Jacket",
+      "articleType": "Jackets",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "20d6a15fa2a2eb32ea6d3dc05d8284e5b2864177b22e403c119f619e0c76760b"
+  },
+  {
+    "_id": "variety_21466",
+    "title": "Áo len nữ · Roxy Women Blue Striped Sweater",
+    "category": "Tops",
+    "gender": "women",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-21466.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/988242868f2ba6513f38c2e99024cc26_images.jpg",
+      "originalTitle": "Roxy Women Blue Striped Sweater",
+      "articleType": "Sweaters",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "84d2d702e22ce292b0e12ef6edcfcf54096c910871eae9b10135198792039046"
+  },
+  {
+    "_id": "variety_21752",
+    "title": "Túi xách nữ · Kiara Women Glossy Black Handbag",
+    "category": "Accessories",
+    "gender": "women",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-21752.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/8ef0f056159e17db6375b370eed87bac_images.jpg",
+      "originalTitle": "Kiara Women Glossy Black Handbag",
+      "articleType": "Handbags",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "ab9c49a6cb6e2eaa3a9258186ba1d2a1919b0bc8ebb68813d86bad3b19bc000b"
+  },
+  {
+    "_id": "variety_2135",
+    "title": "Áo sơ mi nam · Basics Men Red & Blue Slim Fit Shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Red",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-2135.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/601de339dc161305e44766c44cb8daf9_images.jpg",
+      "originalTitle": "Basics Men Red & Blue Slim Fit Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "24481d4ad78dd15e3404f8fe8b2479d1136888f3cb9a2209d6e4737534a8f1d1"
+  },
+  {
+    "_id": "variety_17195",
+    "title": "Áo len nam · U.S. Polo Assn. Men Stripes Green Sweater",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Green",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-17195.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/0e9b244511829c426d5e6708800f2897_images.jpg",
+      "originalTitle": "U.S. Polo Assn. Men Stripes Green Sweater",
+      "articleType": "Sweaters",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "0877a0c60a580caad811f5938fc27df13ee7809bff574625dbcd332eb77b5eba"
+  },
+  {
+    "_id": "variety_16233",
+    "title": "Áo sweatshirt nam · Puma Men Ess Crew Grey Sweatshirt",
+    "category": "Outerwear",
+    "gender": "men",
+    "color": "Grey",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-16233.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/1881c89e56bac5ddaff89853aebda93f_images.jpg",
+      "originalTitle": "Puma Men Ess Crew Grey Sweatshirt",
+      "articleType": "Sweatshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "833c73a97ef4d466c0721475840f81a094aa0787e00a58166d7c5856f4d7634b"
+  },
+  {
+    "_id": "variety_17154",
+    "title": "Áo khoác nam · U.S. Polo Assn. Men Solid Navy Blue Jacket",
+    "category": "Outerwear",
+    "gender": "men",
+    "color": "Navy Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-17154.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/c19a9896823693ccb6ee59a4f7a98c5e_images.jpg",
+      "originalTitle": "U.S. Polo Assn. Men Solid Navy Blue Jacket",
+      "articleType": "Jackets",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "c8a8cf11eb1c2890ce28d3a50a65e88f582249f03bbc7c048bf76bfe85180d90"
+  },
+  {
+    "_id": "variety_15671",
+    "title": "Quần jeans nam · Highlander Men High Original Blue Jeans",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-15671.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/5db2355db50e8758de9596d8e3e6b27a_images.jpg",
+      "originalTitle": "Highlander Men High Original Blue Jeans",
+      "articleType": "Jeans",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "6cc6b235974090983bb931a8f74cb7709980f178c5e20b30903d322e9a3b862f"
+  },
+  {
+    "_id": "variety_18755",
+    "title": "Váy liền nữ · Arrow Woman Kaya Blue Dress",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-18755.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/09d5eb1188132eda52860fb4c93d9635_images.jpg",
+      "originalTitle": "Arrow Woman Kaya Blue Dress",
+      "articleType": "Dresses",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "e70461519dfb760b685f72cf530322e890e32076cdfd74eaa12332cca8da2834"
+  },
+  {
+    "_id": "variety_6864",
+    "title": "Chân váy nữ · Forever New Women's Printed White Skirt",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "White",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-6864.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/c9d7b48119709518f6fba9bdee21c37c_images.jpg",
+      "originalTitle": "Forever New Women's Printed White Skirt",
+      "articleType": "Skirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "c6523be7ef18523c2591adf2db54d6e90719292eeeb35df6a5cda5b066144798"
+  },
+  {
+    "_id": "variety_27856",
+    "title": "Áo sơ mi nữ · Scullers For Her Check Red Shirt",
+    "category": "Tops",
+    "gender": "women",
+    "color": "Red",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-27856.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/bb86e4f20bb2841ef5affdd29e858bb9_images.jpg",
+      "originalTitle": "Scullers For Her Check Red Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "893610289d2c0e8fc3d6d940e009ed77e7dbf66510c2a4d3c60c111072fd0608"
+  },
+  {
+    "_id": "variety_1610",
+    "title": "Áo khoác nữ · Reebok Navy Jacket",
+    "category": "Outerwear",
+    "gender": "women",
+    "color": "Navy Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-1610.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/c5d7ccc049bba28ee67736add1bdf55c_images.jpg",
+      "originalTitle": "Reebok Navy Jacket",
+      "articleType": "Jackets",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "fbbac58fde0ff6242383e59e0e0682e1fbcc21227df972f23b9c0a107a6b10d4"
+  },
+  {
+    "_id": "variety_20229",
+    "title": "Áo len nữ · Wrangler Women Cable Blue Sweater",
+    "category": "Tops",
+    "gender": "women",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-20229.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/cd983ab79b619015d071533b09d955a5_images.jpg",
+      "originalTitle": "Wrangler Women Cable Blue Sweater",
+      "articleType": "Sweaters",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "c859636be2244e5f8590b59d1f37ff809faef2fa92eb04a99cbd9ad04731b0d0"
+  },
+  {
+    "_id": "variety_14801",
+    "title": "Túi xách nữ · United Colors of Benetton Women Solid Black Handbags",
+    "category": "Accessories",
+    "gender": "women",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-14801.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/5dac15f063fb9b97569abf8329c9bd0d_images.jpg",
+      "originalTitle": "United Colors of Benetton Women Solid Black Handbags",
+      "articleType": "Handbags",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "3abc8ce0c2cae7b6d5a06e0fafd29dcc185e8cf09330a52fc43bb791947f50ac"
+  },
+  {
+    "_id": "variety_33289",
+    "title": "Áo sơ mi nam · Arrow Sport Men White Slim Fit Shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "White",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-33289.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/cb95d183ee162c77b0892ff95c35e68b_images.jpg",
+      "originalTitle": "Arrow Sport Men White Slim Fit Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "0afa2de8b4d65b3ecf08c7d6ecec6223c7420b693e8e91be9c1cacb847f22f87"
+  },
+  {
+    "_id": "variety_21151",
+    "title": "Áo len nam · S.Oliver Men Blue Sweater",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-21151.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/sOliver-Men-Blue-Sweater_18aa804c1ea6a4afe1c61c814f4f4ed8_images.jpg",
+      "originalTitle": "S.Oliver Men Blue Sweater",
+      "articleType": "Sweaters",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "09b96f68a3b3a495be25e2a98fc2120a234d170d49af955ddc143a292733b577"
+  },
+  {
+    "_id": "variety_21725",
+    "title": "Áo sweatshirt nam · ADIDAS Men Navy Blue Sweatshirt",
+    "category": "Outerwear",
+    "gender": "men",
+    "color": "Navy Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-21725.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/Adidas-Men-Navy-Blue-Sweatshirt_be449d995ae665cbce81fbce0d69ea1e_images.jpg",
+      "originalTitle": "ADIDAS Men Navy Blue Sweatshirt",
+      "articleType": "Sweatshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "e4db8b621b4e069bcbb39e83b94dd788af720028da97199b0862606add87c853"
+  },
+  {
+    "_id": "variety_24135",
+    "title": "Áo khoác nam · ADIDAS Men Black Jacket",
+    "category": "Outerwear",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-24135.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/8382d1b372d76c0c4b87a354f5345552_images.jpg",
+      "originalTitle": "ADIDAS Men Black Jacket",
+      "articleType": "Jackets",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "3918c236dc0d81e0b22f6a3692da675d2eb0b65aac90f120958dbee2de321efe"
+  },
+  {
+    "_id": "variety_31672",
+    "title": "Quần jeans nam · Spykar Men Blue Jeans",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-31672.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/6c14bcc2970a04387dbd215ccf72415d_images.jpg",
+      "originalTitle": "Spykar Men Blue Jeans",
+      "articleType": "Jeans",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "f5c7813b2b27545c416d3bd9487ea9b55fe227ab20716581d36d3e104c546a7f"
+  },
+  {
+    "_id": "variety_48481",
+    "title": "Váy liền nữ · French Connection Black Dress",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-48481.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/French-Connection-Black-Dress_0b3856664dd61f2093c6f820c74abc8f_images.jpg",
+      "originalTitle": "French Connection Black Dress",
+      "articleType": "Dresses",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "b1e958c9459a70f1ba738cd0a8510e1fc00790f4e49120741991ab8092cc3dc8"
+  },
+  {
+    "_id": "variety_8494",
+    "title": "Chân váy nữ · Forever New Women Clay Pleated Beige Skirts",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Beige",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-8494.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/135b9776fad74c669c754caaeaad990a_images.jpg",
+      "originalTitle": "Forever New Women Clay Pleated Beige Skirts",
+      "articleType": "Skirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "117c951f0d47ee3218cbcabfdb95e6da4fd37e7f3f0c190936cf171b4ad672bb"
+  },
+  {
+    "_id": "variety_44672",
+    "title": "Áo sơ mi nữ · Wills Lifestyle Women Blue Striped Formal Shirt",
+    "category": "Tops",
+    "gender": "women",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-44672.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/image/style/properties/44672/Wills-Lifestyle-Women-Blue-Striped-Casual-Shirt_1_6bfed454fba5451f726d82b3fe47b898.jpg",
+      "originalTitle": "Wills Lifestyle Women Blue Striped Formal Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "10f35cbedd428f1221f76220398fdcebe3d96e87059ca654de52719ef2a97746"
+  },
+  {
+    "_id": "variety_19331",
+    "title": "Áo khoác nữ · United Colors of Benetton Women Solid Navy Blue Jacket",
+    "category": "Outerwear",
+    "gender": "women",
+    "color": "Navy Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-19331.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/825b1d82a492e63cb5df0ed9fb7f5862_images.jpg",
+      "originalTitle": "United Colors of Benetton Women Solid Navy Blue Jacket",
+      "articleType": "Jackets",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "7473dee02effa074ed5a1af5c8c537f8d24c2a6e5f30b90a6c8349e365300788"
+  },
+  {
+    "_id": "variety_21134",
+    "title": "Áo len nữ · s.Oliver Women Solid Grey Sweater",
+    "category": "Tops",
+    "gender": "women",
+    "color": "Grey",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-21134.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/f04abe8ad818bca639341725676979ed_images.jpg",
+      "originalTitle": "s.Oliver Women Solid Grey Sweater",
+      "articleType": "Sweaters",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "1c022fc091f15f24e46d52c8709b96a4d0e8ac6c27f5bb3e0e761726801e9cf5"
+  },
+  {
+    "_id": "variety_34763",
+    "title": "Túi xách nữ · Be For Bag Women Pink Tote Bag",
+    "category": "Accessories",
+    "gender": "women",
+    "color": "Pink",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-34763.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/b3e78c76c557305b066475d18297adbb_images.jpg",
+      "originalTitle": "Be For Bag Women Pink Tote Bag",
+      "articleType": "Handbags",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "7b884cbb974ee8839c21d52aa672f8242426c7a39b49ac14f7dec6297bdd554d"
+  },
+  {
+    "_id": "variety_28789",
+    "title": "Áo sơ mi nam · Denizen Men White Shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "White",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-28789.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/c958d1181135eeef5b71247ccb392392_images.jpg",
+      "originalTitle": "Denizen Men White Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "59e2fa5fb4ac13222b25f0fcae98ab1414756fde3eeea78800750af55b2c0cfa"
+  },
+  {
+    "_id": "variety_18569",
+    "title": "Áo len nam · Puma Men Solid Red Sweater",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Red",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-18569.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/85895b4551f6ed630aebc3b8d2c8ddd0_images.jpg",
+      "originalTitle": "Puma Men Solid Red Sweater",
+      "articleType": "Sweaters",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "42b6ad87af26db36bceb74c0577dbe905de74b56df7cbe80e32afa1d186392f6"
+  },
+  {
+    "_id": "variety_20198",
+    "title": "Áo sweatshirt nam · Wrangler Men North Carolina Blue Sweatshirt",
+    "category": "Outerwear",
+    "gender": "men",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-20198.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/01b59a079b7737c2c5818eaee6053201_images.jpg",
+      "originalTitle": "Wrangler Men North Carolina Blue Sweatshirt",
+      "articleType": "Sweatshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "dc317d521de00c1744ed780d52f14454097008d1e1bb897838ca9d2b84d1e4ad"
+  },
+  {
+    "_id": "variety_17153",
+    "title": "Áo khoác nam · U.S. Polo Assn. Men Solid Lt.khaki Jacket",
+    "category": "Outerwear",
+    "gender": "men",
+    "color": "Khaki",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-17153.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/39113fff54324c8426dd3d6284a30acf_images.jpg",
+      "originalTitle": "U.S. Polo Assn. Men Solid Lt.khaki Jacket",
+      "articleType": "Jackets",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "4537fb451ad55b051c81a9b778ddd4aee40ab43ebb417591bede3e336dadcf82"
+  },
+  {
+    "_id": "variety_31334",
+    "title": "Quần jeans nam · Locomotive Men Washed Blue Jeans",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-31334.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/4d39b2abda22ab6669a42ad62b453636_images.jpg",
+      "originalTitle": "Locomotive Men Washed Blue Jeans",
+      "articleType": "Jeans",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "7edcdeebda27f760852e1b03f6fe16f95a058fb34b917e9f3a520c7a8209ac7c"
+  },
+  {
+    "_id": "variety_54990",
+    "title": "Váy liền nữ · Femella Women Black & Purple Dress",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Purple",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-54990.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/Femella-Women-Multi-Coloured-Dress_dcb05b35e3d44ea6873acada39d4ab91_images.jpg",
+      "originalTitle": "Femella Women Black & Purple Dress",
+      "articleType": "Dresses",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "0dd7b32c90fdda76c7773849d588453f4a1b27332beb71f84589dba336add98b"
+  },
+  {
+    "_id": "variety_40432",
+    "title": "Chân váy nữ · Tonga Women Black Skirt",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-40432.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/51e2d26dd67eb4be6132f7a02cab4e74_images.jpg",
+      "originalTitle": "Tonga Women Black Skirt",
+      "articleType": "Skirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "6abc1dc3a7ee96995b50adc3e19db639ca10c23efc48dcc313f75b24eb10d669"
+  },
+  {
+    "_id": "variety_18880",
+    "title": "Áo sơ mi nữ · Arrow Woman Kenzie Purple Shirt",
+    "category": "Tops",
+    "gender": "women",
+    "color": "Purple",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-18880.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/bed6a59d44a255c2aeb3de46ee8d90dc_images.jpg",
+      "originalTitle": "Arrow Woman Kenzie Purple Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "97baed480a5aadc935d851c16df1a2f4226aa61f6035c0b36dfbc12c179d86c9"
+  },
+  {
+    "_id": "variety_20377",
+    "title": "Áo khoác nữ · Urban Yoga Women Solid Pink Jacket",
+    "category": "Outerwear",
+    "gender": "women",
+    "color": "Pink",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-20377.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/2edd997b791e0eb1045fc58e2b232487_images.jpg",
+      "originalTitle": "Urban Yoga Women Solid Pink Jacket",
+      "articleType": "Jackets",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "4da9df07a20d66646c6aa0556574f8ef2169fa5993aae13f0e2495c4f66b8000"
+  },
+  {
+    "_id": "variety_20302",
+    "title": "Áo len nữ · Jealous 21 Women Blue Sweater",
+    "category": "Tops",
+    "gender": "women",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-20302.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/31b933c2b1ff5c7d78bafde003610b8f_images.jpg",
+      "originalTitle": "Jealous 21 Women Blue Sweater",
+      "articleType": "Sweaters",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "f5a47f1a2f612a1a057673461db196859068bc074eb105e552b10a5b8aa1d231"
+  },
+  {
+    "_id": "variety_53698",
+    "title": "Túi xách nữ · Kiara Women White Handbag",
+    "category": "Accessories",
+    "gender": "women",
+    "color": "White",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-53698.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/Kiara-Women-White-Handbag_67970e6f49df1edc91d6332478a8c2b5_images.jpg",
+      "originalTitle": "Kiara Women White Handbag",
+      "articleType": "Handbags",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "80af6abeb4c45d453ce9ce33d389e08678f476435e998b2ec5ff47914c6630df"
+  },
+  {
+    "_id": "variety_19835",
+    "title": "Áo sơ mi nam · U.S. Polo Assn. Men Check Brown Shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Brown",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-19835.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/dd173532729072e58aafbcad2db2288d_images.jpg",
+      "originalTitle": "U.S. Polo Assn. Men Check Brown Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "1afcca4d8ee3fcea98af31efcc4b18c14858d18aa4d567c781186de46bf0f484"
+  },
+  {
+    "_id": "variety_17201",
+    "title": "Áo len nam · U.S. Polo Assn. Men Stripes Navy Blue Sweater",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Navy Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-17201.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/ed161c74ace9082e19c5843396528bbb_images.jpg",
+      "originalTitle": "U.S. Polo Assn. Men Stripes Navy Blue Sweater",
+      "articleType": "Sweaters",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "183c24a64dd6fcaca0f85722818ad6a9308cfef0ab6005ba3b7607652cf6b0cb"
+  },
+  {
+    "_id": "variety_23539",
+    "title": "Áo sweatshirt nam · Classic Polo Men White Sweatshirt",
+    "category": "Outerwear",
+    "gender": "men",
+    "color": "White",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-23539.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/0fb3ef0c647c6c574d38a949d9e5b8b4_images.jpg",
+      "originalTitle": "Classic Polo Men White Sweatshirt",
+      "articleType": "Sweatshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "db9b39e48c161bd5047a1028b797351f86cb21913169c4453338db0a4aaafa7c"
+  },
+  {
+    "_id": "variety_13120",
+    "title": "Áo khoác nam · ADIDAS Men Ess 3s Rainjkt Navy Blue Jackets",
+    "category": "Outerwear",
+    "gender": "men",
+    "color": "Navy Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-13120.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/9e4731411a79d98926a3d368a84b4ec1_images.jpg",
+      "originalTitle": "ADIDAS Men Ess 3s Rainjkt Navy Blue Jackets",
+      "articleType": "Jackets",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "f62ca9f8f9422a2f4a48fc6f5942806a9d774083c6b0e8fa644ce44e573b019f"
+  },
+  {
+    "_id": "variety_14118",
+    "title": "Quần jeans nam · Flying Machine Men Blue Jeans",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-14118.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/a2f99b19429f9e581b69ce6eb0f6a1b8_images.jpg",
+      "originalTitle": "Flying Machine Men Blue Jeans",
+      "articleType": "Jeans",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "ee33a464480f57a235caa87ffbdfd4e934327aea7b0dd4153d9d5e09035f8808"
+  },
+  {
+    "_id": "variety_48466",
+    "title": "Váy liền nữ · French Connection Women Black Dress",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-48466.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/French-Connection-Women-Black-Dress_c452528651f4b7320f29c0851b4e1a5d_images.jpg",
+      "originalTitle": "French Connection Women Black Dress",
+      "articleType": "Dresses",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "7facc122641bd75f382fb08f713ca71dc820efa34a9ac9f6e42e4f10dd949b88"
+  },
+  {
+    "_id": "variety_8498",
+    "title": "Chân váy nữ · Forever New Women Coral Check Grey Skirts",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Grey",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-8498.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/4d78cd8b18d6982dd69aec7ac228989b_images.jpg",
+      "originalTitle": "Forever New Women Coral Check Grey Skirts",
+      "articleType": "Skirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "7801e14b0db97cee4b0b3a0f108cae9e10fb2d51ea01c09bc511a19b5b5f86bc"
+  },
+  {
+    "_id": "variety_37949",
+    "title": "Áo sơ mi nữ · Mineral Women Printed Green Shirt",
+    "category": "Tops",
+    "gender": "women",
+    "color": "Green",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-37949.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/246efd871c405843a5f13a0bd4b48b94_images.jpg",
+      "originalTitle": "Mineral Women Printed Green Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "7bb0b018a90de00b243ab5e831e018aab8e31d698af6da7a5025f320df2b51a0"
+  },
+  {
+    "_id": "variety_20376",
+    "title": "Áo khoác nữ · Urban Yoga Women Solid Blue Jacket",
+    "category": "Outerwear",
+    "gender": "women",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-20376.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/eeff5b5859fb7114e5c7556a08999ba3_images.jpg",
+      "originalTitle": "Urban Yoga Women Solid Blue Jacket",
+      "articleType": "Jackets",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "d868543e472e17b84339dc5ad16238c6a9bbf445380344af8bb0ae422c4168a5"
+  },
+  {
+    "_id": "variety_9231",
+    "title": "Áo sơ mi nam · Mark Taylor Men Grey Striped Shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Grey",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-9231.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/ddbb52ea2313e156f0fc776798a950de_images.jpg",
+      "originalTitle": "Mark Taylor Men Grey Striped Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "73b909a7d12d95406205a54b65d82ddbbe50bc106c2d55aac18865b627696c62"
+  },
+  {
+    "_id": "variety_16193",
+    "title": "Áo len nam · Puma Men Knitted Vest Green Sweater",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Green",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-16193.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/3fe9dd31f7c40d6192f3c4079e8af045_images.jpg",
+      "originalTitle": "Puma Men Knitted Vest Green Sweater",
+      "articleType": "Sweaters",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "56ef636f926f2ab5792f0530401b5ff2a7067cc8394861bb677543210bfdb18d"
+  },
+  {
+    "_id": "variety_15599",
+    "title": "Áo sweatshirt nam · Nike Men Casual Black Sweatshirts",
+    "category": "Outerwear",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-15599.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/71ff2320301e2beee7735d85818fedc3_images.jpg",
+      "originalTitle": "Nike Men Casual Black Sweatshirts",
+      "articleType": "Sweatshirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "2dd84d5014c04607baeeb2989f03196151fa61e34ebbccda38323a56a5efe5ce"
+  },
+  {
+    "_id": "variety_19337",
+    "title": "Áo khoác nam · United Colors of Benetton Men Stripes Black Jacket",
+    "category": "Outerwear",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-19337.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/3aededb2a4f5feb762fe668a1c260177_images.jpg",
+      "originalTitle": "United Colors of Benetton Men Stripes Black Jacket",
+      "articleType": "Jackets",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "58c97ccefb456acae1ec5ce44f07d115fe2f1a3d0cc9d0c06fb7295d4a1a48a0"
+  },
+  {
+    "_id": "variety_11286",
+    "title": "Quần jeans nam · Wrangler Men Black Millard Jeans",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-11286.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/c4421a49ca26485040a4ba322ef1c68f_images.jpg",
+      "originalTitle": "Wrangler Men Black Millard Jeans",
+      "articleType": "Jeans",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "9699013d880962df96446e8a035d924df48b9e111d4bf1c4ebf3228a3674b610"
+  },
+  {
+    "_id": "variety_26927",
+    "title": "Váy liền nữ · Jealous 21 Women Black Dress",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-26927.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/31807d31f27c4ea35362d03064e65824_images.jpg",
+      "originalTitle": "Jealous 21 Women Black Dress",
+      "articleType": "Dresses",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "3ce7a285cc85e0940c771925081ee87571bc1be8e336c612c94dbfa57f38ec43"
+  },
+  {
+    "_id": "variety_30929",
+    "title": "Chân váy nữ · Fabindia Women Grey Skirt",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Grey",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-30929.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/54f475076a2fc0e3bd21ebb9b934d8ec_images.jpg",
+      "originalTitle": "Fabindia Women Grey Skirt",
+      "articleType": "Skirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "a37248d0b56272516569e761eb227bcc3662c8cd30ee5cda1f132a60eb178ed2"
+  },
+  {
+    "_id": "variety_57033",
+    "title": "Áo sơ mi nữ · Forever New Women Black Shirt",
+    "category": "Tops",
+    "gender": "women",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-57033.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/Forever-New-Women-Black-Shirt_21e3f0ef45c2d22d9d7733a932438d1d_images.jpg",
+      "originalTitle": "Forever New Women Black Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "c30b1509234dadef866db796f2d36a6dd132c3e0ca79ef8e2962f9da48ad14b5"
+  },
+  {
+    "_id": "variety_6876",
+    "title": "Áo khoác nữ · Forever New Women Peach Jacket",
+    "category": "Outerwear",
+    "gender": "women",
+    "color": "Peach",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-6876.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/8a580ce568940db620c3ccc860670f7b_images.jpg",
+      "originalTitle": "Forever New Women Peach Jacket",
+      "articleType": "Jackets",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "e71c2a70483f6133470e781377051b20c64e6954a1938631227932585af76827"
+  },
+  {
+    "_id": "variety_31015",
+    "title": "Áo sơ mi nam · Arrow Men White and Blue Striped Shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "White",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-31015.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/Arrow-Men-White-and-Blue-Striped-Shirt_12e3745ff18d87d3c3887a8fa0e734c0_images.jpg",
+      "originalTitle": "Arrow Men White and Blue Striped Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "98698029d59b4fcad6f1f7251f8a2907a7be8c0184c535b006d54e757c2d0b79"
+  },
+  {
+    "_id": "variety_20787",
+    "title": "Áo len nam · Genesis Men Solid Black Sweater",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-20787.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/402f3084d01ffe9d92e59ced966d609f_images.jpg",
+      "originalTitle": "Genesis Men Solid Black Sweater",
+      "articleType": "Sweaters",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "263da4ed5067413eefab901104f6116ce194ca4af93b1efdf692e0b9712c8301"
+  },
+  {
+    "_id": "variety_9768",
+    "title": "Áo khoác nam · ADIDAS Men Adna Black Jackets",
+    "category": "Outerwear",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-9768.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/b20cac7f5f8d2990ad518c0338c9f056_images.jpg",
+      "originalTitle": "ADIDAS Men Adna Black Jackets",
+      "articleType": "Jackets",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "1526de11e046f1cc48c5c9af9647932c52166d44d72326ee23c3a85782902449"
+  },
+  {
+    "_id": "variety_9176",
+    "title": "Quần jeans nam · Locomotive Men Barney Grey Jeans",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Grey",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-9176.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/9db4c416c3edbff002a30c84289cf4f9_images.jpg",
+      "originalTitle": "Locomotive Men Barney Grey Jeans",
+      "articleType": "Jeans",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "5f4e5aefdde4028dbf48a9794b7ef8eec9c9ed8c741428e716e6e462c71243f9"
+  },
+  {
+    "_id": "variety_59970",
+    "title": "Váy liền nữ · Avirate Mushroom Brown Dress",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-59970.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/Avirate-Mushroom-Brown-Dress_2c8b3dc824e7e8d5be91ef682b033b3f_images.jpg",
+      "originalTitle": "Avirate Mushroom Brown Dress",
+      "articleType": "Dresses",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "86215703b9ce4206a64ee0d8501314a69ae2d205686d76706ae6eb86442eebd4"
+  },
+  {
+    "_id": "variety_49655",
+    "title": "Chân váy nữ · Mineral Pink & Green Skirt",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Pink",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-49655.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/a474424074485fd2562fb484b78ee179_images.jpg",
+      "originalTitle": "Mineral Pink & Green Skirt",
+      "articleType": "Skirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "3d2bed9a3b88b69bc19cdcde9b10bd6f90a8119278845e0e86231c1770745d7a"
+  },
+  {
+    "_id": "variety_43307",
+    "title": "Áo sơ mi nữ · United Colors of Benetton Women White Shirt",
+    "category": "Tops",
+    "gender": "women",
+    "color": "White",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-43307.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/8e71811ecbf2cbcc288bf9150eb81fb1_images.jpg",
+      "originalTitle": "United Colors of Benetton Women White Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "403e46a60b54763d0404887e0d7f1e095a63f2b53b0966aea3d40753bab8482a"
+  },
+  {
+    "_id": "variety_27562",
+    "title": "Áo sơ mi nam · Scullers Men Checked Purple Shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Purple",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-27562.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/084bc9dadb55e341c3e04a41f4e45814_images.jpg",
+      "originalTitle": "Scullers Men Checked Purple Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "2210ac98a9e388fde742fbccb890ee4b462c5e79e65ba190216737ebe00e13a2"
+  },
+  {
+    "_id": "variety_13812",
+    "title": "Áo len nam · Proline Navy Striped Sweater",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Navy Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-13812.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/49cea6675f8ddb67313483da2c90a31f_images.jpg",
+      "originalTitle": "Proline Navy Striped Sweater",
+      "articleType": "Sweaters",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "9693571bf85c3a016430285de565b80a62ed833bb7e95fe5e3f60c00a2edeb4d"
+  },
+  {
+    "_id": "variety_19855",
+    "title": "Áo khoác nam · U.S. Polo Assn. Men Solid Navy Blue Jackets",
+    "category": "Outerwear",
+    "gender": "men",
+    "color": "Navy Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-19855.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/8b28efdf31a1a30a62302715af2b734f_images.jpg",
+      "originalTitle": "U.S. Polo Assn. Men Solid Navy Blue Jackets",
+      "articleType": "Jackets",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "6451cee350c6355c3f76a8855dae290076c8b428d9c950aa17f8c4446ad9d347"
+  },
+  {
+    "_id": "variety_20913",
+    "title": "Quần jeans nam · Deni Yo Men Washed Blue Jeans",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-20913.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/17af8003001ee52e65b7c5975e0bcdc0_images.jpg",
+      "originalTitle": "Deni Yo Men Washed Blue Jeans",
+      "articleType": "Jeans",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "f5e02997d0d3ba0b060c67b8685189ae6fb52bcdd11ce520c0659e23de9cbf78"
+  },
+  {
+    "_id": "variety_8480",
+    "title": "Váy liền nữ · Forever New Women Magnolia Cream Dress",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Cream",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-8480.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/2db70de84ec8185debaa7def3ed59dff_images.jpg",
+      "originalTitle": "Forever New Women Magnolia Cream Dress",
+      "articleType": "Dresses",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "e38e745a72990d97041670a89f02c9a3dd035e9b6aa873b47c675d0adc9369e4"
+  },
+  {
+    "_id": "variety_40428",
+    "title": "Chân váy nữ · Tonga Women Grey Formal Skirt",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Grey",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-40428.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/804d30864b22588debd18bb5ac08c792_images.jpg",
+      "originalTitle": "Tonga Women Grey Formal Skirt",
+      "articleType": "Skirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "49bb98fae6478f4c5fa4fa43b46195324f32c9016899b8b175e354d3b2e174a6"
+  },
+  {
+    "_id": "variety_33974",
+    "title": "Áo sơ mi nữ · Femella Women Check Black Shirt",
+    "category": "Tops",
+    "gender": "women",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-33974.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/ade7b10569387c09a514475d89aec1b3_images.jpg",
+      "originalTitle": "Femella Women Check Black Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "338406cd30ea631f192058acebfb842f3913d9eee9e3affd9aa0e34e28a60885"
+  },
+  {
+    "_id": "variety_9418",
+    "title": "Áo sơ mi nam · John Miller Men grey stripe Grey Shirts",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Grey",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-9418.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/1bf1ef16d47c0cd78fe2b9a16349f6b3_images.jpg",
+      "originalTitle": "John Miller Men grey stripe Grey Shirts",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "cd79e6b813164c84a758ab08b4f455506b1cb21e3e001728d37a83039305a5e7"
+  },
+  {
+    "_id": "variety_41360",
+    "title": "Quần jeans nam · Wrangler Men Navy Blue Millard Jeans",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Navy Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-41360.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/Wrangler-Men-Navy-Blue-Millard-Jeans_729d9c8475195956882ab7fec71a8009_images.jpg",
+      "originalTitle": "Wrangler Men Navy Blue Millard Jeans",
+      "articleType": "Jeans",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "9b9cae07a56a5bcbad55372456a3409052d69c78c1eff3688db5e710bbfc1ac0"
+  },
+  {
+    "_id": "variety_59969",
+    "title": "Váy liền nữ · Avirate Black Dress",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-59969.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/Avirate-Black-Dress_cac407bc1a1a71923e8ea7916b4030d3_images.jpg",
+      "originalTitle": "Avirate Black Dress",
+      "articleType": "Dresses",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "af34f60990b8578b9834dce628ef36c72817491b72e74f7e7bf805f1f77906da"
+  },
+  {
+    "_id": "variety_18711",
+    "title": "Chân váy nữ · Arrow Woman Printed Brown Skirt",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Brown",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-18711.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/Arrow-Women-Printed-Brown-Skirt_db3f7119e474bc83820ed7d11cf0fd4d_images.jpg",
+      "originalTitle": "Arrow Woman Printed Brown Skirt",
+      "articleType": "Skirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "c5408c755b42484fb3fef7e6f79bf90e4d4df3c6a5b63df9a2b9bea83fcb0d09"
+  },
+  {
+    "_id": "variety_33996",
+    "title": "Áo sơ mi nữ · Femella Women Grey Shirt",
+    "category": "Tops",
+    "gender": "women",
+    "color": "Grey",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-33996.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/c37708b6009e085608fb756a0995162b_images.jpg",
+      "originalTitle": "Femella Women Grey Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "6a3f7340b35fa0af52f6251308803a63a2b6557f1bd563b2c91058040117a978"
+  },
+  {
+    "_id": "variety_26812",
+    "title": "Áo sơ mi nam · Arrow Men Yellow Shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Yellow",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-26812.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/Arrow-Men-Yellow-Shirt_426ecb7421be42f1b3102d8ff3297501_images.jpg",
+      "originalTitle": "Arrow Men Yellow Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "dbca34c23719603651a5d800d0a890ea807515d33698ad07e509989443b4420e"
+  },
+  {
+    "_id": "variety_9169",
+    "title": "Quần jeans nam · Locomotive Men Ian Blue Jeans",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-9169.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/7267b462fcf5fb8b01b0ecac1c64077c_images.jpg",
+      "originalTitle": "Locomotive Men Ian Blue Jeans",
+      "articleType": "Jeans",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "4a51f5a2407b8d861abdbbeb5978293640ea219fb650fa2809c7ade521216cb8"
+  },
+  {
+    "_id": "variety_39226",
+    "title": "Váy liền nữ · Femella Women Black Tiered Dress",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-39226.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/5190144d44ae18892c908c6d829de404_images.jpg",
+      "originalTitle": "Femella Women Black Tiered Dress",
+      "articleType": "Dresses",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "4b89887210a547985b2c05ced5bf680cdc70508d47ca6e134cfac187ae4c6f9a"
+  },
+  {
+    "_id": "variety_30923",
+    "title": "Chân váy nữ · Fabindia Women Printed Mustard Skirt",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Mustard",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-30923.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/e7d66f3c35f9a4ccba81cb32ed3cceb6_images.jpg",
+      "originalTitle": "Fabindia Women Printed Mustard Skirt",
+      "articleType": "Skirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "11b4bbe80bbd530fd1c889f36d1d5c13cb76d5340a28feeed6635f8237cf87ca"
+  },
+  {
+    "_id": "variety_57992",
+    "title": "Áo sơ mi nữ · Latin Quarters Women Purple Shirt",
+    "category": "Tops",
+    "gender": "women",
+    "color": "Purple",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-57992.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/Latin-Quarters-Women-Purple-Dress_4aeecefe97a1247231b97e88683d4fc0_images.jpg",
+      "originalTitle": "Latin Quarters Women Purple Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "d587521de79cf470e77c164739a9ba5066c2509154a72d087cf2c9252f2bfd68"
+  },
+  {
+    "_id": "variety_10791",
+    "title": "Áo sơ mi nam · Wrangler Men Manitoba Piping Black Shirts",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-10791.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/a0b61f2e0ba0a16753a41d4c663f7d33_images.jpg",
+      "originalTitle": "Wrangler Men Manitoba Piping Black Shirts",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "39726e3e8d7899140d4c0f55414157df0acb00eb54e591597a46361703269e67"
+  },
+  {
+    "_id": "variety_9903",
+    "title": "Quần jeans nam · Spykar Men Ep Skinny Low Waist Fit Blue Jeans",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-9903.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/51278d904054c54612a6bda40b980ae8_images.jpg",
+      "originalTitle": "Spykar Men Ep Skinny Low Waist Fit Blue Jeans",
+      "articleType": "Jeans",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "0e193ff11ed9da8208ce5b4f9205c321b1cde6b8aba839b59d59972cdece66d5"
+  },
+  {
+    "_id": "variety_39233",
+    "title": "Váy liền nữ · Femella Women Blue GGT Pannel Princess Dress",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-39233.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/b1558e90fe6c289f3464431686594ae9_images.jpg",
+      "originalTitle": "Femella Women Blue GGT Pannel Princess Dress",
+      "articleType": "Dresses",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "5c7344bdf4195b712789e2011ffc7bec774ce1392c72dbfb49426148fedcec90"
+  },
+  {
+    "_id": "variety_6789",
+    "title": "Áo sơ mi nam · Timberland Men Meriden White Check Shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Green",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-6789.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/Timberland-Men-Meriden-White-Check-Shirt_d40bc3532e28d1c1432bea2fc31252d5_images.jpg",
+      "originalTitle": "Timberland Men Meriden White Check Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "36d754c333aa4f69bf74dc98d7534885a9ec37cfbb6c0bad11c3ee0ba4196616"
+  },
+  {
+    "_id": "variety_9170",
+    "title": "Quần jeans nam · Locomotive Men Lain Blue Jeans",
+    "category": "Bottoms",
+    "gender": "men",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-9170.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/538a4957982640f24ce07751644c762e_images.jpg",
+      "originalTitle": "Locomotive Men Lain Blue Jeans",
+      "articleType": "Jeans",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "2e38e9cc2317c58f2b2d59af96899a26c5bcff1da44f8bf6434326cae343204c"
+  },
+  {
+    "_id": "variety_59966",
+    "title": "Váy liền nữ · Avirate Black Polka Dot Dress",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Black",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-59966.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/Avirate-Black-Polka-Dot-Dress_1b638b91fbc676509956554321ea3bab_images.jpg",
+      "originalTitle": "Avirate Black Polka Dot Dress",
+      "articleType": "Dresses",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "9809694d5bd6ab0c31e0340255200a703da67b6a824b7693e89806cb66639b25"
+  },
+  {
+    "_id": "variety_33297",
+    "title": "Áo sơ mi nam · Arrow Sport Men Blue Striped Slim Fit Shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-33297.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/ac0e75298fb58d06c3b4cb3d379afbc1_images.jpg",
+      "originalTitle": "Arrow Sport Men Blue Striped Slim Fit Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "cb8612f9ea5804243d4c746768b32b5bef834841b11c859a8c5725b7fed88a1b"
+  },
+  {
+    "_id": "variety_38843",
+    "title": "Váy liền nữ · Latin Quarters Women Zip Piping Navy Blue Dress",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Navy Blue",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-38843.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/c3eb678b19f53ab90bdc5730548cefa6_images.jpg",
+      "originalTitle": "Latin Quarters Women Zip Piping Navy Blue Dress",
+      "articleType": "Dresses",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "33b3c48ce190b5b14909be3b25c45212340f6f48a9f4a5c674842dc081c1a1a5"
+  },
+  {
+    "_id": "variety_25007",
+    "title": "Áo sơ mi nam · United Colors of Benetton Men Grey Shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Grey",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-25007.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/005fe92568054251e1b6ebfc063206ac_images.jpg",
+      "originalTitle": "United Colors of Benetton Men Grey Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "ff4998028c26a35cf64b0e1c915303451fa0bf0002098b3d5efe8b74c198b806"
+  },
+  {
+    "_id": "variety_57056",
+    "title": "Váy liền nữ · Elle Women White Shift Dress",
+    "category": "Bottoms",
+    "gender": "women",
+    "color": "Cream",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-57056.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/Elle-Women-White-Dress_1fd9d94725f3875ce4ffccdb7055fb35_images.jpg",
+      "originalTitle": "Elle Women White Shift Dress",
+      "articleType": "Dresses",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "1fd8306e23703d387c1065aae6b620fe09cc4dc1b990c83e7dbe2e28e9bf0415"
+  },
+  {
+    "_id": "variety_13735",
+    "title": "Áo sơ mi nam · Belmonte Men Stripes Green Shirts",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Green",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-13735.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/1ec157168a7828be6d061003da62e75d_images.jpg",
+      "originalTitle": "Belmonte Men Stripes Green Shirts",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "f23c105bf78f5ca135aedb443472d8f52ddd72488e91002f197b262b3325d8b6"
+  },
+  {
+    "_id": "variety_16464",
+    "title": "Áo sơ mi nam · Locomotive Men Check Green Shirt",
+    "category": "Tops",
+    "gender": "men",
+    "color": "Green",
+    "garmentPhotoType": "auto",
+    "images": [
+      "/images/catalog/variety-16464.webp"
+    ],
+    "source": {
+      "platform": "Myntra / Fashion Product Images",
+      "url": "https://assets.myntassets.com/v1/images/style/properties/505c3446e30d1902b4bbcd10a87bb65f_images.jpg",
+      "originalTitle": "Locomotive Men Check Green Shirt",
+      "articleType": "Shirts",
+      "processing": "Original background retained; resize and WebP encoding only",
+      "dataset": "https://huggingface.co/datasets/mecha2019/fashion-product-images-small"
+    },
+    "imageHash": "c5a329d5b253cc22a18614f47e9212defee22ef105517df45e10697a99481435"
+  }
+]

@@ -15,11 +15,15 @@ export default function AuthPage() {
   const [showPassword, setShowPassword] = useState(false);
   const [form, setForm] = useState({ name: '', email: '', password: '', role: authRole });
   const [error, setError] = useState('');
+  const [submitting, setSubmitting] = useState(false);
   const changeMode = () => { openAuth(isLogin ? 'signup' : 'login'); setEmailForm(!isLogin); setError(''); setMoreOpen(false); };
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
     e.preventDefault();
-    const result = isLogin ? loginUser(form.email.trim(), form.password) : registerUser(form.name.trim(), form.email.trim(), form.password, form.role);
-    if (!result.success) setError(isLogin ? 'authError' : 'registerError');
+    if (submitting) return;
+    setSubmitting(true); setError('');
+    const result = await (isLogin ? loginUser(form.email.trim(), form.password) : registerUser(form.name.trim(), form.email.trim(), form.password, form.role));
+    if (!result.success) setError(result.message || (isLogin ? 'authError' : 'registerError'));
+    setSubmitting(false);
   };
   const showLegal = () => { setInfoPage('legal'); setCurrentView('info'); };
   return <div className="auth-page">
@@ -38,12 +42,12 @@ export default function AuthPage() {
           <label>{t('email')}<input type="email" required autoComplete="email" placeholder="you@example.com" value={form.email} onChange={e => setForm({ ...form, email: e.target.value })} /></label>
           <label>{t('password')}<span className="password-input"><input aria-label={t('password')} type={showPassword ? 'text' : 'password'} required minLength={isLogin ? undefined : 6} autoComplete={isLogin ? 'current-password' : 'new-password'} placeholder={t('passwordHint')} value={form.password} onChange={e => setForm({ ...form, password: e.target.value })} /><button type="button" aria-label={t(showPassword ? 'hidePassword' : 'showPassword')} onClick={() => setShowPassword(!showPassword)}><Icon name={showPassword ? 'visibility_off' : 'visibility'} /></button></span></label>
           {!isLogin && <label>{t('role')}<select value={form.role} onChange={e => setForm({ ...form, role: e.target.value })}><option value="buyer">{t('buyer')}</option><option value="seller">{t('seller')}</option></select></label>}
-          <button type="submit" className="auth-submit">{isLogin ? t('login') : t('emailSignup')}<Icon name="arrow_forward" /></button>
+          <button type="submit" className="auth-submit" disabled={submitting}>{submitting ? 'Đang đăng nhập…' : isLogin ? t('login') : t('emailSignup')}<Icon name="arrow_forward" /></button>
         </form>}
         {!isLogin && <p className="auth-terms">{t('termsIntro')} <button onClick={showLegal}>{t('terms')}</button> {t('and')} <button onClick={showLegal}>{t('privacy')}</button>.</p>}
         <p className="auth-mode-link">{isLogin ? t('noAccount') : t('hasAccount')} <button onClick={changeMode}>{isLogin ? t('signup') : t('login')}</button></p>
         <button className="more-options" onClick={() => setMoreOpen(!moreOpen)} aria-expanded={moreOpen} aria-controls="demo-logins">{t('moreOptions')}<Icon name={moreOpen ? 'expand_less' : 'expand_more'} /></button>
-        {moreOpen && <div id="demo-logins" className="demo-logins"><p>{t('demo')}</p>{[['demoBuyer', 'buyer'], ['demoSeller', 'seller'], ['demoAdmin', 'admin']].map(([key, role]) => <button key={role} onClick={() => { const result = loginUser(`${role}@sifit.com`, '123456'); if (!result.success) setError('authError'); }}>{t(key)}<Icon name="arrow_forward" /></button>)}</div>}
+        {moreOpen && <div id="demo-logins" className="demo-logins"><p>{t('demo')}</p>{[['demoBuyer', 'buyer'], ['demoSeller', 'seller'], ['demoAdmin', 'admin']].map(([key, role]) => <button key={role} disabled={submitting} onClick={async () => { setSubmitting(true); const result = await loginUser(`${role}@sifit.com`, '123456'); if (!result.success) setError(result.message || 'authError'); setSubmitting(false); }}>{t(key)}<Icon name="arrow_forward" /></button>)}</div>}
       </div>
       <button className="auth-back" onClick={() => setCurrentView('homepage')}><Icon name="arrow_back" />{t('backHome')}</button>
     </section><aside className="auth-visual"><img src={hero} alt="Pre-loved fashion from Sifit" /><div className="auth-visual-shade" /><div className="auth-visual-copy"><p className="eyebrow">THE SECOND LIFE EDIT</p><h2>{t('heroTitle')}</h2><p>{t('heroDescription')}</p></div><span className="auth-photo-label">SIFIT / EST. FOR A BETTER WARDROBE</span></aside></div>
