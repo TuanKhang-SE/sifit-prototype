@@ -44,3 +44,5 @@ export async function reportMessage(id, reason) {
 export async function blockUser(id) {
   await apiClient.post(`/users/${id}/block`);
 }
+export async function unblockUser(id) { await apiClient.delete(`/users/${id}/block`); }
+export async function getBlockStatus(id) { return (await apiClient.get(`/users/${id}/block`)).data.data.blocked; }

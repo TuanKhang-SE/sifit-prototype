@@ -8,6 +8,10 @@ const sellerSections = [
   ['listings', 'Sản phẩm', 'inventory_2'],
   ['add', 'Đăng sản phẩm', 'add_box'],
   ['orders', 'Đơn bán', 'receipt_long'],
+  ['shipments', 'Vận chuyển', 'local_shipping'],
+  ['disputes', 'Khiếu nại', 'verified_user'],
+  ['reviews', 'Đánh giá', 'star'],
+  ['payouts', 'Chi trả', 'account_balance_wallet'],
   ['profile', 'Hồ sơ shop', 'storefront'],
   ['addresses', 'Địa chỉ lấy hàng', 'location_on'],
 ];

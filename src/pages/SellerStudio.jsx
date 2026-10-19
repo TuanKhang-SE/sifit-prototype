@@ -5,6 +5,8 @@ import AddressBook from '../components/AddressBook';
 import OrderCard from '../components/OrderCard';
 import { Panel, Field, Feedback } from '../components/MarketplaceUI';
 import Icon from '../components/Icon';
+import SellerOperations from './SellerOperations';
+import { date } from '../utils/operationFormatting';
 import { useAction } from '../hooks/useAction';
 import { money, idOf } from '../utils/marketplace';
 
@@ -22,6 +24,10 @@ const sections = {
   orders: ['Quản lý đơn bán', 'Theo dõi đơn hàng, chuẩn bị đóng gói và quản lý giao hàng.'],
   profile: ['Hồ sơ shop', 'Giới thiệu cửa hàng của bạn và cập nhật thông tin liên hệ.'],
   addresses: ['Địa chỉ lấy hàng', 'Quản lý địa chỉ để việc giao hàng thuận tiện hơn.'],
+  shipments: ['Vận chuyển', 'Theo dõi các vận đơn của cửa hàng.'],
+  disputes: ['Khiếu nại', 'Theo dõi tiến độ và kết quả xử lý khiếu nại.'],
+  reviews: ['Đánh giá', 'Lắng nghe khách hàng và phản hồi đánh giá sản phẩm.'],
+  payouts: ['Chi trả', 'Xem chi tiết các đợt chi trả cho cửa hàng.'],
 };
 const productStatuses = { active: 'Đang bán', pending: 'Chờ duyệt', draft: 'Bản nháp', rejected: 'Bị từ chối', reserved: 'Đang giữ chỗ', sold: 'Đã bán', archived: 'Đã lưu trữ' };
 const orderStatuses = { PENDING_PAYMENT: 'Chờ thanh toán', PAID: 'Đã thanh toán', PROCESSING: 'Đang chuẩn bị', SHIPPED: 'Đang giao', DELIVERED: 'Đã giao', COMPLETED: 'Hoàn thành', CANCELLED: 'Đã hủy', REFUNDED: 'Đã hoàn tiền', REFUND_PENDING: 'Chờ hoàn tiền' };
@@ -30,6 +36,7 @@ export default function SellerStudio({ tab = 'overview', setTab }) {
   const [products, setProducts] = useState([]);
   const [orders, setOrders] = useState([]);
   const [profile, setProfile] = useState(null);
+  const [verification, setVerification] = useState(null);
   const [profileForm, setProfileForm] = useState({ shopName: '', description: '', contactPhone: '', avatar: '' });
   const [earnings, setEarnings] = useState(null);
   const [payouts, setPayouts] = useState([]);
@@ -45,6 +52,7 @@ export default function SellerStudio({ tab = 'overview', setTab }) {
   const loadProfile = useCallback(async () => {
     try {
       const data = await sellerService.getSellerProfile(); setProfile(data);
+      setVerification(await verificationService.getVerificationStatus());
       setProfileForm({ shopName: data.shopName, description: data.description || '', contactPhone: data.contactPhone || '', avatar: data.avatar || '' });
     } catch (error) { if (error.response?.status !== 404) throw error; }
   }, []);
@@ -82,6 +90,7 @@ export default function SellerStudio({ tab = 'overview', setTab }) {
   return <LocalizedContent><div className="seller-studio" data-section={tab}>
     <div className="seller-page-heading"><div><p className="seller-eyebrow">SIFIT / SELLER STUDIO</p><h1>{sections[tab][0]}</h1><p>{sections[tab][1]}</p></div><div className="seller-page-heading-actions">{tab === 'overview' && <><button className="seller-secondary-button" disabled={busy} onClick={() => run(reload)}><Icon name="refresh" />Làm mới</button><button className="seller-primary-button" disabled={busy} onClick={newDraft}><Icon name="add_box" />Tạo sản phẩm mới</button></>}</div></div>
     <Feedback busy={busy} error={error} />{notice && <p role="status" className="p-3 bg-green-50 rounded-xl">{notice}</p>}
+    {['shipments', 'disputes', 'reviews', 'payouts'].includes(tab) && <SellerOperations key={tab} section={tab} />}
     {tab === 'overview' && <>
       <div className="seller-section-caption"><h2>Hiệu quả kinh doanh</h2><span>Toàn bộ thời gian</span></div>
       <div className="seller-stat-grid">{[
@@ -122,6 +131,7 @@ export default function SellerStudio({ tab = 'overview', setTab }) {
       if (profile) await sellerService.updateSellerProfile(payload); else await sellerService.createSellerProfile(payload);
       await loadProfile(); setNotice('Đã lưu hồ sơ shop.');
     }); }}>{[['Tên shop', 'shopName'], ['Mô tả', 'description'], ['Điện thoại liên hệ', 'contactPhone'], ['URL ảnh đại diện', 'avatar']].map(([label, key]) => <Field key={key} label={label}><input className="input-field" required={key === 'shopName'} minLength={key === 'shopName' ? 3 : undefined} type={key === 'avatar' ? 'url' : 'text'} value={profileForm[key]} onChange={event => setProfileForm({ ...profileForm, [key]: event.target.value })} /></Field>)}<button disabled={busy} className="btn-primary">Lưu hồ sơ shop</button></form>
+      {verification?.latest && <div className="ops-card"><h3>Yêu cầu xác minh gần nhất</h3><p>Ngày gửi: {date(verification.latest.createdAt)}</p><p>Ngày xét duyệt: {date(verification.latest.reviewedAt)}</p>{verification.latest.rejectionReason && <p role="alert">Lý do từ chối: {verification.latest.rejectionReason}</p>}</div>}
       {profile && !['PENDING', 'VERIFIED'].includes(profile.verificationStatus) && <button disabled={busy} onClick={() => run(async () => { await verificationService.submitVerification({}); await loadProfile(); })}>Gửi yêu cầu xác minh shop</button>}
     </Panel>}
   </div></LocalizedContent>;

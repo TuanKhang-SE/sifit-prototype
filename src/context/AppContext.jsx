@@ -19,6 +19,8 @@ export const AppContextProvider = ({ children }) => {
   const [authError, setAuthError] = useState('');
   const initialView = useRef(new URLSearchParams(window.location.search).get('view') || 'homepage').current;
   const [currentView, setCurrentViewRaw] = useState(initialView);
+  const readResource = () => { const query = new URLSearchParams(window.location.search); return { type: query.get('type') || '', id: query.get('id') || '' }; };
+  const [resourceTarget, setResourceTarget] = useState(readResource);
   const [authMode, setAuthMode] = useState('login');
   const [authRole, setAuthRole] = useState('buyer');
   const [infoPage, setInfoPage] = useState('about');
@@ -52,24 +54,29 @@ export const AppContextProvider = ({ children }) => {
   const openAuth = (mode = 'login', role = 'buyer') => {
     setAuthMode(mode); setAuthRole(role); setCurrentView('auth');
   };
+  const openResource = (type, id) => {
+    setResourceTarget({ type, id }); setCurrentViewRaw('resource');
+    window.history.pushState({ view: 'resource' }, '', `?view=resource&type=${encodeURIComponent(type)}&id=${encodeURIComponent(id)}`);
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  };
   const openSellGuide = (section = '') => { setGuideSection(section); setCurrentView('sell-guide'); };
   const browse = (options = {}) => {
     setSearchQuery(options.query || '');
     setFilters({ categories: options.category ? [options.category] : [], brands: options.brand ? [options.brand] : [], sizes: [],
       condition: options.premium ? 90 : 0, priceMax: options.lastChance ? 500000 : 10000000,
-      material: options.material || '', women: !!options.women, department: options.department || '' });
+      material: options.material || '' });
     setSortOption(options.lastChance ? 'Giá: Thấp → Cao' : 'Hàng Mới Về'); setCurrentView('catalog');
   };
   const goBack = () => window.history.length > 1 ? window.history.back() : setCurrentView('homepage');
   useEffect(() => {
-    const pop = event => setCurrentViewRaw(event.state?.view || new URLSearchParams(window.location.search).get('view') || 'homepage');
+    const pop = event => { setResourceTarget(readResource()); setCurrentViewRaw(event.state?.view || new URLSearchParams(window.location.search).get('view') || 'homepage'); };
     window.history.replaceState({ view: initialView }, '', window.location.href);
     window.addEventListener('popstate', pop);
     return () => window.removeEventListener('popstate', pop);
   }, [initialView]);
 
   const fetchListings = useCallback(async (params = {}) => {
-    const result = await collectPages(productService.listProducts, { sort: 'newest', ...params });
+    const result = await productService.listProducts({ sort: 'newest', page: 1, limit: 20, ...params });
     setProducts(result.items); return result;
   }, []);
   const reloadPublicData = useCallback(async () => {
@@ -259,7 +266,7 @@ export const AppContextProvider = ({ children }) => {
   }, [selectedProduct?._id, currentView, apiCategories]);
   return <AppContext.Provider value={{
     user, authLoading, authError, loginUser, registerUser, logoutUser,
-    currentView, setCurrentView, goBack, authMode, authRole, openAuth, browse, infoPage, setInfoPage,
+    currentView, setCurrentView, resourceTarget, openResource, goBack, authMode, authRole, openAuth, browse, infoPage, setInfoPage,
     guideSection, setGuideSection, openSellGuide, products, setProducts, apiCategories, fetchListings,
     publicLoading, dataError, setDataError, reloadPublicData, selectedProduct, setSelectedProduct,
     cart, addToCart, removeFromCart, handleInstantBuy, checkoutProduct, setCheckoutProduct,

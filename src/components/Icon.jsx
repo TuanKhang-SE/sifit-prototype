@@ -41,6 +41,8 @@ const paths = {
   close: 'M6 6l12 12M6 18 18 6',
   menu: 'M3 6h18M3 12h18M3 18h18',
   chevron_right: 'm9 6 6 6-6 6',
+  star: 'm12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9L12 3Z',
+  local_shipping: 'M2 5h12v12H2V5Zm12 5h4l4 5v2h-8V10ZM8 18a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z',
 };
 paths.favorite_border = paths.favorite;
 

@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import * as chatService from '../services/chatService';
 import { Feedback } from '../components/MarketplaceUI';
 import { useAction } from '../hooks/useAction';
+import { Dialog } from '../components/OperationsUI';
 
 import { useApp } from '../context/AppContext';
 import LocalizedContent from '../components/LocalizedContent';
@@ -25,6 +26,8 @@ export default function Chat() {
   const { busy, error, run } = useAction();
   const [reportId, setReportId] = useState(null);
   const [reason, setReason] = useState('');
+  const [blockState, setBlockState] = useState({ id: '', blocked: false, error: '' });
+  const [confirmBlock, setConfirmBlock] = useState(false);
   const sendAttempt = useRef(null);
 
   const visibleChats = chats.filter(c =>
@@ -33,6 +36,15 @@ export default function Chat() {
   const activeChat = visibleChats.find(c => c._id === activeChatId);
   const chatMessages = messages[activeChatId] || [];
   const otherUser = activeChat?.participants?.find(p => getUserId(p) !== getUserId(user));
+  const otherId = getUserId(otherUser);
+  const blockPending = !!otherId && blockState.id !== otherId;
+  const blocked = blockState.id === otherId && blockState.blocked;
+  useEffect(() => {
+    let live = true;
+    setConfirmBlock(false);
+    if (otherId) chatService.getBlockStatus(otherId).then(value => { if (live) setBlockState({ id: otherId, blocked: value, error: '' }); }).catch(error => { if (live) setBlockState({ id: otherId, blocked: false, error: error.response?.data?.message || 'Không tải được trạng thái chặn. Hãy chọn lại hội thoại.' }); });
+    return () => { live = false; };
+  }, [otherId]);
 
   const lastMessageId = chatMessages.at(-1)?._id;
   useEffect(() => {
@@ -40,7 +52,7 @@ export default function Chat() {
     if (last && activeChatId) chatService.markRead(activeChatId, last).catch(() => {});
   }, [activeChatId, lastMessageId]);
   const send = () => {
-    if (!input.trim() || !activeChatId || busy) return;
+    if (!input.trim() || !activeChatId || busy || blocked || blockPending || blockState.error) return;
     const fingerprint = activeChatId + ':' + input.trim();
     if (sendAttempt.current?.fingerprint !== fingerprint) sendAttempt.current = { fingerprint, id: crypto.randomUUID() };
     run(async () => {
@@ -52,6 +64,8 @@ export default function Chat() {
   return (
     <LocalizedContent>
     <Feedback busy={busy} error={error} />
+    {blockState.error && <p role="alert">{blockState.error}</p>}
+    {confirmBlock && <Dialog title={blocked ? 'Bỏ chặn người dùng' : 'Chặn người dùng'} busy={busy} onClose={() => setConfirmBlock(false)}><Feedback busy={busy} error={error} /><p>{blocked ? 'Cho phép tiếp tục trao đổi tin nhắn với' : 'Ngừng nhận và gửi tin nhắn với'} {otherUser?.name}?</p><button disabled={busy} onClick={() => run(async () => { if (blocked) await chatService.unblockUser(otherId); else await chatService.blockUser(otherId); setBlockState({ id: otherId, blocked: !blocked, error: '' }); setConfirmBlock(false); })}>Xác nhận {blocked ? 'bỏ chặn' : 'chặn'}</button></Dialog>}
     {reportId && <form className="max-w-4xl mx-auto p-4 space-y-3" onSubmit={event => { event.preventDefault(); run(async () => { await chatService.reportMessage(reportId, reason); setReportId(null); setReason(''); }); }}><label>Lý do báo cáo tin nhắn<textarea required maxLength="1000" className="input-field" value={reason} onChange={event => setReason(event.target.value)} /></label><button disabled={busy}>Gửi báo cáo</button><button type="button" onClick={() => setReportId(null)}>Hủy</button></form>}
     <div className="chat-workspace max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-8 h-[calc(100vh-160px)] flex gap-6 animate-fade-in">
       {/* ── Conversation list ── */}
@@ -112,6 +126,7 @@ export default function Chat() {
               <button onClick={() => { setSelectedProduct(activeChat.listing); setCurrentView('detail'); }} className="text-primary bg-primary/10 px-4 py-1.5 rounded-full text-xs font-bold hover:bg-primary/20 transition-colors cursor-pointer border-none">
                 Xem Sản Phẩm
               </button>
+              <button disabled={busy || blockPending || !!blockState.error} onClick={() => setConfirmBlock(true)}>{blocked ? 'Bỏ chặn người dùng' : 'Chặn người dùng'}</button>
             </header>
 
             {/* Messages */}
@@ -143,15 +158,15 @@ export default function Chat() {
               <input
                 type="text"
                 maxLength={2000}
-                disabled={busy}
-                placeholder="Nhập tin nhắn..."
+                disabled={busy || blocked || blockPending || !!blockState.error}
+                placeholder={blocked ? 'Bạn đã chặn người dùng này' : 'Nhập tin nhắn...'}
                 value={input}
                 onChange={e => setInput(e.target.value)}
                 onKeyDown={e => e.key === 'Enter' && send()}
                 className="flex-1 bg-gray-100 border border-transparent focus:bg-white focus:border-primary/30 focus:shadow-[0_0_0_4px_rgba(0,108,73,0.08)] rounded-full px-5 py-3 text-sm outline-none transition-all"
               />
               <button
-                disabled={busy}
+                disabled={busy || blocked || blockPending || !!blockState.error}
                 onClick={send}
                 className="bg-primary text-white w-11 h-11 rounded-full flex items-center justify-center hover:shadow-emerald-sm hover:-translate-y-0.5 transition-all cursor-pointer border-none flex-shrink-0"
               >

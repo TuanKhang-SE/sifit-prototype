@@ -14,6 +14,7 @@ export function WishlistPage() {
   return <LocalizedContent><div className="max-w-6xl mx-auto px-4 py-8 space-y-4"><h1 className="font-heading font-bold text-3xl">Sản phẩm yêu thích</h1>{!wishlist.length && <p>Chưa có sản phẩm yêu thích.</p>}<div className="product-grid">{wishlist.map(item => item.availability === 'AVAILABLE' ? <ProductCard key={item.productId} product={item.product} /> : <div key={item.productId} className="p-4 bg-white border rounded-xl"><p>{item.title || 'Sản phẩm không còn khả dụng'}</p><p>{item.availability}</p><button onClick={() => toggleWishlist(item.product)}>Bỏ yêu thích</button></div>)}</div></div></LocalizedContent>;
 }
 export default function NotificationsPage() {
+  const { openResource } = useApp();
   const [items, setItems] = useState([]);
   const [preferences, setPreferences] = useState(null);
   const [count, setCount] = useState(0);
@@ -29,7 +30,7 @@ export default function NotificationsPage() {
     return () => window.removeEventListener('sifit:notifications', refresh);
   }, [run, reload]);
   return <LocalizedContent><div className="max-w-4xl mx-auto px-4 py-8 space-y-5"><h1 className="font-heading font-bold text-3xl">Thông báo ({count} chưa đọc)</h1><Feedback busy={busy} error={error} /><div className="flex gap-3"><button disabled={busy} onClick={() => run(reload)}>Làm mới</button><button disabled={busy} onClick={() => run(async () => { await notificationService.markAllRead(); await reload(); })}>Đọc tất cả</button></div>
-    {items.map(item => <Panel key={idOf(item)} title={`${item.isRead ? '' : '● '}${item.title}`}><p>{item.body}</p><p>{new Date(item.createdAt).toLocaleString('vi-VN')}</p><div className="flex gap-3">{!item.isRead && <button disabled={busy} onClick={() => run(async () => { await notificationService.markRead(idOf(item)); await reload(); })}>Đánh dấu đã đọc</button>}<button disabled={busy} onClick={() => run(async () => { await notificationService.archive(idOf(item)); await reload(); })}>Ẩn thông báo</button></div></Panel>)}
+    {items.map(item => <Panel key={idOf(item)} title={`${item.isRead ? '' : '● '}${item.title}`}><p>{item.body}</p><p>{new Date(item.createdAt).toLocaleString('vi-VN')}</p><div className="flex gap-3">{item.resourceType && item.resourceId && <button disabled={busy} onClick={() => run(async () => { if (!item.isRead) await notificationService.markRead(idOf(item)); openResource(item.resourceType, idOf(item.resourceId)); })}>Xem chi tiết</button>}{!item.isRead && <button disabled={busy} onClick={() => run(async () => { await notificationService.markRead(idOf(item)); await reload(); })}>Đánh dấu đã đọc</button>}<button disabled={busy} onClick={() => run(async () => { await notificationService.archive(idOf(item)); await reload(); })}>Ẩn thông báo</button></div></Panel>)}
     {!items.length && !busy && <p>Chưa có thông báo.</p>}
     {preferences && <Panel title="Tùy chọn thông báo">{[['inAppEnabled', 'Thông báo trong ứng dụng'], ['messageNotifications', 'Tin nhắn'], ['orderNotifications', 'Đơn hàng'], ['productNotifications', 'Sản phẩm'], ['shippingNotifications', 'Giao hàng'], ['reviewNotifications', 'Đánh giá'], ['payoutNotifications', 'Chi trả']].map(([key, label]) => <label key={key} className="block"><input disabled={busy} type="checkbox" checked={preferences[key]} onChange={event => {
       const previous = preferences;
