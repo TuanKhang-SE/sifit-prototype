@@ -1,0 +1,81 @@
+import Navbar from '../components/Navbar';
+import { useEffect, useState } from 'react';
+import SellerWorkspace from '../components/SellerWorkspace';
+import PortalHeader from '../components/PortalHeader';
+import AccountPage from '../pages/AccountPage';
+import Footer from '../components/Footer';
+import Homepage from '../pages/Homepage';
+import Catalog from '../pages/Catalog';
+import ProductDetail from '../pages/ProductDetail';
+import Chat from '../pages/Chat';
+import CheckoutTracker from '../pages/CheckoutTracker';
+import SellerStudio from '../pages/SellerStudio';
+import AdminHub from '../pages/AdminHub';
+import ShopProfile from '../pages/ShopProfile';
+import AuthPage from '../pages/AuthPage';
+import AiStylist from '../pages/AiStylist';
+import InfoPage from '../pages/InfoPage';
+import SellPage from '../pages/SellPage';
+import CleanOutGuide from '../pages/CleanOutGuide';
+import NotificationsPage, { WishlistPage } from '../pages/NotificationsPage';
+import { useApp } from '../context/AppContext';
+
+export default function MainLayout() {
+  const { currentView, setCurrentView, user, authLoading, openAuth, dataError, setDataError, publicLoading, reloadPublicData } = useApp();
+  const portal = user && user.role !== 'buyer';
+  const [sellerTab, setSellerTab] = useState('overview');
+  const home = user?.role === 'admin' ? 'admin' : user?.role === 'seller' ? 'seller' : 'homepage';
+  const allowed = user?.role === 'seller' ? ['seller', 'chat', 'notifications', 'account', 'history', 'detail', 'shop']
+    : user?.role === 'admin' ? ['admin', 'chat', 'notifications', 'account', 'history', 'detail', 'shop'] : null;
+  const forbidden = user && (allowed ? !allowed.includes(currentView) : ['seller', 'admin', 'history'].includes(currentView));
+  useEffect(() => {
+    if (!authLoading && forbidden) setCurrentView(home);
+  }, [authLoading, forbidden, home, setCurrentView]);
+
+  const renderView = () => {
+    // Keep form state and error messages mounted while a login is in progress.
+    if (currentView === 'auth' && !user) return <AuthPage />;
+    if (authLoading) return <p className="p-8" role="status">Đang khôi phục phiên đăng nhập…</p>;
+    if (forbidden) return <p className="p-8" role="status">Đang mở giao diện tài khoản…</p>;
+    if (['checkout', 'seller', 'chat', 'admin', 'notifications', 'wishlist', 'account', 'history'].includes(currentView)) {
+      if (authLoading) return <p className="p-8" role="status">Đang khôi phục phiên đăng nhập…</p>;
+      if (!user) return <div className="p-8 text-center space-y-4"><p>Đăng nhập để tiếp tục.</p><button onClick={() => openAuth()} className="btn-primary">Đăng nhập</button></div>;
+      if (currentView === 'admin' && user.role !== 'admin') return <p className="p-8">Bạn không có quyền quản trị.</p>;
+    }
+    switch (currentView) {
+      case 'homepage': return <Homepage />;
+      case 'catalog': return <Catalog />;
+      case 'detail': return <ProductDetail />;
+      case 'chat': return <Chat />;
+      case 'shop': return <ShopProfile />;
+      case 'ai-stylist': return <AiStylist />;
+      case 'checkout': return <CheckoutTracker />;
+      case 'history': return <CheckoutTracker historyOnly />;
+      case 'account': return <AccountPage />;
+      case 'seller': return <SellerStudio tab={sellerTab} setTab={setSellerTab} />;
+      case 'sell': return <SellPage />;
+      case 'sell-guide': return <CleanOutGuide />;
+      case 'admin': return <AdminHub />;
+      case 'auth': return <AuthPage />;
+      case 'notifications': return <NotificationsPage />;
+      case 'wishlist': return <WishlistPage />;
+      case 'info': return <InfoPage />;
+      default: return <Homepage />;
+    }
+  };
+
+  if (user?.role === 'seller' && !authLoading) return <SellerWorkspace activeTab={sellerTab} onSelectTab={setSellerTab}>
+    {dataError && <div role="alert" className="seller-global-error"><p>{dataError}</p><button onClick={() => setDataError('')}>Đóng</button></div>}
+    <main className="workspace-screen">{renderView()}</main>
+  </SellerWorkspace>;
+
+  return (
+    <div className="flex flex-col min-h-screen bg-transparent text-[#17221e]">
+      {!authLoading && currentView !== 'auth' && (portal ? <PortalHeader /> : <Navbar />)}
+      {currentView !== 'auth' && dataError && <div role="alert" className="px-6 py-3 bg-red-50 text-red-700 flex flex-wrap gap-3"><p>{dataError}</p><button onClick={reloadPublicData}>Thử tải lại</button><button onClick={() => setDataError('')}>Đóng</button></div>}
+      {currentView !== 'auth' && !portal && publicLoading && <p role="status" className="px-6 py-2">Đang tải sản phẩm…</p>}
+      <main className={`flex-grow ${['detail', 'chat', 'shop', 'ai-stylist', 'checkout', 'seller', 'admin'].includes(currentView) ? 'workspace-screen' : ''}`}>{renderView()}</main>
+      {!authLoading && !portal && currentView !== 'auth' && <Footer />}
+    </div>
+  );
+}

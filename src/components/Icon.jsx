@@ -1,3 +1,49 @@
+// Core navigation icons render locally, even when external font CDNs are unavailable.
+const paths = {
+  dashboard: 'M3 3h7v7H3V3Zm11 0h7v7h-7V3ZM3 14h7v7H3v-7Zm11 0h7v7h-7v-7Z',
+  inventory_2: 'M3 3h18v5H3V3Zm2 5v13h14V8M9 12h6',
+  add_box: 'M3 3h18v18H3V3Zm9 4v10M7 12h10',
+  storefront: 'M3 3h18l1 6a3 3 0 0 1-5 2 3 3 0 0 1-5 0 3 3 0 0 1-5 0 3 3 0 0 1-5-2l1-6ZM4 12v9h16v-9M9 21v-7h6v7',
+  location_on: 'M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Zm-5 0a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z',
+  settings: 'm9 3 1-2h4l1 2 2 1 2-1 2 4-1 2v3l1 2-2 4-2-1-2 1-1 3h-4l-1-3-2-1-2 1-2-4 1-2V9L2 7l2-4 2 1 3-1Zm7 9a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z',
+  history: 'M3 3v5h5M3 8a9 9 0 1 1 0 8M12 7v5l4 2',
+  panel_collapse: 'M3 3h18v18H3V3Zm5 0v18m8-13-4 4 4 4',
+  panel_expand: 'M3 3h18v18H3V3Zm5 0v18m4-13 4 4-4 4',
+  logout: 'M9 3H3v18h6m5-15 6 6-6 6M8 12h12',
+  expand_more: 'm6 9 6 6 6-6',
+  refresh: 'M20 3v6h-6M20 9a8 8 0 1 0 0 7',
+  payments: 'M2 5h20v14H2V5Zm14 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0ZM5 9h.01M19 15h.01',
+  account_balance_wallet: 'M20 8V4H4a2 2 0 0 0-2 2v14h20V8H4a2 2 0 0 1 0-4m18 8h-7v5h7m-4-2.5h.01',
+  schedule: 'M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM12 7v5l3 2',
+  task_alt: 'M21 11v1a9 9 0 1 1-5-8M8 11l4 4L22 5',
+  arrow_forward: 'M4 12h16m-6-6 6 6-6 6',
+  arrow_back: 'M20 12H4m6-6-6 6 6 6',
+  visibility: 'M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Zm13 0a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z',
+  visibility_off: 'M3 3l18 18M10 5h2c6 0 10 7 10 7l-3 4M6 6a24 24 0 0 0-4 6s4 7 10 7c2 0 4-1 5-2M10 10a3 3 0 0 0 4 4',
+  north_east: 'M6 18 18 6M6 6h12v12',
+  south: 'M12 4v16m-6-6 6 6 6-6',
+  north: 'M12 20V4m-6 6 6-6 6 6',
+  search: 'M21 21l-5-5M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0',
+  shopping_bag: 'M5 7h14l1 14H4L5 7ZM8 8V6a4 4 0 0 1 8 0v2',
+  add_shopping_cart: 'M3 3h2l3 12h10l3-8H7M10 19h.01M18 19h.01M15 2v8m-4-4h8',
+  person: 'M20 21v-2a6 6 0 0 0-6-6h-4a6 6 0 0 0-6 6v2M16 6a4 4 0 1 1-8 0 4 4 0 0 1 8 0',
+  eco: 'M20 3C7 1 2 7 5 15c3 8 17 6 15-12ZM5 20 16 9',
+  favorite: 'M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z',
+  forum: 'M21 11V3H3v13l4-4h14ZM9 16h8l4 4v-4h1V9',
+  chat_bubble_outline: 'M21 3H3v15l4-4h14V3Z',
+  checkroom: 'M10 5a2 2 0 1 1 4 0c0 2-2 2-2 4v2L2 17v3h20v-3L12 11',
+  verified_user: 'M12 2 3 6v6c0 5 9 10 9 10s9-5 9-10V6l-9-4ZM8 12l3 3 5-6',
+  receipt_long: 'M4 3l2 2 2-2 2 2 2-2 2 2 2-2 2 2 2-2v18l-2-2-2 2-2-2-2 2-2-2-2 2-2-2-2 2V3ZM8 9h8M8 13h8M8 17h5',
+  notifications_none: 'M5 17h14l-2-3V9A5 5 0 0 0 7 9v5l-2 3Zm5 3h4M12 2v2',
+  auto_awesome: 'M12 3l2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5L12 3ZM21 2v4m-2-2h4',
+  language: 'M21 12A9 9 0 1 1 3 12a9 9 0 0 1 18 0ZM3 12h18M12 3a17 17 0 0 1 0 18 17 17 0 0 1 0-18Z',
+  image: 'M3 3h18v18H3V3ZM3 17l6-6 4 4 3-3 5 5M16 7h.01',
+  close: 'M6 6l12 12M6 18 18 6',
+  menu: 'M3 6h18M3 12h18M3 18h18',
+  chevron_right: 'm9 6 6 6-6 6',
+};
+paths.favorite_border = paths.favorite;
+
 export default function Icon({ name, className = '' }) {
-  return <span aria-hidden="true" className={`material-symbols-outlined ${className}`}>{name}</span>;
+  return <span aria-hidden="true" className={`material-symbols-outlined ${paths[name] ? 'sifit-icon' : ''} ${className}`}>{paths[name] ? <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><path d={paths[name]} /></svg> : name}</span>;
 }

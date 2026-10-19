@@ -11,8 +11,8 @@ export default function ProductDetail() {
   if (!selectedProduct) return null;
 
   const reviews = getProductReviews(selectedProduct._id);
-  const isSold = selectedProduct.status === 'sold';
-  const isSeller = user?.role === 'seller';
+  const isSold = selectedProduct.status !== 'active';
+  const isSeller = user?._id === selectedProduct.seller?._id;
 
   return (
     <LocalizedContent>
@@ -38,7 +38,7 @@ export default function ProductDetail() {
             {isSold && (
               <div className="absolute inset-0 bg-gray-900/60 backdrop-blur-sm flex items-center justify-center z-10">
                 <div className="bg-white/10 backdrop-blur-md border border-white/20 px-10 py-4 rounded-2xl shadow-2xl">
-                  <span className="text-red-400 font-heading font-black text-5xl uppercase tracking-[0.2em]">ĐÃ BÁN</span>
+                  <span className="text-red-400 font-heading font-black text-3xl uppercase tracking-[0.2em]">{selectedProduct.status === 'sold' ? 'ĐÃ BÁN' : 'KHÔNG KHẢ DỤNG'}</span>
                 </div>
               </div>
             )}
@@ -109,13 +109,13 @@ export default function ProductDetail() {
           <div className="space-y-3 mb-7">
             {isSold ? (
               <div className="bg-gray-100 border border-gray-200 p-5 rounded-2xl text-center">
-                <p className="text-sm font-black text-gray-900 uppercase tracking-widest">Sản phẩm đã được mua</p>
+                <p className="text-sm font-black text-gray-900 uppercase tracking-widest">Sản phẩm hiện không khả dụng</p>
                 <p className="text-xs text-gray-500 mt-2">Hàng 2hand — chỉ có 1 chiếc duy nhất. Tiếc quá!</p>
               </div>
-            ) : isSeller ? (
+            ) : isSeller || (user && user.role !== 'buyer') ? (
               <div className="bg-gray-100 p-5 rounded-2xl text-center border border-gray-200">
                 <p className="text-sm font-black text-gray-900 uppercase tracking-widest">Không thể mua hàng</p>
-                <p className="text-xs text-gray-500 mt-2">Tài khoản Người bán không được phép mua hàng.</p>
+                <p className="text-xs text-gray-500 mt-2">{isSeller ? 'Bạn không thể mua sản phẩm do chính mình đăng bán.' : 'Mua sắm dành cho tài khoản người mua.'}</p>
               </div>
             ) : (
               <>
@@ -182,6 +182,8 @@ export default function ProductDetail() {
                       </div>
                       <p className="text-xs text-gray-400 mb-2">{new Date(review.createdAt).toLocaleDateString('vi-VN')}</p>
                       <p className="text-sm text-gray-700">{review.comment}</p>
+                      {review.images?.length > 0 && <div className="flex flex-wrap gap-2 mt-3">{review.images.map(asset => <a key={asset.publicId} href={asset.url} target="_blank" rel="noreferrer"><img src={asset.url} alt="Ảnh đánh giá" className="w-20 h-20 object-cover rounded-xl" /></a>)}</div>}
+                      {review.sellerReply?.text && <p className="text-sm mt-3">Phản hồi của người bán: {review.sellerReply.text}</p>}
                     </div>
                   </div>
                 ))}

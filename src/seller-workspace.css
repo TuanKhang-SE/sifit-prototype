@@ -1,0 +1,177 @@
+.seller-shell { --seller-sidebar-width: 248px; --seller-accent: #12664c; color: #25392f; background: #f5f7f9; min-height: 100vh; font-family: 'Be Vietnam Pro', system-ui, sans-serif; font-size: 13px; }
+.seller-shell.sidebar-collapsed { --seller-sidebar-width: 80px; }
+.seller-sidebar { position: fixed; inset: 0 auto 0 0; width: var(--seller-sidebar-width); z-index: 45; display: flex; flex-direction: column; background: #fff; border-right: 1px solid #e6eae8; transition: width .22s ease; }
+.seller-brand { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; flex-shrink: 0; gap: 5px; min-height: 99px; margin: 0 23px; border-bottom: 1px solid #edf0ed; text-align: left; }
+.seller-brand img { width: 118px; height: 43px; object-fit: contain; }
+.seller-brand > span:not(.seller-brand-mark) { color: #829489; font-size: 8px; font-weight: 600; letter-spacing: .21em; padding-left: 3px; }
+.seller-brand-mark { color: #12664c; background: #eaf4ed; border-radius: 11px; width: 42px; height: 42px; display: grid; place-items: center; }
+.seller-brand-mark .sifit-icon { font-size: 24px; }
+.seller-sidebar-scroll { overflow-y: auto; overflow-x: hidden; flex: 1; padding: 24px 14px; scrollbar-width: thin; }
+.seller-nav-caption { padding: 0 13px; font-size: 9px; font-weight: 600; letter-spacing: .1em; color: #94a199; white-space: nowrap; margin-bottom: 14px; }
+.seller-nav-divider { margin-top: 27px; padding-top: 23px; border-top: 1px solid #edf0ed; }
+.seller-navigation { display: flex; flex-direction: column; gap: 6px; }
+.seller-navigation > button { position: relative; display: flex; align-items: center; gap: 12px; min-height: 44px; padding: 12px 14px; color: #6c7c72; text-align: left; border-radius: 7px; font-size: 12px; font-weight: 500; white-space: nowrap; transition: color .15s, background .15s; }
+.seller-navigation > button:hover { background: #f3f7f3; color: #12664c; }
+.seller-navigation > button[aria-current='page'] { background: #eaf5ed; color: #12664c; font-weight: 600; }
+.seller-navigation > button[aria-current='page']::before { content: ''; position: absolute; height: 19px; width: 3px; background: #16875e; left: -14px; border-radius: 0 3px 3px 0; }
+.seller-navigation .sifit-icon { font-size: 20px; }
+.seller-active-dot { width: 5px; height: 5px; border-radius: 50%; background: #238963; margin-left: auto; }
+.seller-sidebar-bottom { border-top: 1px solid #edf0ed; padding: 16px 15px 18px; flex-shrink: 0; }
+.seller-sidebar-shop { display: flex; gap: 10px; align-items: center; background: #f6f8f5; border: 1px solid #edf0e9; border-radius: 8px; padding: 10px; margin-bottom: 12px; }
+.seller-shop-avatar, .seller-topbar-avatar { width: 33px; height: 33px; display: grid; place-items: center; border-radius: 9px; background: #e6eee0; color: #58714b; font-weight: 600; flex-shrink: 0; }
+.seller-sidebar-shop > div { min-width: 0; }
+.seller-sidebar-shop strong { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 137px; font-size: 10px; font-weight: 600; color: #425b48; }
+.seller-sidebar-shop > div > span { display: block; font-size: 9px; color: #93a18b; margin-top: 4px; }
+.seller-collapse-button, .seller-signout { display: flex; align-items: center; min-height: 38px; gap: 12px; width: 100%; padding: 9px 12px; border-radius: 6px; color: #7d8b81; font-size: 11px; text-align: left; white-space: nowrap; }
+.seller-collapse-button:hover { color: #12664c; background: #f3f7f3; }
+.seller-signout:hover { color: #a64c40; background: #fbf2ef; }
+.seller-collapse-button .sifit-icon, .seller-signout .sifit-icon { font-size: 18px; }
+.seller-workspace { margin-left: var(--seller-sidebar-width); min-width: 0; transition: margin-left .22s ease; }
+.seller-topbar { height: 74px; background: #ffffffed; backdrop-filter: blur(12px); border-bottom: 1px solid #e8ece9; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-inline: 32px; position: sticky; top: 0; z-index: 35; }
+.seller-breadcrumb { display: flex; align-items: center; gap: 10px; font-size: 11px; color: #a0aaa3; white-space: nowrap; }
+.seller-breadcrumb > .sifit-icon { font-size: 14px; }
+.seller-breadcrumb strong { color: #52665a; font-weight: 500; }
+.seller-topbar-actions { display: flex; align-items: center; gap: 18px; }
+.seller-role-label { display: flex; align-items: center; gap: 6px; color: #69806d; font-size: 10px; padding-right: 17px; border-right: 1px solid #e6eae6; white-space: nowrap; }
+.seller-role-label > span { width: 5px; height: 5px; background: #5f986c; border-radius: 50%; }
+.seller-notification-button { color: #6e8176; display: grid; place-items: center; border-radius: 6px; width: 34px; height: 34px; }
+.seller-notification-button:hover { background: #eef5ef; }
+.seller-topbar-account { display: flex; align-items: center; gap: 10px; color: #425a4a; font-size: 11px; font-weight: 500; }
+.seller-topbar-avatar { width: 31px; height: 31px; border-radius: 50%; }
+.seller-topbar-account > .sifit-icon { font-size: 15px; color: #92a18d; }
+.seller-workspace-content { padding: 30px 32px 45px; max-width: 1800px; margin-inline: auto; }
+.seller-shell .workspace-screen { background: transparent; min-width: 0; }
+.seller-studio { display: flex; flex-direction: column; gap: 23px; min-width: 0; }
+.seller-page-heading { display: flex; align-items: center; justify-content: space-between; gap: 25px; padding-bottom: 4px; }
+.seller-eyebrow { font-size: 8px; letter-spacing: .13em; color: #91a18e; font-weight: 600; margin-bottom: 9px; }
+.seller-page-heading h1 { font-size: 27px; font-weight: 600; color: #233c2c; letter-spacing: -.04em; margin: 0 0 9px; line-height: 1.35; }
+.seller-page-heading > div > p:last-child:not(.seller-eyebrow) { color: #8a978b; font-size: 11px; line-height: 1.8; max-width: 550px; }
+.seller-page-heading-actions { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.seller-primary-button, .seller-secondary-button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border-radius: 6px; min-height: 38px; padding: 10px 15px; font-size: 11px; font-weight: 500; white-space: nowrap; }
+.seller-primary-button { background: #17664c; color: #fff; border: 1px solid #17664c; box-shadow: 0 3px 8px #17664c0b; }
+.seller-primary-button:hover { background: #0c503a; }
+.seller-secondary-button { border: 1px solid #dfe7df; background: #fff; color: #6e8172; }
+.seller-secondary-button:hover { border-color: #a3b8a7; color: #17664c; }
+.seller-primary-button .sifit-icon, .seller-secondary-button .sifit-icon { font-size: 17px; }
+.seller-shell button:disabled { opacity: .5; cursor: wait; }
+.seller-section-caption { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: -8px; }
+.seller-section-caption h2 { font-size: 13px; font-weight: 600; color: #4b6151; margin: 0; letter-spacing: 0; }
+.seller-section-caption > span { border: 1px solid #e0e7de; padding: 5px 9px; background: #fff; color: #879483; border-radius: 5px; font-size: 9px; }
+.seller-stat-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 17px; }
+.seller-stat-card { background: #fff; padding: 20px; border-radius: 10px; border: 1px solid #e6ebe5; min-width: 0; box-shadow: 0 2px 4px #25392f02; }
+.seller-stat-card > div { display: flex; align-items: center; justify-content: space-between; gap: 10px; color: #829080; font-size: 10px; }
+.seller-stat-icon { display: grid; place-items: center; border-radius: 8px; background: #f0f5ed; color: #7b986c; width: 34px; height: 34px; flex-shrink: 0; }
+.seller-stat-icon .sifit-icon { font-size: 19px; }
+.seller-stat-card > strong { display: block; color: #304a35; margin: 16px 0 12px; font-size: clamp(21px, 1.8vw, 30px); font-weight: 600; letter-spacing: -.04em; overflow-wrap: anywhere; }
+.seller-stat-card > p { font-size: 9px; line-height: 1.7; color: #9ca696; border-top: 1px solid #eef1ea; padding-top: 12px; margin: 0; }
+.seller-stat-featured { background: #155e46; border-color: #155e46; box-shadow: 0 5px 15px #155e4610; }
+.seller-stat-featured > div { color: #d8e9de; }
+.seller-stat-featured > strong { color: #fff; }
+.seller-stat-featured .seller-stat-icon { background: #ffffff16; color: #c0dec7; }
+.seller-stat-featured > p { color: #abcbb5; border-top-color: #ffffff1c; }
+.seller-dashboard-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.seller-dashboard-panel, .seller-studio > section, .seller-studio > div > section:not(.seller-stat-card) { background: #fff; border: 1px solid #e5ebe4; border-radius: 10px; padding: 23px; min-width: 0; box-shadow: 0 2px 4px #25392f02; }
+.seller-panel-heading { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-bottom: 20px; }
+.seller-panel-heading h2, .seller-studio > section > h2 { font-size: 14px; font-weight: 600; color: #3a5340; letter-spacing: -.02em; margin: 0; }
+.seller-panel-heading p { color: #9aa594; font-size: 10px; margin-top: 6px; }
+.seller-count-badge { border: 1px solid #e3e9df; background: #f8faf5; color: #8a9b7b; border-radius: 5px; padding: 5px 8px; font-size: 9px; white-space: nowrap; }
+.seller-inventory-status { display: grid; grid-template-columns: 1fr 1fr; gap: 23px 25px; padding: 4px 0 21px; }
+.seller-inventory-status > div > div { display: flex; align-items: center; justify-content: space-between; font-size: 10px; color: #7c8a73; margin-bottom: 10px; }
+.seller-inventory-status > div > div > span { display: flex; align-items: center; gap: 7px; }
+.seller-inventory-status strong { color: #516b46; font-weight: 600; }
+.seller-status-dot { width: 6px; height: 6px; border-radius: 50%; background: #84a471; }
+.seller-status-dot.status-pending { background: #d2b36b; }
+.seller-status-dot.status-draft { background: #aab5a2; }
+.seller-status-dot.status-sold { background: #6c9a95; }
+.seller-inventory-status progress { appearance: none; width: 100%; height: 5px; border: 0; border-radius: 20px; overflow: hidden; display: block; background: #f1f4ec; }
+.seller-inventory-status progress::-webkit-progress-bar { background: #f1f4ec; }
+.seller-inventory-status progress::-webkit-progress-value { background: #8cac76; border-radius: 20px; }
+.seller-inventory-status progress::-moz-progress-bar { background: #8cac76; }
+.seller-panel-link { display: inline-flex; align-items: center; gap: 9px; font-size: 10px; font-weight: 500; color: #5f8251; }
+.seller-panel-link:hover { text-decoration: underline; text-underline-offset: 4px; }
+.seller-panel-link .sifit-icon { font-size: 15px; }
+.seller-panel-icon { color: #91a481; background: #f5f8ef; border-radius: 8px; width: 34px; height: 34px; display: grid; place-items: center; }
+.seller-finance-summary > div { display: flex; justify-content: space-between; gap: 20px; font-size: 11px; color: #8d9a83; padding: 10px 0; border-bottom: 1px solid #f0f2eb; }
+.seller-finance-summary dd { color: #4b6840; font-weight: 600; }
+.seller-finance-note { display: flex; gap: 8px; color: #96a28c; font-size: 9px; line-height: 1.8; margin: 14px 0; }
+.seller-finance-note .sifit-icon { font-size: 16px; margin-top: 1px; }
+.seller-table-wrap { overflow-x: auto; }
+.seller-shell .seller-table-wrap table { width: 100%; border-collapse: collapse; min-width: 550px; }
+.seller-table-wrap th { text-align: left; background: #f7f9f4; font-size: 10px; color: #98a28d; font-weight: 500; padding: 12px 15px; white-space: nowrap; }
+.seller-table-wrap td { padding: 15px; font-size: 11px; color: #6a7e5e; border-bottom: 1px solid #f0f3eb; }
+.seller-table-wrap tr:last-child td { border-bottom: 0; }
+.seller-status-badge { display: inline-flex; align-items: center; gap: 5px; background: #eef5e9; color: #718e5c; border: 1px solid #e4eddd; padding: 4px 8px; font-size: 9px; border-radius: 5px; white-space: nowrap; font-weight: 500; }
+.seller-status-badge.status-pending { background: #fff9eb; border-color: #f1e6c9; color: #ae9150; }
+.seller-status-badge.status-draft { background: #f4f5f1; color: #8a957e; border-color: #e7eae0; }
+.seller-status-badge.status-rejected { background: #fbefeb; border-color: #f0dcd2; color: #b67f69; }
+.seller-empty-state { text-align: center; padding: 25px; background: #fafbf8; border: 1px dashed #e3eade; border-radius: 8px; }
+.seller-empty-state > span { color: #b1c2a3; display: grid; place-items: center; width: 45px; height: 45px; background: #f1f5eb; border-radius: 12px; margin: 0 auto 12px; }
+.seller-empty-state .sifit-icon { font-size: 24px; }
+.seller-empty-state h3 { font-size: 12px; color: #7a9270; font-weight: 500; margin-bottom: 7px; }
+.seller-empty-state p, .seller-muted-copy { font-size: 11px; color: #9da991; line-height: 1.9; }
+.seller-payout-row { display: flex; align-items: center; gap: 20px; padding: 12px 0; border-top: 1px solid #eef2e8; font-size: 11px; color: #88987a; }
+.seller-listing-actions { display: flex; gap: 10px; justify-content: flex-end; }
+.seller-product-row { display: flex; align-items: center; flex-wrap: wrap; gap: 18px; padding: 20px 0; border-bottom: 1px solid #edf1e8; }
+.seller-product-row:last-child { border-bottom: 0; }
+.seller-product-thumbnail { position: relative; width: 65px; height: 76px; display: grid; place-items: center; flex-shrink: 0; background: #f1f5ec; color: #a6b798; border: 1px solid #e7edde; border-radius: 7px; overflow: hidden; }
+.seller-product-thumbnail img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.seller-product-description { flex: 1; min-width: 190px; }
+.seller-product-description > .font-bold { font-size: 12px; font-weight: 500; color: #425b37; }
+.seller-product-price { display: flex; align-items: center; gap: 15px; margin-top: 8px; color: #779360; font-size: 11px; }
+.seller-product-row > button { border: 1px solid #e2e9dc; background: #fafcf7; border-radius: 5px; color: #7b9467; padding: 7px 10px; font-size: 10px; }
+.seller-product-row > button:last-child { color: #ab8975; }
+.seller-studio .input-field { border: 1px solid #e0e7db; background: #fafbf8; color: #42583b; border-radius: 6px; font-size: 12px; padding: 11px 13px; min-height: 42px; box-shadow: none; }
+.seller-studio .input-field:focus { border-color: #a5bb97; background: #fff; box-shadow: 0 0 0 3px #e7f0df; }
+.seller-studio textarea.input-field { min-height: 130px; resize: vertical; }
+.seller-studio label { font-size: 11px; color: #7d9071; margin-bottom: 6px; }
+.seller-studio .btn-primary { background: #17664c; border-radius: 6px; font-size: 11px; font-weight: 500; letter-spacing: 0; text-transform: none; box-shadow: none; padding: 12px 19px; }
+.seller-studio form { margin-top: 20px; }
+.seller-studio form > div { margin-bottom: 17px; }
+.seller-studio input[type='file'] { width: 100%; padding: 23px; border: 1px dashed #cddac2; border-radius: 8px; background: #f8faf4; color: #8b9e7c; font-size: 11px; }
+.seller-studio input[type='file']::file-selector-button { border: 1px solid #d3dfca; background: #fff; color: #6f8b5d; border-radius: 5px; padding: 8px 12px; margin-right: 12px; cursor: pointer; }
+.seller-studio section > button:not([class]), .seller-studio section > div > button:not([class]) { font-size: 11px; color: #7f986d; padding: 7px 0; }
+.seller-studio section > p:not([class]) { color: #8a9d7c; font-size: 12px; line-height: 1.9; }
+.seller-shell .workspace-screen .chat-workspace { height: calc(100vh - 140px); padding: 0; min-height: 530px; }
+.seller-global-error { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 12px 16px; background: #fbefeb; color: #af7862; border: 1px solid #f1ddd2; border-radius: 7px; margin-bottom: 20px; font-size: 12px; }
+/* Maintain legibility in wide desktop workspaces. */
+.seller-navigation > button { font-size: 13px; }
+.seller-page-heading > div > p:last-child:not(.seller-eyebrow) { font-size: 12px; color: #6e8072; }
+.seller-stat-card > div { font-size: 12px; color: #6b7f6e; }
+.seller-stat-featured > div { color: #d8e9de; }
+.seller-stat-card > p { font-size: 11px; color: #71836a; }
+.seller-stat-featured > p { color: #b6d2be; }
+.seller-panel-heading h2, .seller-studio > section > h2 { font-size: 15px; }
+.seller-panel-heading p, .seller-empty-state p, .seller-muted-copy { color: #778a6e; font-size: 11px; }
+.seller-inventory-status > div > div { font-size: 12px; }
+.seller-finance-summary > div { font-size: 12px; color: #758a69; }
+.seller-finance-note { font-size: 10px; color: #7f9075; }
+.seller-panel-link { font-size: 11px; }
+.seller-studio label { color: #667d58; font-size: 12px; }
+.seller-studio .input-field { font-size: 13px; }
+.sidebar-collapsed .seller-brand { margin-inline: 14px; align-items: center; }
+.sidebar-collapsed .seller-sidebar-scroll { padding-inline: 13px; }
+.sidebar-collapsed .seller-nav-caption { font-size: 0; padding: 0; margin-bottom: 0; height: 0; }
+.sidebar-collapsed .seller-nav-divider { margin-block: 18px 15px; height: 1px; padding: 0; }
+.sidebar-collapsed .seller-navigation > button { justify-content: center; padding-inline: 10px; }
+.sidebar-collapsed .seller-nav-label, .sidebar-collapsed .seller-active-dot, .sidebar-collapsed .seller-sidebar-shop > div { display: none; }
+.sidebar-collapsed .seller-sidebar-bottom { padding-inline: 13px; }
+.sidebar-collapsed .seller-sidebar-shop { background: transparent; border: 0; padding: 6px 0; justify-content: center; }
+.sidebar-collapsed .seller-collapse-button, .sidebar-collapsed .seller-signout { justify-content: center; padding-inline: 0; }
+@media (max-width: 1250px) {
+  .seller-stat-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .seller-page-heading { align-items: flex-start; }
+  .seller-page-heading-actions { flex-wrap: wrap; justify-content: flex-end; }
+  .seller-topbar-account > span:not(.seller-topbar-avatar) { display: none; }
+}
+@media (max-width: 1000px) {
+  .seller-shell { --seller-sidebar-width: 220px; }
+  .seller-shell.sidebar-collapsed { --seller-sidebar-width: 72px; }
+  .seller-workspace-content { padding: 24px; }
+  .seller-topbar { padding-inline: 24px; }
+  .seller-role-label { display: none; }
+  .seller-dashboard-columns { grid-template-columns: 1fr; }
+  .seller-page-heading { flex-wrap: wrap; }
+  .seller-sidebar-scroll { padding-inline: 10px; }
+  .seller-navigation > button { font-size: 11px; }
+}
+@media (prefers-reduced-motion: reduce) { .seller-sidebar, .seller-workspace { transition: none; } }

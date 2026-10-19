@@ -26,7 +26,7 @@ button { cursor: pointer; }
 .header-categories { display: flex; align-items: center; justify-content: space-between; flex: 1; gap: 18px; }
 .header-categories button { font-size: 13px; white-space: nowrap; padding-block: 16px; transition: color .2s; }
 .header-categories button:hover, .text-link:hover { color: var(--sifit-green); }
-.account-actions { display: flex; align-items: center; gap: 15px; font-size: 12px; white-space: nowrap; }
+.account-actions { display: flex; align-items: center; gap: 15px; margin-left: auto; font-size: 12px; white-space: nowrap; }
 .account-button { display: flex; align-items: center; gap: 6px; }
 .bag-button { position: relative; display: flex; padding: 5px; }
 .bag-count { position: absolute; top: -3px; right: -6px; background: var(--sifit-green); color: #fff; width: 17px; height: 17px; display: grid; place-items: center; border-radius: 50%; font-size: 10px; }
@@ -341,3 +341,5 @@ button { cursor: pointer; }
   .info-page h1 { font-size: 34px; }
 }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+.workspace-links { display: flex; gap: 22px; padding-block: 10px; overflow-x: auto; font-size: 12px; border-top: 1px solid #e3e8e1; }
+.workspace-links button { white-space: nowrap; }

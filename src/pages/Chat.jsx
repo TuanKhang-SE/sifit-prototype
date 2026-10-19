@@ -1,4 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
+import * as chatService from '../services/chatService';
+import { Feedback } from '../components/MarketplaceUI';
+import { useAction } from '../hooks/useAction';
+
 import { useApp } from '../context/AppContext';
 import LocalizedContent from '../components/LocalizedContent';
 
@@ -16,8 +20,12 @@ const isCurrentUser = (sender, currentUser) => {
 };
 
 export default function Chat() {
-  const { chats, messages, activeChatId, setActiveChatId, user, sendMessage } = useApp();
+  const { chats, messages, activeChatId, setActiveChatId, user, sendMessage, setSelectedProduct, setCurrentView, loadOlderMessages, hasOlderMessages, fetchChats } = useApp();
   const [input, setInput] = useState('');
+  const { busy, error, run } = useAction();
+  const [reportId, setReportId] = useState(null);
+  const [reason, setReason] = useState('');
+  const sendAttempt = useRef(null);
 
   const visibleChats = chats.filter(c =>
     c.participants?.some(participant => getUserId(participant) === getUserId(user))
@@ -26,19 +34,31 @@ export default function Chat() {
   const chatMessages = messages[activeChatId] || [];
   const otherUser = activeChat?.participants?.find(p => getUserId(p) !== getUserId(user));
 
+  const lastMessageId = chatMessages.at(-1)?._id;
+  useEffect(() => {
+    const last = lastMessageId;
+    if (last && activeChatId) chatService.markRead(activeChatId, last).catch(() => {});
+  }, [activeChatId, lastMessageId]);
   const send = () => {
-    if (!input.trim() || !activeChatId) return;
-    sendMessage(activeChatId, input.trim());
-    setInput('');
+    if (!input.trim() || !activeChatId || busy) return;
+    const fingerprint = activeChatId + ':' + input.trim();
+    if (sendAttempt.current?.fingerprint !== fingerprint) sendAttempt.current = { fingerprint, id: crypto.randomUUID() };
+    run(async () => {
+      const result = await sendMessage(activeChatId, input.trim(), sendAttempt.current.id);
+      if (result.success) { setInput(''); sendAttempt.current = null; }
+    });
   };
 
   return (
     <LocalizedContent>
+    <Feedback busy={busy} error={error} />
+    {reportId && <form className="max-w-4xl mx-auto p-4 space-y-3" onSubmit={event => { event.preventDefault(); run(async () => { await chatService.reportMessage(reportId, reason); setReportId(null); setReason(''); }); }}><label>Lý do báo cáo tin nhắn<textarea required maxLength="1000" className="input-field" value={reason} onChange={event => setReason(event.target.value)} /></label><button disabled={busy}>Gửi báo cáo</button><button type="button" onClick={() => setReportId(null)}>Hủy</button></form>}
     <div className="chat-workspace max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-8 h-[calc(100vh-160px)] flex gap-6 animate-fade-in">
       {/* ── Conversation list ── */}
       <aside className="w-72 flex-shrink-0 bg-white rounded-3xl border border-gray-100 shadow-card flex flex-col overflow-hidden">
         <div className="p-5 border-b border-gray-100">
           <h3 className="font-heading font-black text-xl text-gray-900">Hộp Thư</h3>
+          <button disabled={busy} onClick={() => run(fetchChats)}>Làm mới</button>
           <p className="text-xs text-gray-400 mt-0.5">{visibleChats.length} cuộc trò chuyện</p>
         </div>
         <div className="flex-1 overflow-y-auto custom-scrollbar">
@@ -89,23 +109,25 @@ export default function Chat() {
                   <p className="text-[11px] text-primary font-black uppercase tracking-widest">Đang chat với {otherUser?.name}</p>
                 </div>
               </div>
-              <button className="text-primary bg-primary/10 px-4 py-1.5 rounded-full text-xs font-bold hover:bg-primary/20 transition-colors cursor-pointer border-none">
+              <button onClick={() => { setSelectedProduct(activeChat.listing); setCurrentView('detail'); }} className="text-primary bg-primary/10 px-4 py-1.5 rounded-full text-xs font-bold hover:bg-primary/20 transition-colors cursor-pointer border-none">
                 Xem Sản Phẩm
               </button>
             </header>
 
             {/* Messages */}
             <div className="flex-1 p-6 overflow-y-auto custom-scrollbar space-y-5 bg-gradient-to-b from-gray-50/30 to-white">
+              {hasOlderMessages && <button disabled={busy} onClick={() => run(loadOlderMessages)}>Tải tin nhắn cũ</button>}
               {chatMessages.map((m, i) => {
                 const isMe = isCurrentUser(m.sender, user);
                 return (
                   <div key={m._id || i} className={`flex ${isMe ? 'justify-end' : 'justify-start'}`}>
                     <div className={`flex flex-col ${isMe ? 'items-end' : 'items-start'} max-w-[70%]`}>
                       {m.attachments?.length > 0 && (
-                        <img src={m.attachments[0]} alt="attachment" className="rounded-2xl mb-2 max-w-[200px] border border-gray-100" />
+                        <img src={m.attachments[0]?.url || m.attachments[0]} alt="attachment" className="rounded-2xl mb-2 max-w-[200px] border border-gray-100" />
                       )}
                       <div className={`px-5 py-3 shadow-sm ${isMe ? 'bg-primary text-white rounded-[22px] rounded-br-sm' : 'bg-gray-100 text-gray-900 rounded-[22px] rounded-bl-sm'}`}>
-                        <p className="text-sm leading-relaxed">{m.content}</p>
+                        <p className="text-sm leading-relaxed">{m.deletedAt ? 'Tin nhắn đã được xóa' : m.content}</p>
+                        {!isMe && !m.deletedAt && <button className="text-xs underline" onClick={() => setReportId(m._id)}>Báo cáo</button>}
                       </div>
                       <span className="text-[10px] text-gray-400 mt-1.5 px-1">
                         {new Date(m.createdAt).toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' })}
@@ -120,6 +142,8 @@ export default function Chat() {
             <footer className="p-4 border-t border-gray-100 flex gap-3 bg-white/60 backdrop-blur-sm">
               <input
                 type="text"
+                maxLength={2000}
+                disabled={busy}
                 placeholder="Nhập tin nhắn..."
                 value={input}
                 onChange={e => setInput(e.target.value)}
@@ -127,6 +151,7 @@ export default function Chat() {
                 className="flex-1 bg-gray-100 border border-transparent focus:bg-white focus:border-primary/30 focus:shadow-[0_0_0_4px_rgba(0,108,73,0.08)] rounded-full px-5 py-3 text-sm outline-none transition-all"
               />
               <button
+                disabled={busy}
                 onClick={send}
                 className="bg-primary text-white w-11 h-11 rounded-full flex items-center justify-center hover:shadow-emerald-sm hover:-translate-y-0.5 transition-all cursor-pointer border-none flex-shrink-0"
               >

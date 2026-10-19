@@ -1,447 +1,272 @@
-import React, { createContext, useState, useContext, useEffect, useRef } from 'react';
-import { useLanguage } from './LanguageContext';
-import { translateWorkspace } from '../data/workspaceTranslations';
-import {
-  MOCK_USERS, MOCK_LISTINGS, MOCK_ORDERS,
-  MOCK_CONVERSATIONS, MOCK_MESSAGES, MOCK_REVIEWS,
-  MOCK_REPORTS, MOCK_PACKAGES, MOCK_STATS,
-} from '../data/mockData';
+import { createContext, useState, useContext, useEffect, useRef, useCallback } from 'react';
+import * as authService from '../services/authService';
+import * as productService from '../services/productService';
+import * as categoryService from '../services/categoryService';
+import * as cartService from '../services/cartService';
+import * as orderService from '../services/orderService';
+import * as chatService from '../services/chatService';
+import * as reviewService from '../services/reviewService';
+import * as wishlistService from '../services/wishlistService';
+import { collectPages } from '../services/pagination';
+import { getApiErrorMessage } from '../utils/errorHandler';
+import { normalizeMessage } from '../utils/normalizers';
+import { connectRealtime } from '../services/realtimeService';
 
 const AppContext = createContext();
-
 export const AppContextProvider = ({ children }) => {
-  const { locale } = useLanguage();
-  const tr = value => locale === 'en' ? translateWorkspace(value) : value;
-  // ── Auth State ──
   const [user, setUser] = useState(null);
+  const [authLoading, setAuthLoading] = useState(true);
+  const [authError, setAuthError] = useState('');
   const initialView = useRef(new URLSearchParams(window.location.search).get('view') || 'homepage').current;
   const [currentView, setCurrentViewRaw] = useState(initialView);
   const [authMode, setAuthMode] = useState('login');
   const [authRole, setAuthRole] = useState('buyer');
   const [infoPage, setInfoPage] = useState('about');
   const [guideSection, setGuideSection] = useState(window.location.hash.slice(1));
-  const viewHistoryRef = useRef([initialView]);
-
-  // ── Data State (in-memory, mutable) ──
-  const [products, setProducts] = useState([...MOCK_LISTINGS]);
-  const [orders, setOrders] = useState([...MOCK_ORDERS]);
-  const [chats, setChats] = useState([...MOCK_CONVERSATIONS]);
-  const [messages, setMessages] = useState({ ...MOCK_MESSAGES });
-  const [reports, setReports] = useState([...MOCK_REPORTS]);
-  const [users, setUsers] = useState([...MOCK_USERS]);
-  const [stats, setStats] = useState({ ...MOCK_STATS });
-  const [packages] = useState([...MOCK_PACKAGES]);
-
-  // ── UI State ──
-  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [products, setProducts] = useState([]);
+  const [apiCategories, setApiCategories] = useState([]);
+  const [publicLoading, setPublicLoading] = useState(true);
+  const [dataError, setDataError] = useState('');
+  const [orders, setOrders] = useState([]);
+  const [chats, setChats] = useState([]);
+  const [messages, setMessages] = useState({});
+  const [wishlist, setWishlist] = useState([]);
   const [cart, setCart] = useState([]);
+  const [selectedProduct, setSelectedProduct] = useState(null);
   const [activeChatId, setActiveChatId] = useState(null);
   const [checkoutProduct, setCheckoutProduct] = useState(null);
-  const [activePackage, setActivePackage] = useState(null);
   const [currentSellerId, setCurrentSellerId] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
-  const [filters, setFilters] = useState({
-    categories: [], brands: [], sizes: [], condition: 0, priceMax: 10000000,
-  });
+  const [filters, setFilters] = useState({ categories: [], brands: [], sizes: [], condition: 0, priceMax: 10000000 });
   const [sortOption, setSortOption] = useState('Hàng Mới Về');
+  const [chatCursors, setChatCursors] = useState({});
+  const [chatRefresh, setChatRefresh] = useState(0);
+  const sessionRef = useRef(0);
 
-  // ── AI Stylist ──
-  const [aiMessages, setAiMessages] = useState([
-    { role: 'ai', text: 'Chào bạn! Mình là Trợ lý AI Stylist của Sifit ✨. Bạn đang tìm đồ cho dịp gì (đi biển, mùa đông, dự tiệc...) hay phong cách nào (vintage, streetwear)?' }
-  ]);
-  const [isAiTyping, setIsAiTyping] = useState(false);
-  const [aiStep, setAiStep] = useState(0);
-  const [aiIntent, setAiIntent] = useState('');
-
-  const sendAiMessage = (text) => {
-    setAiMessages(prev => [...prev, { role: 'user', text }]);
-    setIsAiTyping(true);
-
-    setTimeout(() => {
-      let replyText = '';
-      let recommendedListings = [];
-      const lowerText = text.toLowerCase().replace(/beach|summer|hot/g, 'biển').replace(/winter|cold|warm/g, 'đông').replace(/party|formal|elegant/g, 'tiệc');
-
-      if (aiStep === 0) {
-        setAiIntent(lowerText);
-        replyText = 'Nghe thú vị đó! Để mình gợi ý chuẩn xác nhất, bạn có thể cho mình biết **giới tính, chiều cao, cân nặng** và **dáng người** (VD: dáng quả lê, gầy, đầy đặn...) của bạn không?';
-        setAiStep(1);
-      } else {
-        const combinedIntent = aiIntent + ' ' + lowerText;
-        if (combinedIntent.includes('biển') || combinedIntent.includes('hè') || combinedIntent.includes('nóng')) {
-          replyText = 'Với vóc dáng của bạn đi biển thì những món đồ mỏng nhẹ, sáng màu hoặc phụ kiện như mũ là tôn dáng nhất! Bạn xem thử mấy món này nhé:';
-          recommendedListings = products.filter(p => p.category === 'Tops' || p.category === 'Accessories').slice(0, 4);
-        } else if (combinedIntent.includes('đông') || combinedIntent.includes('lạnh') || combinedIntent.includes('ấm')) {
-          replyText = 'Vào mùa đông, với dáng người của bạn thì khoác áo có form đứng sẽ che khuyết điểm rất tốt. Mình gợi ý cho bạn mấy mẫu cực chất đang có trên sàn:';
-          recommendedListings = products.filter(p => p.category === 'Outerwear' || p.material.toLowerCase().includes('wool')).slice(0, 4);
-        } else if (combinedIntent.includes('vintage')) {
-          replyText = 'Đồ vintage form rộng (oversize) sẽ cực kỳ hợp với form người của bạn luôn. Đây là những món đồ có style vintage rất đặc trưng vừa vặn với bạn:';
-          recommendedListings = products.filter(p => p.title.toLowerCase().includes('vintage') || p.brand === "Levi's" || p.brand === 'Stussy').slice(0, 4);
-        } else if (combinedIntent.includes('tiệc') || combinedIntent.includes('sang')) {
-          replyText = 'Đi tiệc thì cần đồ thanh lịch, tôn dáng. Với số đo của bạn, Blazer form vừa hoặc đồ lụa/satin là lựa chọn tuyệt vời:';
-          recommendedListings = products.filter(p => p.title.toLowerCase().includes('blazer') || p.material.toLowerCase().includes('satin')).slice(0, 4);
-        } else {
-          replyText = 'Cảm ơn bạn! Với vóc dáng này, mình nghĩ những món đồ basic đang hot nhất hôm nay sẽ rất hợp. Xem thử nhé:';
-          recommendedListings = products.filter(p => p.isFeatured).slice(0, 4);
-        }
-        setAiStep(0);
-        setAiIntent('');
-      }
-
-      setAiMessages(prev => [...prev, { role: 'ai', text: replyText, products: recommendedListings }]);
-      setIsAiTyping(false);
-    }, 1500);
-  };
-
-  // ── Navigation ──
-  const setCurrentView = (view) => {
+  const setCurrentView = view => {
     if (view === currentView) return;
-    viewHistoryRef.current.push(view);
     setCurrentViewRaw(view);
     window.history.pushState({ view }, '', `?view=${view}`);
     window.scrollTo({ top: 0, behavior: 'instant' });
   };
-
   const openAuth = (mode = 'login', role = 'buyer') => {
-    setAuthMode(mode);
-    setAuthRole(role);
-    setCurrentView('auth');
+    setAuthMode(mode); setAuthRole(role); setCurrentView('auth');
   };
-
-  const openSellGuide = (section = '') => {
-    setGuideSection(section);
-    setCurrentView('sell-guide');
-    if (!section) {
-      window.history.replaceState({ view: 'sell-guide' }, '', '?view=sell-guide');
-      window.scrollTo({ top: 0, behavior: 'instant' });
-    }
-  };
-
+  const openSellGuide = (section = '') => { setGuideSection(section); setCurrentView('sell-guide'); };
   const browse = (options = {}) => {
     setSearchQuery(options.query || '');
-    setFilters({ categories: options.category ? [options.category] : [], brands: options.brand ? [options.brand] : [],
-      sizes: [], condition: options.premium ? 90 : 0, priceMax: options.lastChance ? 500000 : 10000000,
+    setFilters({ categories: options.category ? [options.category] : [], brands: options.brand ? [options.brand] : [], sizes: [],
+      condition: options.premium ? 90 : 0, priceMax: options.lastChance ? 500000 : 10000000,
       material: options.material || '', women: !!options.women, department: options.department || '' });
-    setSortOption(options.lastChance ? 'Giá: Thấp → Cao' : 'Hàng Mới Về');
-    setCurrentView('catalog');
+    setSortOption(options.lastChance ? 'Giá: Thấp → Cao' : 'Hàng Mới Về'); setCurrentView('catalog');
   };
-
-  const goBack = () => {
-    if (viewHistoryRef.current.length > 1) {
-      window.history.back();
-      return;
-    }
-    setCurrentView('homepage');
-  };
-
+  const goBack = () => window.history.length > 1 ? window.history.back() : setCurrentView('homepage');
   useEffect(() => {
-    const handlePopState = (event) => {
-      const view = event.state?.view || new URLSearchParams(window.location.search).get('view') || 'homepage';
-      viewHistoryRef.current = viewHistoryRef.current.slice(0, -1);
-      setCurrentViewRaw(view);
-    };
-
+    const pop = event => setCurrentViewRaw(event.state?.view || new URLSearchParams(window.location.search).get('view') || 'homepage');
     window.history.replaceState({ view: initialView }, '', window.location.href);
-    window.addEventListener('popstate', handlePopState);
-    return () => window.removeEventListener('popstate', handlePopState);
+    window.addEventListener('popstate', pop);
+    return () => window.removeEventListener('popstate', pop);
   }, [initialView]);
 
-  // ── Auth ──
-  const loginUser = (email, password) => {
-    const found = MOCK_USERS.find(u => u.email === email && u.password === password);
-    if (!found) return { success: false, message: 'Email hoặc mật khẩu không đúng.' };
-    if (found.blocked) return { success: false, message: 'Tài khoản này đã bị khóa.' };
-    setUser(found);
-    if (found.role === 'seller') setCurrentView('seller');
-    else if (found.role === 'admin') setCurrentView('admin');
-    else setCurrentView('homepage');
-    return { success: true };
+  const fetchListings = useCallback(async (params = {}) => {
+    const result = await collectPages(productService.listProducts, { sort: 'newest', ...params });
+    setProducts(result.items); return result;
+  }, []);
+  const reloadPublicData = useCallback(async () => {
+    setPublicLoading(true); setDataError('');
+    try {
+      const [categories] = await Promise.all([categoryService.listCategories(), fetchListings()]);
+      setApiCategories(categories);
+    } catch (error) { setDataError(getApiErrorMessage(error)); }
+    finally { setPublicLoading(false); }
+  }, [fetchListings]);
+  useEffect(() => { reloadPublicData(); }, [reloadPublicData]);
+  useEffect(() => {
+    let cancelled = false;
+    authService.refreshSession().then(result => { if (!cancelled) setUser(result.user); })
+      .catch(() => { if (!cancelled) setUser(null); })
+      .finally(() => { if (!cancelled) setAuthLoading(false); });
+    return () => { cancelled = true; };
+  }, []);
+  useEffect(() => {
+    const expired = () => { sessionRef.current += 1; setUser(null); };
+    window.addEventListener('sifit:session-expired', expired);
+    return () => window.removeEventListener('sifit:session-expired', expired);
+  }, []);
+  const loginUser = async (email, password) => {
+    setAuthLoading(true); setAuthError('');
+    try {
+      const result = await authService.login({ email, password });
+      sessionRef.current += 1; setUser(result.user);
+      setCurrentView(result.user.role === 'admin' ? 'admin' : result.user.role === 'seller' ? 'seller' : 'homepage');
+      return { success: true, data: result.user };
+    } catch (error) {
+      const message = error.response?.status === 401 ? 'Email hoặc mật khẩu không đúng. Vui lòng kiểm tra lại.' : getApiErrorMessage(error);
+      setAuthError(message); return { success: false, message };
+    } finally { setAuthLoading(false); }
   };
-
-  const registerUser = (name, email, password, role) => {
-    if (MOCK_USERS.find(u => u.email === email)) {
-      return { success: false, message: 'Email này đã được sử dụng.' };
-    }
-    const newUser = {
-      _id: `user_${Date.now()}`, name, email, password, role,
-      avatar: `https://i.pravatar.cc/150?img=${Math.floor(Math.random() * 70) + 1}`,
-      phone: '', blocked: false, averageRating: 0, reviewCount: 0,
-      addresses: [], createdAt: new Date().toISOString(),
-    };
-    MOCK_USERS.push(newUser);
-    setUser(newUser);
-    setUsers(prev => [...prev, newUser]);
-    if (role === 'seller') setCurrentView('seller');
-    else setCurrentView('homepage');
-    return { success: true };
+  const registerUser = async (name, email, password, role) => {
+    try {
+      await authService.register({ name, email, password, role });
+      const result = await loginUser(email, password);
+      return result;
+    } catch (error) { return { success: false, message: getApiErrorMessage(error) }; }
   };
-
-  const logoutUser = () => {
-    setUser(null);
-    setCart([]);
-    setActiveChatId(null);
-    setCheckoutProduct(null);
-    setCurrentView('homepage');
+  const logoutUser = async () => {
+    try { await authService.logout(); } catch (error) { setDataError(getApiErrorMessage(error)); }
+    finally { sessionRef.current += 1; setUser(null); setActiveChatId(null); setCheckoutProduct(null); setCurrentView('homepage'); }
   };
-
-  const updateUser = (newData) => {
-    const updated = { ...user, ...newData };
-    setUser(updated);
-    setUsers(prev => prev.map(u => u._id === user._id ? updated : u));
+  const syncCart = data => {
+    const items = (data?.items || []).filter(item => item.product).map(item => ({ ...item.product, available: item.available }));
+    setCart(items); return items;
   };
+  const fetchOrders = useCallback(async () => {
+    const generation = sessionRef.current;
+    const result = await collectPages(orderService.listMyOrders);
+    if (generation === sessionRef.current) setOrders(result.items);
+    return result;
+  }, []);
+  const fetchChats = useCallback(async () => {
+    const generation = sessionRef.current;
+    const result = await collectPages(chatService.listConversations);
+    if (generation === sessionRef.current) setChats(result.items);
+    return result;
+  }, []);
+  useEffect(() => {
+    setCart([]); setOrders([]); setChats([]); setMessages({}); setWishlist([]); setChatCursors({});
+    if (!user) return;
+    let cancelled = false;
+    const jobs = user.role === 'buyer' ? [
+      cartService.getCart().then(data => { if (!cancelled) syncCart(data); }),
+      collectPages(orderService.listMyOrders).then(data => { if (!cancelled) setOrders(data.items); }),
+      collectPages(chatService.listConversations).then(data => { if (!cancelled) setChats(data.items); }),
+      wishlistService.getWishlist().then(data => { if (!cancelled) setWishlist(data.items); }),
+    ] : [
+      collectPages(chatService.listConversations).then(data => { if (!cancelled) setChats(data.items); }),
+      collectPages(orderService.listMyOrders).then(data => { if (!cancelled) setOrders(data.items); }),
+    ];
+    Promise.allSettled(jobs).then(results => {
+      const failed = results.find(result => result.status === 'rejected');
+      if (failed && !cancelled) setDataError(getApiErrorMessage(failed.reason));
+    });
+    return () => { cancelled = true; };
+  }, [user]);
 
-  // ── Listings ──
-  const createListing = (listingData) => {
-    const newListing = {
-      _id: `listing_${Date.now()}`,
-      seller: { _id: user._id, name: user.name, avatar: user.avatar, averageRating: user.averageRating, reviewCount: user.reviewCount },
-      ...listingData,
-      status: 'active',
-      isFeatured: false,
-      averageRating: 0,
-      reviewCount: 0,
-      createdAt: new Date().toISOString(),
-    };
-    setProducts(prev => [newListing, ...prev]);
-    return { success: true, data: newListing };
+  const mergeMessage = useCallback(raw => {
+    const message = normalizeMessage(raw);
+    setMessages(prev => {
+      const existing = prev[message.conversation] || [];
+      return { ...prev, [message.conversation]: [...existing.filter(item => item._id !== message._id), message]
+        .sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt)) };
+    });
+    setChats(prev => prev.map(chat => chat._id === message.conversation ? { ...chat, lastMessage: message } : chat));
+  }, []);
+  useEffect(() => {
+    if (!user) return;
+    return connectRealtime({ onMessage: mergeMessage, onReconnect: () => {
+      fetchChats().catch(error => setDataError(getApiErrorMessage(error)));
+      setChatRefresh(value => value + 1);
+    } });
+  }, [user, mergeMessage, fetchChats]);
+  useEffect(() => {
+    if (!user || !activeChatId) return;
+    let cancelled = false;
+    chatService.listMessages(activeChatId, { limit: 50 }).then(async result => {
+      if (cancelled) return;
+      // Preserve realtime messages received while history was loading.
+      setMessages(prev => ({ ...prev, [activeChatId]: [...new Map([...result.items, ...(prev[activeChatId] || [])].map(item => [item._id, item])).values()]
+        .sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt)) }));
+      setChatCursors(prev => ({ ...prev, [activeChatId]: result.hasMore ? result.nextCursor : null }));
+      if (result.items.length) await chatService.markRead(activeChatId, result.items.at(-1)._id);
+    }).catch(error => { if (!cancelled) setDataError(getApiErrorMessage(error)); });
+    return () => { cancelled = true; };
+  }, [user, activeChatId, chatRefresh]);
+  const loadOlderMessages = async () => {
+    const cursor = chatCursors[activeChatId];
+    if (!cursor) return;
+    try {
+      const result = await chatService.listMessages(activeChatId, { limit: 50, before: cursor });
+      setMessages(prev => ({ ...prev, [activeChatId]: [...new Map([...result.items, ...(prev[activeChatId] || [])].map(item => [item._id, item])).values()] }));
+      setChatCursors(prev => ({ ...prev, [activeChatId]: result.hasMore ? result.nextCursor : null }));
+    } catch (error) { setDataError(getApiErrorMessage(error)); }
   };
-
-  const updateListing = (id, listingData) => {
-    setProducts(prev => prev.map(p => p._id === id ? { ...p, ...listingData } : p));
-    return { success: true };
-  };
-
-  const deleteListing = (id) => {
-    setProducts(prev => prev.filter(p => p._id !== id));
-    return { success: true };
-  };
-
-  const fetchListings = () => {}; // no-op for mock
-
-  // ── Cart ──
-  const addToCart = (product) => {
+  const addToCart = async product => {
     if (!user) { openAuth(); return; }
-    if (cart.find(p => p._id === product._id)) { alert(tr('Sản phẩm đã có trong giỏ hàng!')); return; }
-    setCart(prev => [...prev, product]);
-    alert(tr('Đã thêm vào giỏ hàng! 🛒'));
+    if (user.role !== 'buyer') return { success: false };
+    try { syncCart(await cartService.addItem(product._id)); return { success: true }; }
+    catch (error) { alert(getApiErrorMessage(error)); return { success: false }; }
   };
-
-  const removeFromCart = (listingId) => {
-    setCart(prev => prev.filter(p => p._id !== listingId));
+  const removeFromCart = async id => {
+    try { syncCart(await cartService.removeItem(id)); return { success: true }; }
+    catch (error) { alert(getApiErrorMessage(error)); return { success: false }; }
   };
-
-  const handleInstantBuy = (product) => {
+  const handleInstantBuy = async product => {
     if (!user) { openAuth(); return; }
-    setCheckoutProduct(product);
-    setCurrentView('checkout');
+    if (user.role !== 'buyer') return;
+    if (!cart.some(item => item._id === product._id) && !(await addToCart(product))?.success) return;
+    setCheckoutProduct(product); setCurrentView('checkout');
   };
-
-  // ── Orders ──
-  const createOrder = (orderData) => {
-    const listing = products.find(p => p._id === orderData.listingId) || checkoutProduct;
-    if (!listing) return { success: false, message: 'Không tìm thấy sản phẩm.' };
-    const newOrder = {
-      _id: `order_${Date.now()}`,
-      buyer: { _id: user._id, name: user.name },
-      seller: listing.seller,
-      listing,
-      price: listing.price,
-      shippingFee: 30000,
-      totalAmount: listing.price + 30000,
-      status: 'pending',
-      shippingAddress: orderData.shippingAddress,
-      trackingNumber: null,
-      shippingCarrier: null,
-      isReviewed: false,
-      createdAt: new Date().toISOString(),
-    };
-    setOrders(prev => [newOrder, ...prev]);
-    setProducts(prev => prev.map(p => p._id === listing._id ? { ...p, status: 'processing' } : p));
-    return { success: true, data: newOrder };
+  const createOrder = async data => {
+    try {
+      const checkout = await orderService.createOrder(data);
+      // A successful checkout must remain successful even if a subsequent read fails.
+      const results = await Promise.allSettled([fetchOrders(), cartService.getCart().then(syncCart), fetchListings()]);
+      const failed = results.find(result => result.status === 'rejected');
+      if (failed) setDataError(getApiErrorMessage(failed.reason));
+      return { success: true, data: checkout };
+    } catch (error) { return { success: false, message: getApiErrorMessage(error) }; }
   };
-
-  const updateOrderStatus = (orderId, statusData) => {
-    setOrders(prev => prev.map(o =>
-      o._id === orderId ? { ...o, ...statusData } : o
-    ));
-    if (statusData.status === 'completed') {
-      const order = orders.find(o => o._id === orderId);
-      if (order) {
-        setProducts(prev => prev.map(p =>
-          p._id === order.listing._id ? { ...p, status: 'sold' } : p
-        ));
-        setStats(prev => ({
-          ...prev,
-          totalRevenue: prev.totalRevenue + order.listing.price,
-          platformRevenue: (prev.platformRevenue || 0) + (order.listing.price * 0.07),
-          completedOrders: prev.completedOrders + 1
-        }));
-      }
-    }
-    return { success: true };
-  };
-
-  const fetchOrders = () => {}; // no-op
-
-  // ── Chat ──
-  const startChat = (product) => {
+  const startChat = async product => {
     if (!user) { openAuth(); return; }
-    const existingConv = chats.find(c =>
-      c.listing?._id === product._id &&
-      c.participants.some(p => p._id === user._id)
-    );
-    if (existingConv) {
-      setActiveChatId(existingConv._id);
-      setCurrentView('chat');
-      return;
-    }
-    const seller = product.seller;
-    const newConv = {
-      _id: `conv_${Date.now()}`,
-      participants: [
-        { _id: user._id, name: user.name, avatar: user.avatar || 'https://i.pravatar.cc/150' },
-        { _id: seller._id, name: seller.name, avatar: seller.avatar || 'https://i.pravatar.cc/150' },
-      ],
-      listing: { _id: product._id, title: product.title, images: product.images },
-      lastMessage: null,
-      createdAt: new Date().toISOString(),
-    };
-    setChats(prev => [newConv, ...prev]);
-    setMessages(prev => ({ ...prev, [newConv._id]: [] }));
-    setActiveChatId(newConv._id);
-    setCurrentView('chat');
+    if (user.role !== 'buyer') return;
+    try {
+      const chat = await chatService.createConversation(product._id);
+      setChats(prev => [chat, ...prev.filter(item => item._id !== chat._id)]);
+      window.dispatchEvent(new Event('sifit:conversations'));
+      setActiveChatId(chat._id); setCurrentView('chat');
+    } catch (error) { alert(getApiErrorMessage(error)); }
   };
-
-  const sendMessage = (convId, content) => {
-    const newMsg = {
-      _id: `msg_${Date.now()}`,
-      conversation: convId,
-      sender: user._id,
-      content,
-      attachments: [],
-      isRead: false,
-      createdAt: new Date().toISOString(),
-    };
-    setMessages(prev => ({
-      ...prev,
-      [convId]: [...(prev[convId] || []), newMsg],
-    }));
-    setChats(prev => prev.map(c =>
-      c._id === convId ? { ...c, lastMessage: newMsg } : c
-    ));
+  const sendMessage = async (id, content, clientMessageId) => {
+    try {
+      mergeMessage(await chatService.sendMessage(id, content, clientMessageId));
+      return { success: true };
+    } catch (error) { alert(getApiErrorMessage(error)); return { success: false }; }
   };
-
-  const fetchChats = () => {}; // no-op
-
-  // ── Reports ──
-  const addReport = (reason, details) => {
+  const toggleWishlist = async product => {
     if (!user) { openAuth(); return; }
-    const newReport = {
-      _id: `report_${Date.now()}`,
-      reporter: { _id: user._id, name: user.name },
-      listing: selectedProduct,
-      reason, details,
-      status: 'pending',
-      createdAt: new Date().toISOString(),
-    };
-    setReports(prev => [newReport, ...prev]);
-    setStats(prev => ({ ...prev, pendingReports: prev.pendingReports + 1 }));
-    alert(tr('Báo cáo vi phạm đã được ghi nhận! Ban quản trị sẽ xem xét.'));
-    setProducts(prev => prev.map(p =>
-      p._id === selectedProduct?._id ? { ...p, status: 'reported' } : p
-    ));
+    if (user.role !== 'buyer') return;
+    try {
+      const exists = wishlist.some(item => item.productId === product._id);
+      const result = await (exists ? wishlistService.removeItem(product._id) : wishlistService.addItem(product._id));
+      setWishlist(result.items);
+    } catch (error) { alert(getApiErrorMessage(error)); }
   };
-
-  // ── Admin ──
-  const toggleBlockUser = (userId) => {
-    setUsers(prev => prev.map(u =>
-      u._id === userId ? { ...u, blocked: !u.blocked } : u
-    ));
-  };
-
-  const resolveReport = (reportId, action) => {
-    const report = reports.find(r => r._id === reportId);
-    if (action === 'delete_listing' || action === 'block_user') {
-      if (report?.listing?._id) {
-        setProducts(prev => prev.map(p =>
-          p._id === report.listing._id ? { ...p, status: 'hidden' } : p
-        ));
-      }
-      if (action === 'block_user' && report?.listing?.seller?._id) {
-        toggleBlockUser(report.listing.seller._id);
-      }
-      setReports(prev => prev.map(r =>
-        r._id === reportId ? { ...r, status: 'resolved' } : r
-      ));
-    } else {
-      setReports(prev => prev.map(r =>
-        r._id === reportId ? { ...r, status: 'dismissed' } : r
-      ));
-    }
-    setStats(prev => ({ ...prev, pendingReports: Math.max(0, prev.pendingReports - 1) }));
-  };
-
-  // ── Shop Profile ──
-  const viewShopProfile = (sellerId) => {
-    setCurrentSellerId(sellerId);
-    setCurrentView('shop');
-  };
-
-  const getSellerData = (sellerId) => {
-    return {
-      seller: users.find(u => u._id === sellerId) || null,
-      listings: products.filter(p => p.seller?._id === sellerId && p.status === 'active'),
-      reviews: MOCK_REVIEWS[`seller_${sellerId}`] || [],
-    };
-  };
-
-  const getProductReviews = (listingId) => {
-    return MOCK_REVIEWS[listingId] || [];
-  };
-
-  const submitReview = (orderId, rating, comment) => {
-    setOrders(prev => prev.map(o =>
-      o._id === orderId ? { ...o, isReviewed: true } : o
-    ));
-    alert(tr('Cảm ơn bạn đã đánh giá! ⭐'));
-  };
-
-  return (
-    <AppContext.Provider value={{
-      // Auth
-      user, loginUser, registerUser, logoutUser, updateUser,
-      // Navigation
-      currentView, setCurrentView, goBack, authMode, authRole, openAuth, browse, infoPage, setInfoPage, guideSection, setGuideSection, openSellGuide,
-      // Products
-      products, setProducts, fetchListings, createListing, updateListing, deleteListing,
-      selectedProduct, setSelectedProduct,
-      // Cart
-      cart, setCart, addToCart, removeFromCart,
-      handleInstantBuy,
-      checkoutProduct, setCheckoutProduct,
-      // Orders
-      orders, setOrders, fetchOrders, createOrder, updateOrderStatus,
-      // Chat
-      chats, setChats, activeChatId, setActiveChatId,
-      messages, sendMessage, fetchChats, startChat,
-      // Reports
-      reports, addReport, resolveReport,
-      // Admin
-      users, stats, setStats, toggleBlockUser,
-      // Packages
-      packages, activePackage, setActivePackage,
-      // Search & Filters
-      searchQuery, setSearchQuery, filters, setFilters, sortOption, setSortOption,
-      // Shop
-      currentSellerId, viewShopProfile, getSellerData, getProductReviews,
-      // Reviews
-      submitReview,
-      // AI Stylist
-      aiMessages, isAiTyping, sendAiMessage,
-    }}>
-      {children}
-    </AppContext.Provider>
-  );
+  const viewShopProfile = sellerId => { setCurrentSellerId(sellerId); setCurrentView('shop'); };
+  const [productReviews, setProductReviews] = useState({});
+  useEffect(() => {
+    if (!selectedProduct?._id || currentView !== 'detail') return;
+    let cancelled = false;
+    Promise.all([productService.getProduct(selectedProduct._id), collectPages(params => reviewService.listProductReviews(selectedProduct._id, params)),
+      reviewService.productSummary(selectedProduct._id)]).then(([product, reviews, summary]) => {
+      if (cancelled) return;
+      const category = apiCategories.find(item => (item._id || item.id) === product.categoryId);
+      setSelectedProduct(previous => ({ ...product, category: category?.name || previous.category,
+        categorySlug: category?.slug || previous.categorySlug,
+        averageRating: summary.summary?.averageRating ?? 0, reviewCount: summary.summary?.totalReviews ?? 0 }));
+      setProductReviews(prev => ({ ...prev, [product._id]: reviews.items }));
+    }).catch(error => { if (!cancelled) setDataError(getApiErrorMessage(error)); });
+    return () => { cancelled = true; };
+  }, [selectedProduct?._id, currentView, apiCategories]);
+  return <AppContext.Provider value={{
+    user, authLoading, authError, loginUser, registerUser, logoutUser,
+    currentView, setCurrentView, goBack, authMode, authRole, openAuth, browse, infoPage, setInfoPage,
+    guideSection, setGuideSection, openSellGuide, products, setProducts, apiCategories, fetchListings,
+    publicLoading, dataError, setDataError, reloadPublicData, selectedProduct, setSelectedProduct,
+    cart, addToCart, removeFromCart, handleInstantBuy, checkoutProduct, setCheckoutProduct,
+    orders, fetchOrders, createOrder, chats, activeChatId, setActiveChatId, messages, sendMessage,
+    fetchChats, startChat, loadOlderMessages, hasOlderMessages: !!chatCursors[activeChatId],
+    wishlist, toggleWishlist, searchQuery, setSearchQuery, filters, setFilters, sortOption, setSortOption,
+    currentSellerId, viewShopProfile, getProductReviews: id => productReviews[id] || [],
+  }}>{children}</AppContext.Provider>;
 };
-
 export const useApp = () => useContext(AppContext);

@@ -9,7 +9,7 @@ const SIZES = ['XS', 'S', 'M', 'L', 'XL', 'XXL', 'Freesize', '38', '39', '40', '
 const normalize = value => (value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd').toLowerCase();
 
 export default function Catalog() {
-  const { products, searchQuery, setSearchQuery, filters, setFilters, sortOption, setSortOption, activePackage, user, browse } = useApp();
+  const { products, searchQuery, setSearchQuery, filters, setFilters, sortOption, setSortOption, browse } = useApp();
   const { t } = useLanguage();
   const toggle = (type, value) => setFilters(prev => ({ ...prev, [type]: prev[type].includes(value) ? prev[type].filter(x => x !== value) : [...prev[type], value] }));
   const filtered = products.filter(p => {
@@ -18,7 +18,7 @@ export default function Catalog() {
     if (filters.categories.length && !filters.categories.some(category => matchesCategory(p, category))) return false;
     if (filters.brands.length && !filters.brands.some(brand => brand.toLowerCase() === p.brand?.toLowerCase())) return false;
     if (filters.sizes.length && !filters.sizes.includes(p.size)) return false;
-    if (filters.material && !normalize(p.material).includes(normalize(filters.material))) return false;
+    if (filters.material && !normalize(`${p.description} ${p.title}`).includes(normalize(filters.material))) return false;
     if (filters.women && !['women', 'unisex'].includes(p.gender)) return false;
     if (filters.department === 'kids' && p.gender !== 'kids') return false;
     if (filters.department === 'juniors' && p.department !== 'juniors') return false;
@@ -26,10 +26,6 @@ export default function Catalog() {
     if (filters.department === 'plus' && !['XL', 'XXL', 'XXXL', '3XL', '4XL'].includes(p.size)) return false;
     return p.condition >= filters.condition && p.price <= filters.priceMax;
   }).sort((a, b) => {
-    const aVip = activePackage && a.seller?._id === user?._id;
-    const bVip = activePackage && b.seller?._id === user?._id;
-    if (aVip && !bVip) return -1;
-    if (bVip && !aVip) return 1;
     if (sortOption === 'Giá: Thấp → Cao') return a.price - b.price;
     if (sortOption === 'Giá: Cao → Thấp') return b.price - a.price;
     return new Date(b.createdAt) - new Date(a.createdAt);

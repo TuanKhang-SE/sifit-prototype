@@ -8,13 +8,16 @@
     "build": "vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "test:ui": "node scripts/verify-redesign.mjs",
-    "test:selling": "node scripts/verify-selling.mjs"
+    "test:ui": "node scripts/verify-api-integration.mjs",
+    "test:selling": "node scripts/verify-selling.mjs",
+    "test:integration": "node scripts/verify-api-integration.mjs"
   },
   "dependencies": {
+    "axios": "^1.20.0",
     "qrcode-generator": "^2.0.4",
     "react": "^19.2.7",
-    "react-dom": "^19.2.7"
+    "react-dom": "^19.2.7",
+    "socket.io-client": "^4.8.4"
   },
   "devDependencies": {
     "@playwright/test": "^1.64.0",
