@@ -20,6 +20,10 @@
 .storefront-refresh .header-search input { font-size: 11px; }
 .storefront-refresh .header-search button { color: #2a6148; }
 .storefront-refresh .account-actions { gap: 15px; font-size: 11px; margin-left: 0; }
+.buyer-account { position: relative; }
+.buyer-account-options { position: absolute; top: calc(100% + 12px); right: 0; z-index: 60; width: 200px; padding: 6px; background: #fff; border: 1px solid #e4e8df; border-radius: 10px; box-shadow: 0 8px 24px #153f321a; }
+.buyer-account-options button { display: block; width: 100%; padding: 12px; text-align: left; font-size: 14px; border-radius: 6px; }
+.buyer-account-options button:hover, .buyer-account-options button:focus-visible { background: #edf5ef; color: #15573e; }
 .storefront-refresh .signup-link { border: 1px solid #1e563f; border-radius: 5px; padding: 9px 13px; }
 .storefront-account-row { border-top: 1px solid #f0f1ed; }
 .storefront-refresh .workspace-links { border: 0; padding-block: 0; gap: 30px; min-height: 42px; align-items: stretch; }

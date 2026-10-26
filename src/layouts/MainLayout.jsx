@@ -1,8 +1,11 @@
 import Navbar from '../components/Navbar';
 import { lazy, Suspense, useEffect, useState } from 'react';
 import SellerWorkspace from '../components/SellerWorkspace';
+import AdminWorkspace from '../components/AdminWorkspace';
 import PortalHeader from '../components/PortalHeader';
 import AccountPage from '../pages/AccountPage';
+import AddressBook from '../components/AddressBook';
+import BuyerHeading from '../components/BuyerHeading';
 import Footer from '../components/Footer';
 import Homepage from '../pages/Homepage';
 import Catalog from '../pages/Catalog';
@@ -26,6 +29,8 @@ export default function MainLayout() {
   const { currentView, setCurrentView, user, authLoading, openAuth, dataError, setDataError, publicLoading, reloadPublicData } = useApp();
   const portal = user && user.role !== 'buyer';
   const [sellerTab, setSellerTab] = useState('overview');
+  const [adminTab, setAdminTab] = useState('overview');
+  const [adminBusy, setAdminBusy] = useState(false);
   const home = user?.role === 'admin' ? 'admin' : user?.role === 'seller' ? 'seller' : 'homepage';
   const allowed = user?.role === 'seller' ? ['seller', 'chat', 'notifications', 'account', 'history', 'detail', 'shop', 'resource']
     : user?.role === 'admin' ? ['admin', 'chat', 'notifications', 'account', 'history', 'detail', 'shop', 'resource'] : null;
@@ -39,7 +44,7 @@ export default function MainLayout() {
     if (currentView === 'auth' && !user) return <AuthPage />;
     if (authLoading) return <p className="p-8" role="status">Đang khôi phục phiên đăng nhập…</p>;
     if (forbidden) return <p className="p-8" role="status">Đang mở giao diện tài khoản…</p>;
-    if (['checkout', 'seller', 'chat', 'admin', 'notifications', 'wishlist', 'account', 'history', 'resource'].includes(currentView)) {
+    if (['checkout', 'seller', 'chat', 'admin', 'notifications', 'wishlist', 'account', 'account-profile', 'account-addresses', 'account-password', 'history', 'resource'].includes(currentView)) {
       if (authLoading) return <p className="p-8" role="status">Đang khôi phục phiên đăng nhập…</p>;
       if (!user) return <div className="p-8 text-center space-y-4"><p>Đăng nhập để tiếp tục.</p><button onClick={() => openAuth()} className="btn-primary">Đăng nhập</button></div>;
       if (currentView === 'admin' && user.role !== 'admin') return <p className="p-8">Bạn không có quyền quản trị.</p>;
@@ -54,11 +59,14 @@ export default function MainLayout() {
       case 'checkout': return <CheckoutTracker />;
       case 'history': return <CheckoutTracker historyOnly />;
       case 'account': return <AccountPage />;
+      case 'account-profile': return <AccountPage key="profile" section="profile" />;
+      case 'account-addresses': return <div className="member-page member-address-page"><BuyerHeading title="Địa chỉ" description="Quản lý những địa chỉ nhận hàng đã lưu của bạn." /><AddressBook /></div>;
+      case 'account-password': return <AccountPage key="password" section="password" />;
       case 'resource': return <ResourcePage />;
       case 'seller': return <SellerStudio tab={sellerTab} setTab={setSellerTab} />;
       case 'sell': return <SellPage />;
       case 'sell-guide': return <CleanOutGuide />;
-      case 'admin': return <AdminHub />;
+      case 'admin': return <AdminHub tab={adminTab} setTab={setAdminTab} onBusyChange={setAdminBusy} />;
       case 'auth': return <AuthPage />;
       case 'notifications': return <NotificationsPage />;
       case 'wishlist': return <WishlistPage />;
@@ -71,6 +79,11 @@ export default function MainLayout() {
     {dataError && <div role="alert" className="seller-global-error"><p>{dataError}</p><button onClick={() => setDataError('')}>Đóng</button></div>}
     <main className="workspace-screen"><Suspense fallback={<p role="status" className="p-8">Đang mở trang…</p>}>{renderView()}</Suspense></main>
   </SellerWorkspace>;
+
+  if (user?.role === 'admin' && !authLoading) return <AdminWorkspace activeTab={adminTab} onSelectTab={setAdminTab} busy={adminBusy}>
+    {dataError && <div role="alert" className="admin-global-error"><p>{dataError}</p><button onClick={() => setDataError('')}>Đóng</button></div>}
+    <main><Suspense fallback={<p role="status">Đang mở trang…</p>}>{renderView()}</Suspense></main>
+  </AdminWorkspace>;
 
   return (
     <div className="flex flex-col min-h-screen bg-transparent text-[#17221e]">

@@ -6,11 +6,11 @@ function Timestamp({ value }) {
 
 export default function OrderDetails({ order, now }) {
   const address = order.shippingAddress;
-  return <section aria-label="Thông tin giao hàng và thời hạn" className="border rounded-xl p-4 bg-gray-50 space-y-3 text-sm">
+  return <section aria-label="Thông tin giao hàng và thời hạn" className="member-order-details border rounded-xl p-4 bg-gray-50 space-y-3 text-sm">
     <h4 className="font-bold">Địa chỉ nhận hàng</h4>
     {address ? <address className="not-italic space-y-1">
       <p>{address.recipientName} · {address.phone}</p>
-      <p>{[address.addressLine, address.ward, address.district, address.city || address.province, address.postalCode].filter(Boolean).join(', ')}</p>
+      <p>{[address.addressLine, address.ward, address.city || address.province, address.postalCode].filter(Boolean).join(', ')}</p>
       {address.notes && <p>Ghi chú địa chỉ: {address.notes}</p>}
     </address> : <p>Đơn hàng chưa có thông tin địa chỉ.</p>}
     {order.notes && <p>Ghi chú đơn hàng: {order.notes}</p>}

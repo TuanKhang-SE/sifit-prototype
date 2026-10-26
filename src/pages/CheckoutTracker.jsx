@@ -3,6 +3,9 @@ import { useApp } from '../context/AppContext';
 import LocalizedContent from '../components/LocalizedContent';
 import AddressBook from '../components/AddressBook';
 import OrderCard from '../components/OrderCard';
+import Icon from '../components/Icon';
+import BuyerHeading from '../components/BuyerHeading';
+import '../checkout.css';
 import { Panel, Tabs, Feedback, Field } from '../components/MarketplaceUI';
 import { useAction } from '../hooks/useAction';
 import { money, idOf } from '../utils/marketplace';
@@ -12,12 +15,16 @@ import * as disputeService from '../services/disputeService';
 import * as authService from '../services/authService';
 import { collectPages } from '../services/pagination';
 
-const emptyAddress = { recipientName: '', phone: '', addressLine: '', ward: '', district: '', city: '' };
+const emptyAddress = { recipientName: '', phone: '', addressLine: '', ward: '', city: '' };
 export default function CheckoutTracker({ historyOnly = false }) {
-  const { user, cart, removeFromCart, orders, createOrder, fetchOrders, checkoutProduct, setCheckoutProduct, logoutUser } = useApp();
+  const { user, cart, removeFromCart, orders, createOrder, fetchOrders, checkoutProduct, setCheckoutProduct, logoutUser, browse } = useApp();
   const [tab, setTab] = useState(!historyOnly && (checkoutProduct || cart.length) ? 'checkout' : 'orders');
   const [addresses, setAddresses] = useState([]);
-  const [shipping, setShipping] = useState(emptyAddress);
+  const [selectedAddressId, setSelectedAddressId] = useState('');
+  const deliveryAddresses = addresses.filter(item => item.addressType !== 'PICKUP');
+  const selectedAddress = deliveryAddresses.find(item => idOf(item) === selectedAddressId)
+    || deliveryAddresses.find(item => item.isDefault) || deliveryAddresses[0];
+  const shipping = selectedAddress ? { ...selectedAddress, city: selectedAddress.province } : emptyAddress;
   const [disputes, setDisputes] = useState([]);
   const [passwords, setPasswords] = useState({ currentPassword: '', newPassword: '' });
   const { busy, error, run } = useAction();
@@ -25,8 +32,6 @@ export default function CheckoutTracker({ historyOnly = false }) {
   const [created, setCreated] = useState(null);
   useEffect(() => { run(async () => {
     const data = await addressService.listAddresses(); setAddresses(data);
-    const defaultAddress = data.find(item => item.isDefault && item.addressType !== 'PICKUP') || data.find(item => item.addressType !== 'PICKUP');
-    if (defaultAddress) setShipping({ ...defaultAddress, city: defaultAddress.province });
   }); }, [run]);
   useEffect(() => {
     if (tab === 'disputes') run(async () => setDisputes((await collectPages(disputeService.listMyDisputes)).items));
@@ -34,6 +39,7 @@ export default function CheckoutTracker({ historyOnly = false }) {
   const placeOrder = event => {
     event.preventDefault();
     run(async () => {
+      if (!selectedAddress) throw new Error('Vui lòng thêm địa chỉ nhận hàng trước khi đặt hàng.');
       const address = Object.fromEntries(Object.keys(emptyAddress).map(key => [key, shipping[key]]));
       const fingerprint = JSON.stringify({ products: cart.map(item => item._id).sort(), address });
       if (attempt.current?.fingerprint !== fingerprint) attempt.current = { fingerprint, key: crypto.randomUUID() };
@@ -42,25 +48,41 @@ export default function CheckoutTracker({ historyOnly = false }) {
       setCreated(result.data); setCheckoutProduct(null); setTab('orders');
     });
   };
-  return <LocalizedContent><div className="max-w-5xl mx-auto px-4 py-8 space-y-5">
-    <h1 className="font-heading text-3xl font-bold">{historyOnly ? 'Đơn mua trước đây' : 'Tài khoản của tôi'}</h1>
-    <Tabs disabled={busy} value={tab} onChange={setTab} items={historyOnly ? [['orders', 'Đơn mua'], ['disputes', 'Khiếu nại']] : [[ 'checkout', `Giỏ hàng (${cart.length})` ], ['orders', 'Đơn mua'], ['addresses', 'Địa chỉ'], ['disputes', 'Khiếu nại'], ['profile', 'Tài khoản']]} />
+  return <LocalizedContent><div className={tab === 'checkout' ? 'checkout-page' : !historyOnly ? 'member-page member-orders' : 'max-w-5xl mx-auto px-4 py-8 space-y-5'}>
+    {historyOnly && <h1 className="font-heading text-3xl font-bold">Đơn mua trước đây</h1>}
+    <Tabs disabled={busy} value={tab} onChange={setTab} items={historyOnly ? [['orders', 'Đơn mua'], ['disputes', 'Khiếu nại']] : [[ 'checkout', `Giỏ hàng (${cart.length})` ], ['orders', 'Đơn mua'], ['disputes', 'Khiếu nại']]} />
     <Feedback error={error} busy={busy} />
-    {tab === 'checkout' && <Panel title="Đặt hàng toàn bộ giỏ hàng">
-      <p>Đơn hàng được tách theo từng người bán. Xóa các món bạn chưa muốn mua trước khi đặt hàng.</p>
-      {cart.map(item => <div key={item._id} className="flex items-center gap-3 border-b py-3">{item.images[0] && <img src={item.images[0]} alt="" className="w-16 h-16 object-cover rounded-xl" />}<div className="flex-1"><p>{item.title}</p><p>{money(item.price)}</p>{!item.available && <p className="text-red-600">Sản phẩm không còn khả dụng</p>}</div><button disabled={busy} onClick={() => removeFromCart(item._id)}>Xóa</button></div>)}
-      {cart.length === 0 ? <p>Giỏ hàng trống.</p> : <form onSubmit={placeOrder} className="space-y-4">
-        <Field label="Chọn địa chỉ đã lưu"><select className="input-field" defaultValue="" onChange={event => { const address = addresses.find(item => idOf(item) === event.target.value); setShipping(address ? { ...address, city: address.province } : emptyAddress); }}><option value="">Nhập địa chỉ giao hàng</option>{addresses.filter(item => item.addressType !== 'PICKUP').map(item => <option key={idOf(item)} value={idOf(item)}>{item.label} · {item.addressLine}</option>)}</select></Field>
-        <div className="grid sm:grid-cols-2 gap-3">{[['Người nhận', 'recipientName'], ['Số điện thoại', 'phone'], ['Số nhà, tên đường', 'addressLine'], ['Phường/Xã', 'ward'], ['Quận/Huyện', 'district'], ['Tỉnh/Thành phố', 'city']].map(([label, key]) => <Field label={label} key={key}><input className="input-field" required value={shipping[key]} onChange={event => setShipping({ ...shipping, [key]: event.target.value })} /></Field>)}</div>
-        <p>Tiền hàng dự kiến: <strong>{money(cart.reduce((sum, item) => sum + item.price, 0))}</strong></p>
-        <p>Tổng tiền và phí giao hàng được xác nhận trong đơn hàng. Đơn mới tạo sẽ chờ thanh toán; bạn có thể thanh toán trong mục Đơn mua.</p>
-        <button className="btn-primary" disabled={busy || cart.some(item => !item.available)}>Đặt hàng ({cart.length} sản phẩm)</button>
+    {tab === 'checkout' && <>
+      <div className="checkout-heading"><div><p className="checkout-eyebrow">SIFIT / MUA SẮM</p><h1>Giỏ hàng của bạn</h1></div><span className="checkout-count">{cart.length} sản phẩm</span></div>
+      {cart.length === 0 ? <section className="checkout-empty"><span className="checkout-empty-icon"><Icon name="shopping_bag" /></span><h2>Giỏ hàng trống.</h2><p>Khám phá tủ đồ và chọn món đồ bạn yêu thích.</p><button type="button" onClick={() => browse()}>Khám phá sản phẩm <Icon name="arrow_forward" /></button></section> : <form onSubmit={placeOrder} className="checkout-grid">
+        <div className="checkout-main">
+          <section className="checkout-card" aria-labelledby="cart-products-title"><div className="checkout-card-heading"><h2 id="cart-products-title">Sản phẩm đã chọn</h2><Icon name="shopping_bag" /></div>
+            <div className="checkout-products">{cart.map(item => <div key={item._id} className="checkout-product">
+              <div className="checkout-product-image">{item.images[0] ? <img src={item.images[0]} alt={item.title} /> : <Icon name="image" />}</div>
+              <div className="checkout-product-info"><p className="checkout-product-title">{item.title}</p><p className="checkout-product-price">{money(item.price)}</p>{!item.available && <p className="checkout-unavailable">Sản phẩm không còn khả dụng</p>}</div>
+              <button type="button" className="checkout-remove" disabled={busy} onClick={() => removeFromCart(item._id)}><Icon name="close" />Xóa</button>
+            </div>)}</div>
+          </section>
+          <section className="checkout-card checkout-delivery" aria-labelledby="cart-delivery-title"><div className="checkout-card-heading"><h2 id="cart-delivery-title">Địa chỉ nhận hàng</h2><Icon name="location_on" /></div>
+            {deliveryAddresses.length ? <><Field label="Chọn địa chỉ đã lưu"><select className="input-field" value={idOf(selectedAddress)} onChange={event => setSelectedAddressId(event.target.value)}>{deliveryAddresses.map(item => <option key={idOf(item)} value={idOf(item)}>{item.label}</option>)}</select></Field>
+              <div className="checkout-address"><span className="checkout-address-marker"><Icon name="location_on" /></span><div><p className="checkout-recipient">{shipping.recipientName} · {shipping.phone}</p><p className="checkout-address-line">{shipping.addressLine}, {shipping.ward}, {shipping.city}</p></div></div></> : <p className="checkout-address-missing">Chưa có địa chỉ nhận hàng. Hãy thêm địa chỉ trước khi đặt hàng.</p>}
+            <button type="button" className="checkout-address-link" disabled={busy} onClick={() => setTab('addresses')}>Thêm / quản lý địa chỉ <Icon name="arrow_forward" /></button>
+          </section>
+        </div>
+        <aside className="checkout-summary checkout-card" aria-labelledby="cart-summary-title"><div className="checkout-card-heading"><h2 id="cart-summary-title">Tóm tắt đơn hàng</h2><Icon name="receipt_long" /></div>
+          <dl className="checkout-totals"><div><dt>Số lượng</dt><dd>{cart.length} sản phẩm</dd></div><div><dt>Tiền hàng</dt><dd>{money(cart.reduce((sum, item) => sum + item.price, 0))}</dd></div><div><dt>Phí giao hàng</dt><dd className="checkout-fee-note">Xác nhận khi tạo đơn</dd></div></dl>
+          <div className="checkout-total"><span>Tiền hàng dự kiến</span><strong>{money(cart.reduce((sum, item) => sum + item.price, 0))}</strong></div>
+          <p className="checkout-summary-note">Tổng tiền và phí giao hàng được xác nhận khi tạo đơn.</p>
+          <button className="checkout-place-order" disabled={busy || !selectedAddress || cart.some(item => !item.available)}>Đặt hàng ({cart.length} sản phẩm)<Icon name="arrow_forward" /></button>
+          <p className="checkout-payment-note"><Icon name="receipt_long" /><span>Thanh toán sau khi tạo đơn trong mục Đơn mua.</span></p>
+        </aside>
       </form>}
-    </Panel>}
-    {tab === 'orders' && <div className="space-y-4">
+    </>}
+    {tab === 'orders' && <div className="member-order-list space-y-4">
+      {!historyOnly && <BuyerHeading title="Đơn mua" description="Theo dõi và quản lý những món đồ bạn đã đặt."><button disabled={busy} className="member-secondary" onClick={() => run(fetchOrders)}><Icon name="refresh" />Làm mới đơn mua</button></BuyerHeading>}
       {created && <p role="status" className="p-3 bg-green-50 rounded-xl">Đã tạo đơn hàng. Tổng thanh toán: {money(created.buyerTotal)}. Trạng thái: {created.orderStatus}.</p>}
-      <button disabled={busy} onClick={() => run(fetchOrders)}>Làm mới đơn mua</button>
-      {!orders.length && <p>Chưa có đơn mua.</p>}
+      {historyOnly && <button disabled={busy} onClick={() => run(fetchOrders)}>Làm mới đơn mua</button>}
+      {!orders.length && <div className="member-empty"><Icon name="receipt_long" /><p>Chưa có đơn mua.</p></div>}
       {orders.map(order => <OrderCard key={order._id} order={order} onChange={fetchOrders} />)}
     </div>}
     {tab === 'addresses' && <AddressBook onChange={setAddresses} />}

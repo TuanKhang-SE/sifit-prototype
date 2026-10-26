@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useApp } from '../context/AppContext';
 import { useLanguage } from '../context/LanguageContext';
 import LanguageSwitch from './LanguageSwitch';
@@ -10,6 +10,20 @@ export default function Navbar() {
   const isSelling = ['sell', 'sell-guide'].includes(currentView);
   const { t } = useLanguage();
   const [query, setQuery] = useState(searchQuery);
+  const [accountOpen, setAccountOpen] = useState(false);
+  const accountMenu = useRef(null);
+  const accountTrigger = useRef(null);
+  useEffect(() => {
+    if (!accountOpen) return;
+    const outside = event => { if (!accountMenu.current?.contains(event.target)) setAccountOpen(false); };
+    const escape = event => {
+      if (event.key === 'Escape') { setAccountOpen(false); accountTrigger.current?.focus(); }
+    };
+    document.addEventListener('pointerdown', outside);
+    document.addEventListener('keydown', escape);
+    return () => { document.removeEventListener('pointerdown', outside); document.removeEventListener('keydown', escape); };
+  }, [accountOpen]);
+  const openAccount = view => { setAccountOpen(false); setCurrentView(view); };
   useEffect(() => setQuery(searchQuery), [searchQuery]);
   useEffect(() => {
     const header = document.querySelector('.store-header');
@@ -27,7 +41,15 @@ export default function Navbar() {
       <form className="header-search" role="search" onSubmit={event => { event.preventDefault(); browse({ query: query.trim() }); }}><Icon name="search" /><input aria-label={t('searchLabel')} placeholder={t('search')} value={query} onChange={event => setQuery(event.target.value)} /><button type="submit" aria-label={t('searchLabel')}><Icon name="arrow_forward" /></button></form>
       <div className="account-actions">
         <button className="bag-button" onClick={() => user ? setCurrentView('checkout') : openAuth()} aria-label={t('cart')} title={t('cart')}><Icon name="shopping_bag" />{cart.length > 0 && <span className="bag-count">{cart.length}</span>}</button><span className="nav-divider" />
-        {user ? <><button className="account-button" onClick={() => setCurrentView('checkout')}><Icon name="person" /><span>{user.name.split(' ').slice(-1)}</span></button><button className="text-link logout-link" onClick={logoutUser}>{t('logout')}</button></> : <><button className="text-link" onClick={() => openAuth('login')}>{t('login')}</button><button className="signup-link" onClick={() => openAuth('signup')}>{t('signup')}</button></>}
+        {user ? <><div className="buyer-account" ref={accountMenu} onBlur={event => { if (!event.currentTarget.contains(event.relatedTarget)) setAccountOpen(false); }}>
+          <button ref={accountTrigger} className="account-button" aria-label={`Tài khoản ${user.name}`} aria-expanded={accountOpen} aria-controls="buyer-account-options" onClick={() => setAccountOpen(value => !value)}><Icon name="person" /><span>{user.name.split(' ').slice(-1)}</span></button>
+          {accountOpen && <nav id="buyer-account-options" className="buyer-account-options" aria-label="Tùy chọn tài khoản">
+            <button onClick={() => openAccount('account-profile')}>Thông tin cá nhân</button>
+            <button onClick={() => openAccount('account-addresses')}>Địa chỉ</button>
+            <button onClick={() => openAccount('account-password')}>Đổi mật khẩu</button>
+            <button onClick={() => { setAccountOpen(false); logoutUser(); }}>{t('logout')}</button>
+          </nav>}
+        </div><button className="text-link logout-link" onClick={logoutUser}>{t('logout')}</button></> : <><button className="text-link" onClick={() => openAuth('login')}>{t('login')}</button><button className="signup-link" onClick={() => openAuth('signup')}>{t('signup')}</button></>}
       </div>
     </div>
     {isSelling && <nav className="storefront-guide-links wide-container" aria-label={t('sell')}><button onClick={() => setCurrentView('sell')}>{t('waysToSell')}</button><button onClick={() => openSellGuide()}>{t('cleanOutGuide')}</button></nav>}

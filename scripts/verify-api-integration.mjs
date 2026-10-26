@@ -26,6 +26,22 @@ let server, vite, browser;
 const errors = [];
 const png = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+/XioAAAAASUVORK5CYII=', 'base64');
 const imageUrl = `data:image/png;base64,${png.toString('base64')}`;
+const captureMember = async (page, name) => {
+  await fs.mkdir('artifacts/integration', { recursive: true });
+  const viewport = page.viewportSize();
+  if (await page.locator('.admin-shell').count()) {
+    await expect.poll(() => page.evaluate(() => {
+      const workspace = document.querySelector('.admin-workspace');
+      const expected = window.innerWidth <= 850 ? 0 : parseFloat(getComputedStyle(document.querySelector('.admin-shell')).getPropertyValue('--admin-sidebar-width'));
+      return Math.abs(workspace.getBoundingClientRect().left - expected) < 1;
+    })).toBe(true);
+  }
+  await page.screenshot({ path: `artifacts/integration/${name}-desktop.png`, fullPage: true });
+  await page.setViewportSize({ width: 390, height: 844 });
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await page.screenshot({ path: `artifacts/integration/${name}-mobile.png`, fullPage: true });
+  await page.setViewportSize(viewport);
+};
 try {
   await mongoose.connect(process.env.MONGODB_URI);
   const cloudinary = requireBackend('./src/config/cloudinary');
@@ -155,14 +171,65 @@ try {
   console.log('PASS seller profile, draft, multipart upload, encoded image deletion, submission');
 
   const adminPage = await login('admin', admin.email);
+  await expect(adminPage.getByRole('navigation', { name: 'Quản lý hệ thống', exact: true })).toBeVisible();
+  await expect(adminPage.locator('.admin-metric')).toHaveCount(12);
+  await captureMember(adminPage, 'admin-overview');
+  await adminPage.getByRole('button', { name: 'Thu gọn menu quản trị', exact: true }).click();
+  await expect.poll(async () => (await adminPage.locator('.admin-sidebar').boundingBox()).width).toBe(78);
+  await expect(adminPage.getByRole('button', { name: 'Mở rộng menu quản trị', exact: true })).toHaveAttribute('aria-expanded', 'false');
+  await adminPage.getByRole('button', { name: 'Mở rộng menu quản trị', exact: true }).click();
+  await adminPage.setViewportSize({ width: 390, height: 844 });
+  await expect(adminPage.locator('.admin-sidebar')).toBeHidden();
+  await adminPage.getByRole('button', { name: 'Mở menu quản trị', exact: true }).click();
+  await expect(adminPage.locator('.admin-sidebar')).toBeVisible();
+  await adminPage.keyboard.press('Escape');
+  await expect(adminPage.locator('.admin-sidebar')).toBeHidden();
+  await adminPage.getByRole('button', { name: 'Mở menu quản trị', exact: true }).click();
+  await adminPage.getByRole('button', { name: 'Kiểm duyệt sản phẩm', exact: true }).click();
+  await expect(adminPage.locator('.admin-sidebar')).toBeHidden();
+  await adminPage.setViewportSize({ width: 1440, height: 1000 });
+  console.log('PASS admin sidebar navigation, collapse and mobile drawer');
+  await adminPage.getByRole('button', { name: 'Người dùng', exact: true }).click();
+  await expect(adminPage.getByRole('heading', { name: `Buyer Integration · ${buyer.email}`, exact: true })).toBeVisible();
   await adminPage.getByRole('button', { name: 'Kiểm duyệt sản phẩm', exact: true }).click();
   const pendingPanel = adminPage.locator('section').filter({ has: adminPage.getByRole('heading', { name: 'Integration Published Jacket', exact: true }) });
+  await expect(pendingPanel.getByRole('button', { name: 'Duyệt', exact: true })).toBeVisible();
+  await captureMember(adminPage, 'admin-products');
   await pendingPanel.getByRole('button', { name: 'Duyệt', exact: true }).click();
   await expect.poll(async () => (await Product.findOne({ title: 'Integration Published Jacket' }))?.status).toBe('ACTIVE');
+  await expect(pendingPanel.getByRole('button', { name: 'Ẩn sản phẩm', exact: true })).toBeVisible();
+  await adminPage.getByRole('button', { name: 'Đơn hàng', exact: true }).click();
+  await expect(adminPage.getByText('Chưa có dữ liệu.', { exact: true })).toBeVisible();
+  await adminPage.getByRole('button', { name: 'Kiểm duyệt sản phẩm', exact: true }).click();
+  await expect(pendingPanel.getByRole('button', { name: 'Ẩn sản phẩm', exact: true })).toBeVisible();
+  expect(errors).toEqual([]);
   console.log('PASS admin moderation');
   resetRateBudget();
 
   const buy = await login('buyer', buyer.email);
+  const buyerAccount = buy.getByRole('button', { name: 'Tài khoản Buyer Integration', exact: true });
+  await buyerAccount.click();
+  await expect(buyerAccount).toHaveAttribute('aria-expanded', 'true');
+  await buy.getByRole('button', { name: 'Thông tin cá nhân', exact: true }).click();
+  await expect(buy.getByRole('heading', { name: 'Thông tin cá nhân', exact: true })).toBeVisible();
+  await expect(buy.locator('main')).toContainText(buyer.email);
+  await expect(buy.getByLabel('Mật khẩu hiện tại', { exact: true })).toHaveCount(0);
+  await captureMember(buy, 'member-profile');
+  await buy.reload();
+  await expect(buy.getByRole('heading', { name: 'Thông tin cá nhân', exact: true })).toBeVisible();
+  await buyerAccount.click();
+  await buy.getByRole('button', { name: 'Đổi mật khẩu', exact: true }).click();
+  await expect(buy.getByLabel('Mật khẩu hiện tại', { exact: true })).toBeVisible();
+  await expect(buy.getByRole('heading', { name: 'Thông tin cá nhân', exact: true })).toHaveCount(0);
+  await captureMember(buy, 'member-password');
+  await buyerAccount.click();
+  await buy.keyboard.press('Escape');
+  await expect(buyerAccount).toHaveAttribute('aria-expanded', 'false');
+  await buyerAccount.click();
+  await buy.getByRole('heading', { name: 'Đổi mật khẩu', exact: true }).first().click();
+  await expect(buyerAccount).toHaveAttribute('aria-expanded', 'false');
+  console.log('PASS buyer account dropdown, separate profile/password pages, reload and dismissal');
+  resetRateBudget();
   await expect(buy.getByRole('button', { name: 'Kênh bán', exact: true })).toHaveCount(0);
   await buy.goto(`${base}/?view=seller`);
   await expect(buy).toHaveURL(/view=homepage/);
@@ -170,6 +237,15 @@ try {
   console.log('PASS role-specific landing, navigation, refresh and protected UI');
   await buy.goto(`${base}/?view=catalog`);
   await expect(buy.locator('.product-card')).toHaveCount(3);
+  await captureMember(buy, 'catalog');
+  await buy.setViewportSize({ width: 390, height: 844 });
+  await expect(buy.locator('#catalog-filter-panel')).toBeHidden();
+  await buy.getByRole('button', { name: 'Bộ lọc', exact: true }).click();
+  await expect(buy.locator('#catalog-filter-panel')).toBeVisible();
+  await expect(buy.getByRole('button', { name: 'Bộ lọc', exact: true })).toHaveAttribute('aria-expanded', 'true');
+  await buy.getByRole('button', { name: 'Bộ lọc', exact: true }).click();
+  await expect(buy.locator('#catalog-filter-panel')).toBeHidden();
+  await buy.setViewportSize({ width: 1440, height: 1000 });
   const card = buy.locator('.product-card').filter({ hasText: 'Integration Jacket 1' });
   await card.getByRole('button', { name: '♡ Yêu thích', exact: true }).click();
   await expect(card.getByRole('button', { name: '♥ Đã yêu thích', exact: true })).toBeVisible();
@@ -199,17 +275,48 @@ try {
     await buy.locator('.product-card').filter({ hasText: title }).locator('.product-quick-add').click();
   }
   await buy.getByRole('button', { name: 'Giỏ hàng', exact: true }).click();
-  for (const [label, value] of [['Người nhận', 'Buyer Integration'], ['Số điện thoại', '0901234567'], ['Số nhà, tên đường', '123 Test Street'], ['Phường/Xã', 'Test Ward'], ['Quận/Huyện', 'Test District'], ['Tỉnh/Thành phố', 'Ho Chi Minh']]) {
+  await expect(buy.getByRole('button', { name: 'Đặt hàng (2 sản phẩm)', exact: true })).toBeDisabled();
+  await buy.getByRole('button', { name: 'Thêm / quản lý địa chỉ', exact: true }).click();
+  await buy.getByRole('button', { name: 'Thêm địa chỉ', exact: true }).click();
+  await expect(buy.getByRole('heading', { name: 'Địa chỉ 1', exact: true })).toBeVisible();
+  await expect(buy.getByLabel('Tên địa chỉ', { exact: true })).toHaveCount(0);
+  await expect(buy.getByLabel('Loại địa chỉ', { exact: true })).toHaveCount(0);
+  for (const [label, value] of [['Người nhận', 'Buyer Integration'], ['Số điện thoại', '0901234567'], ['Số nhà, tên đường', '123 Test Street'], ['Phường/Xã', 'Test Ward'], ['Tỉnh/Thành phố', 'Ho Chi Minh']]) {
     await buy.getByLabel(label, { exact: true }).fill(value);
   }
+  await buy.getByRole('button', { name: 'Lưu địa chỉ', exact: true }).click();
+  await expect(buy.getByText('Địa chỉ 1', { exact: true })).toBeVisible();
+  await buy.getByRole('button', { name: 'Thêm địa chỉ', exact: true }).click();
+  await expect(buy.getByRole('heading', { name: 'Địa chỉ 2', exact: true })).toBeVisible();
+  await captureMember(buy, 'member-address-form');
+  for (const [label, value] of [['Người nhận', 'Buyer Integration'], ['Số điện thoại', '0901234567'], ['Số nhà, tên đường', '456 Second Street'], ['Phường/Xã', 'Second Ward'], ['Tỉnh/Thành phố', 'Ho Chi Minh']]) {
+    await buy.getByLabel(label, { exact: true }).fill(value);
+  }
+  await buy.getByRole('button', { name: 'Lưu địa chỉ', exact: true }).click();
+  await expect(buy.getByText('Địa chỉ 2', { exact: true })).toBeVisible();
+  await buy.getByRole('button', { name: 'Giỏ hàng (2)', exact: true }).click();
+  await buy.getByLabel('Chọn địa chỉ đã lưu', { exact: true }).selectOption({ label: 'Địa chỉ 2' });
+  await expect(buy.getByText('456 Second Street, Second Ward, Ho Chi Minh', { exact: true })).toBeVisible();
+  await expect(buy.getByLabel('Số nhà, tên đường', { exact: true })).toHaveCount(0);
+  await buy.getByLabel('Chọn địa chỉ đã lưu', { exact: true }).selectOption({ label: 'Địa chỉ 1' });
+  await expect(buy.getByText('123 Test Street, Test Ward, Ho Chi Minh', { exact: true })).toBeVisible();
+  await fs.mkdir('artifacts/integration', { recursive: true });
+  await buy.screenshot({ path: 'artifacts/integration/checkout-desktop.png', fullPage: true });
+  await buy.setViewportSize({ width: 390, height: 844 });
+  await expect(buy.locator('.checkout-summary')).toHaveCSS('position', 'static');
+  expect(await buy.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await buy.screenshot({ path: 'artifacts/integration/checkout-mobile.png', fullPage: true });
+  await buy.setViewportSize({ width: 1440, height: 1000 });
+  resetRateBudget();
   await buy.getByRole('button', { name: 'Đặt hàng (2 sản phẩm)', exact: true }).click();
   await expect.poll(async () => Order.countDocuments({ buyerId: buyer._id })).toBe(2);
   await expect(buy.locator('article')).toHaveCount(2);
   const pendingDetails = buy.locator('article').first();
   await expect(pendingDetails.getByRole('heading', { name: 'Địa chỉ nhận hàng', exact: true })).toBeVisible();
   await expect(pendingDetails.getByText('Buyer Integration · 0901234567', { exact: true })).toBeVisible();
-  await expect(pendingDetails.getByText('123 Test Street, Test Ward, Test District, Ho Chi Minh', { exact: true })).toBeVisible();
+  await expect(pendingDetails.getByText('123 Test Street, Test Ward, Ho Chi Minh', { exact: true })).toBeVisible();
   await expect(pendingDetails.getByText('Hạn giữ chỗ / thanh toán:', { exact: false })).toBeVisible();
+  await captureMember(buy, 'member-orders');
   await expect(buy.getByText('Tổng thanh toán: 100.000', { exact: false })).toBeVisible();
   await buy.getByRole('button', { name: 'Thanh toán', exact: true }).first().click();
   await expect(buy.getByText('Yêu cầu thanh toán:', { exact: false })).toBeVisible();
@@ -224,14 +331,16 @@ try {
   console.log('PASS multi-seller checkout, order mapping, server totals, payment attempt and reload');
   resetRateBudget();
 
+  await buyerAccount.click();
   await buy.getByRole('button', { name: 'Địa chỉ', exact: true }).click();
-  for (const [label, value] of [['Nhãn địa chỉ', 'Home'], ['Người nhận', 'Buyer Integration'], ['Số điện thoại', '0901234567'], ['Số nhà, tên đường', '123 Test Street'], ['Phường/Xã', 'Test Ward'], ['Quận/Huyện', 'Test District'], ['Tỉnh/Thành phố', 'Ho Chi Minh']]) {
-    await buy.getByLabel(label, { exact: true }).fill(value);
-  }
-  await buy.getByRole('button', { name: 'Thêm địa chỉ', exact: true }).click();
-  await expect(buy.getByText('123 Test Street, Test Ward, Test District, Ho Chi Minh', { exact: true })).toBeVisible();
+  await expect(buy.getByLabel('Loại địa chỉ', { exact: true })).toHaveCount(0);
+  await expect(buy.getByText('Địa chỉ 1', { exact: true })).toBeVisible();
+  await expect(buy.getByText('Địa chỉ 2', { exact: true })).toBeVisible();
+  await expect(buy.getByText('123 Test Street, Test Ward, Ho Chi Minh', { exact: true })).toBeVisible();
+  await captureMember(buy, 'member-addresses');
   await buy.getByRole('button', { name: 'Thông báo', exact: true }).click();
   await expect(buy.getByRole('heading', { name: 'Tùy chọn thông báo' })).toBeVisible();
+  await captureMember(buy, 'member-notifications');
   const messagesPreference = buy.getByLabel('Tin nhắn', { exact: true });
   await messagesPreference.uncheck();
   await expect(messagesPreference).toBeEnabled();
@@ -286,11 +395,14 @@ try {
   console.log('PASS non-delivery complaint before shipment, duplicate guard and unchanged payment');
   resetRateBudget();
   const Address = requireBackend('./src/models/address.model');
-  const pickup = await Address.create({ userId: seller._id, label: 'Pickup', recipientName: 'Seller Integration', phone: '0901234567', addressLine: '456 Pickup Street', ward: 'Ward', district: 'District', province: 'Ho Chi Minh', addressType: 'BOTH' });
+  const pickup = await Address.create({ userId: seller._id, label: 'Pickup', recipientName: 'Seller Integration', phone: '0901234567', addressLine: '456 Pickup Street', ward: 'Ward', province: 'Ho Chi Minh', addressType: 'BOTH' });
   await sell.getByRole('button', { name: 'Kênh bán', exact: true }).click();
   await sell.getByRole('button', { name: 'Đơn bán', exact: true }).click();
   const sellerCard = sell.locator('article').filter({ hasText: `Đơn #${sellerOrder.id.slice(-8)}` });
+  await expect(sellerCard.locator('.seller-order-finance')).toBeVisible();
+  await captureMember(sell, 'seller-orders');
   await sellerCard.getByRole('button', { name: 'Tạo vận đơn', exact: true }).click();
+  await captureMember(sell, 'seller-shipment-form');
   await sellerCard.getByLabel('Địa chỉ lấy hàng', { exact: true }).selectOption(pickup.id);
   for (const [label, value] of [['Khối lượng (gram)', '500'], ['Dài (cm)', '25'], ['Rộng (cm)', '20'], ['Cao (cm)', '10']]) await sellerCard.getByLabel(label, { exact: true }).fill(value);
   await sellerCard.getByRole('button', { name: 'Báo giá giao hàng', exact: true }).click();
@@ -391,7 +503,7 @@ try {
     const orders = await import('/src/services/orderService.js');
     const active = (await products.listProducts()).items[0];
     await cart.addItem(active._id);
-    return orders.createOrder({ shippingAddress: { recipientName: 'Expiry Buyer', phone: '0901234567', addressLine: 'Expiry Street', ward: 'Ward', district: 'District', city: 'Ho Chi Minh' }, idempotencyKey: crypto.randomUUID() });
+    return orders.createOrder({ shippingAddress: { recipientName: 'Expiry Buyer', phone: '0901234567', addressLine: 'Expiry Street', ward: 'Ward', city: 'Ho Chi Minh' }, idempotencyKey: crypto.randomUUID() });
   });
   await Order.updateMany({ checkoutGroupId: newCheckout.id }, { reservationExpiresAt: new Date(Date.now() - 1000) });
   await buy.reload();
@@ -530,6 +642,7 @@ try {
 
   await adminPage.getByRole('button', { name: 'Báo cáo & CSV', exact: true }).click();
   await expect(adminPage.getByRole('heading', { name: 'Tổng giá trị hàng hóa', exact: true })).toBeVisible();
+  await captureMember(adminPage, 'admin-reports');
   await adminPage.getByLabel('Gộp theo', { exact: true }).selectOption('month');
   await adminPage.getByRole('button', { name: 'Xem báo cáo', exact: true }).click();
   const downloadEvent = adminPage.waitForEvent('download');

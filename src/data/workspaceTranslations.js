@@ -49,7 +49,7 @@ export const workspaceTranslations = {
   'Tên shop': 'Shop name', 'Số điện thoại': 'Phone number', 'Ảnh đại diện (URL)': 'Avatar URL',
   'Hỗ trợ: JPG, PNG, WebP': 'Supported: JPG, PNG, WebP', 'Tài khoản': 'Account', 'Đơn mua': 'Orders', 'Giỏ hàng': 'Shopping bag',
   'Hồ Sơ Của Tôi': 'My profile', 'Họ và tên': 'Full name', 'Địa chỉ mặc định': 'Default address',
-  'Số nhà, tên đường': 'Street address', 'Phường/Xã': 'Ward', 'Quận/Huyện': 'District', 'Tỉnh/Thành phố': 'City / province',
+  'Số nhà, tên đường': 'Street address', 'Phường/Xã': 'Ward', 'Tỉnh/Thành phố': 'City / province',
   'Tất cả': 'All', 'Chờ Thanh Toán': 'Pending payment', 'Chờ Xác Nhận': 'Pending', 'Đang Giao': 'Shipping', 'Hoàn Thành': 'Completed',
   'Đánh Giá': 'Reviews', 'Đánh giá sản phẩm': 'Review product', 'Chia sẻ cảm nhận của bạn...': 'Share your experience...',
   'Gửi Đánh Giá': 'Submit review', 'Sản phẩm thanh toán': 'Checkout items',

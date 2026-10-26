@@ -8,6 +8,7 @@ import OrderReviews from './OrderReviews';
 import { Feedback, Field } from './MarketplaceUI';
 import { useAction } from '../hooks/useAction';
 import { money, idOf } from '../utils/marketplace';
+import '../seller-orders.css';
 
 
 const statuses = { PENDING_PAYMENT: 'Chờ thanh toán', PAID: 'Đã thanh toán', PROCESSING: 'Đang chuẩn bị', SHIPPED: 'Đang vận chuyển', DELIVERED: 'Đã giao', COMPLETED: 'Hoàn thành', CANCELLED: 'Đã hủy', REFUND_PENDING: 'Chờ hoàn tiền', REFUNDED: 'Đã hoàn tiền' };
@@ -38,20 +39,24 @@ export default function OrderCard({ order, seller = false, addresses = [], onCha
     setPayment(await paymentService.createPayment({ checkoutGroupId: idOf(order.checkoutGroupId), idempotencyKey: paymentKey.current }));
   });
   const refreshPayment = () => run(async () => { setPayment(await paymentService.getPayment(idOf(payment))); await onChange(); });
-  return <article className="bg-white border rounded-2xl p-5 space-y-4">
-    <div className="flex justify-between gap-3"><h3 className="font-bold">Đơn #{order._id.slice(-8)}</h3><span>{statuses[order.orderStatus] || order.orderStatus}</span></div>
-    <p className="text-sm text-gray-500">{seller ? `Người mua: ${order.buyer?.name || order.buyer?._id}` : `Người bán: ${order.seller?.name || order.seller?._id}`}</p>
-    {order.items.map(item => <div key={idOf(item.productId)} className="flex gap-3 items-center">
+  return <article className={`bg-white border rounded-2xl p-5 space-y-4 ${seller ? 'seller-order-card' : 'member-order-card'}`}>
+    <div className="member-order-header flex justify-between gap-3"><h3 className="font-bold">Đơn #{order._id.slice(-8)}</h3><span className="member-order-status" data-status={order.orderStatus}>{statuses[order.orderStatus] || order.orderStatus}</span></div>
+    <p className="member-order-seller text-sm text-gray-500">{seller ? `Người mua: ${order.buyer?.name || order.buyer?._id}` : `Người bán: ${order.seller?.name || order.seller?._id}`}</p>
+    {order.items.map(item => <div key={idOf(item.productId)} className="member-order-product flex gap-3 items-center">
       {item.image && <img src={item.image} className="w-16 h-16 object-cover rounded-xl" alt="" />}<div className="flex-1"><p>{item.title}</p><p>{money(item.price)} × {item.quantity}</p></div>
     </div>)}
-    <p>Tiền hàng: {money(order.subtotal)} · Phí giao hàng: {money(order.shippingFee)}</p>
-    <p className="font-bold">Tổng thanh toán: {money(order.totalAmount)}</p>
-    {seller && <p>Hoa hồng: {money(order.commissionAmount)} ({(order.commissionRateBasisPoints || 0) / 100}%) · Tiền người bán: {money(order.sellerProceeds)}</p>}
-    <p className="text-sm">Thanh toán: {order.paymentStatus}</p>
+    {seller ? <dl className="seller-order-finance">
+      <div><dt>Tiền hàng</dt><dd>{money(order.subtotal)}</dd></div>
+      <div><dt>Phí giao hàng</dt><dd>{money(order.shippingFee)}</dd></div>
+      <div><dt>Tổng thanh toán</dt><dd>{money(order.totalAmount)}</dd></div>
+      <div><dt>Hoa hồng ({(order.commissionRateBasisPoints || 0) / 100}%)</dt><dd>{money(order.commissionAmount)}</dd></div>
+      <div className="seller-order-proceeds"><dt>Tiền người bán</dt><dd>{money(order.sellerProceeds)}</dd></div>
+    </dl> : <><p>Tiền hàng: {money(order.subtotal)} · Phí giao hàng: {money(order.shippingFee)}</p><p className="member-order-total font-bold">Tổng thanh toán: {money(order.totalAmount)}</p></>}
+    <p className="seller-order-payment text-sm">Thanh toán: {seller ? ({ UNPAID: 'Chưa thanh toán', PAID: 'Đã thanh toán', FAILED: 'Thất bại', REFUND_PENDING: 'Chờ hoàn tiền', REFUNDED: 'Đã hoàn tiền' }[order.paymentStatus] || order.paymentStatus) : order.paymentStatus}</p>
     <OrderDetails order={order} now={now} />
     {!seller && activeDispute && <p role="status">Khiếu nại đang xử lý: {activeDispute.status}. Xem chi tiết trong mục Khiếu nại.</p>}
     <Feedback error={error} busy={busy} />
-    <div className="flex gap-3 flex-wrap">
+    <div className="member-order-actions flex gap-3 flex-wrap">
       {!seller && order.orderStatus === 'PENDING_PAYMENT' && <><button disabled={busy || !!paymentExpired} onClick={pay}>Thanh toán</button><button disabled={busy} onClick={() => run(async () => { await orderService.cancelOrder(order._id); await onChange(); })}>Hủy toàn bộ đơn trong lần đặt hàng này</button></>}
       {!seller && order.orderStatus === 'DELIVERED' && !order.buyerConfirmedAt && <button disabled={busy} onClick={() => run(async () => { await orderService.confirmReceipt(order._id); await onChange(); })}>Xác nhận đã nhận hàng</button>}
       {['PAID', 'PROCESSING', 'SHIPPED', 'DELIVERED', 'COMPLETED'].includes(order.orderStatus) && <button disabled={busy} onClick={() => run(async () => setTracking(await shippingService.getTracking(order._id)))}>Xem vận đơn</button>}
